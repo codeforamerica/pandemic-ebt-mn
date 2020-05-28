@@ -1,2 +1,0 @@
-class AlreadyReceivedForm < Form
-end

@@ -127,11 +127,10 @@ en:
     many_immigrants_can_html: Many immigrants can get CalFresh. <a href="https://www.getcalfresh.org/en/immigrants" target="_blank">Learn more about CalFresh and immigration.</a>
     you_can_also_html: You can also find your <a href="http://www.cafoodbanks.org/find-food-bank" target="_blank">nearest food bank.</a>
   received_card:
-    alt_text_card: A white card that says P-EBT on it
-    header: Have you received a P-EBT card?
-    it_looks_like_html: It looks like this&colon;
-    if_you_already_got: If you already got this card, you don't need to fill out this form. You can use this like a
-      debit card to buy food.
+    alt_text_card: A card with a picture of a lake that says Minnesota on it
+    header: Does your household use food benefits (SNAP/EBT) or participate in Minnesota’s Family Investment Program
+      (MFIP)?
+    it_looks_like_html: The card may look like this&colon;
   already_received:
     header: You’re all done!
     you_dont_need: You don’t need to fill this form out. The P-EBT card will be automatically loaded like a debit card

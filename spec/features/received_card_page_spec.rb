@@ -8,10 +8,7 @@ RSpec.describe 'Journey', type: :feature do
       click_on 'Apply now'
       expect(page).to have_text "Here's how it works"
       click_on 'Continue'
-      expect(page).to have_text 'Is the student able to receive free or reduced price meals'
-      choose 'Yes'
-      click_on 'Continue'
-      expect(page).to have_text 'Have you received a P-EBT card?'
+      expect(page).to have_text 'Does your household use food benefits (SNAP/EBT)'
       click_on 'Yes'
       expect(page).to have_text 'You’re all done'
     end

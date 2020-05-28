@@ -7,6 +7,10 @@ class PagesController < ApplicationController
 
   def info; end
 
+  def card; end
+
+  def done; end
+
   def early
     if ENV['EXPERIMENT_OVER'] == '1'
       render 'early'

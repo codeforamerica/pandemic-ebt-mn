@@ -3,8 +3,6 @@ class FormNavigation
     EligibleController,
     MealEligibilityController,
     SorryController,
-    ReceivedCardController,
-    AlreadyReceivedController,
     ChildrenController,
     AddStudentController,
     MailingAddressController,
