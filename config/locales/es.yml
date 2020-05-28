@@ -115,10 +115,10 @@ es:
     many_immigrants_can_html: La mayoría de inmigrantes pueden obtener CalFresh. <a href="https://www.getcalfresh.org/en/immigrants" target="_blank">Aprenda más sobre CalFresh e inmigración.</a>
     you_can_also_html: También puede encontrar su <a href="http://www.cafoodbanks.org/find-food-bank" target="_blank">banco de alimentos más cercano.</a>
   received_card:
-    header: ¿Ya ha recibido la tarjeta de P-EBT?
-    it_looks_like_html: Se parece así.
-    if_you_already_got: Si ya recibió esta tarjeta, no necesita completar este formulario. Usted recibirá dinero en esta
-      tarjeta.
+    alt_text_card: A card with a picture of a lake that says Minnesota on it
+    header: Does your household use food benefits (SNAP/EBT) or participate in Minnesota’s Family Investment Program
+      (MFIP)?
+    it_looks_like_html: The card may look like this&colon;
   already_received:
     header: ¡Ya terminó!
     you_dont_need: Si ya recibió esta tarjeta, no necesita completar este formulario. Puede usarla como una tarjeta de

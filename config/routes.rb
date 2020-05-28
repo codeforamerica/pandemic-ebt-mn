@@ -8,6 +8,8 @@ Rails.application.routes.draw do
     get 'early' => 'pages#early', as: 'early'
     get 'how' => 'pages#how', as: 'how'
     get 'info' => 'pages#info', as: 'info'
+    get 'card' => 'pages#card', as: 'card'
+    get 'done' => 'pages#done', as: 'done'
 
     resources :steps, controller: :forms, only: (Rails.env.production? ? %i[show] : %i[show index]) do
       collection do
