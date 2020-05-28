@@ -42,10 +42,12 @@
         <div class="grid__item width-five-sixths shift-one-twelfth">
           <div class="toolbar toolbar--wrap-when-small">
               <div class="toolbar__left">
-                <% unless content_for?(:no_back) %>
-                <a class="button button--primary button--small" href="javascript:history.back()">
-                  <i class="icon-arrow_back"></i> <%= t("shared.go_back") %>
-                </a>
+                <% if content_for?(:no_back) %>
+                  <%= render 'pages/logo' %>
+                  <% else %>
+                  <a class="button button--primary button--small" href="javascript:history.back()">
+                    <i class="icon-arrow_back"></i> <%= t("shared.go_back") %>
+                  </a>
                 <% end %>
               </div>
             <div class="toolbar__right>">
