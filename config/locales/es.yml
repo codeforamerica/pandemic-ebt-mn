@@ -145,23 +145,6 @@ es:
     public_school: Escuela pública (incluyendo escuela autónoma o escuela "charter")
     private_school: Escuela privada (incluyendo escuela religiosa)
     please_add_student: Por favor agregue un estudiante.
-  just_so_you_know:
-    header: Solo para que sepas
-    the_card_will: La tarjeta tendrá el nombre del estudiante mayor cuando llegue. Si solicitó más de un hijo,
-      todos los beneficios estarán en esta tarjeta. Los adultos en el hogar podrán usar la tarjeta para comprar
-      alimentos para toda la familia.
-  residential_address:
-    header: ¿Cual es la dirección que %{full_name} tiene en el registro de la escuela?
-    what_address_notice: Es importante que nos de la dirección que su escuela tiene en sus registros. Nos puede dar una
-      dirección diferente para recibir correo.
-    student_was_homeless: El estudiante no tenía hogar al momento de la registracíon.
-    is_this_the_best: ¿Es este el mejor lugar para recibir correo durante las próximas dos semanas?
-    yes_send_mail: Sí, envíe el correo ahí
-    no_use_different: No, uso una dirección diferente para el correo
-  same_address:
-    header: Todos los estudiantes en su casa estan registrados en la escuela con esta dirección?
-    help_text: Nada mas necesitamos saber si todos los estudiantes en su hogar usan estan registrados con esta dirección
-      en su escuela.
   mailing_address:
     header: ¿Donde deberíamos enviar su tarjeta de P-EBT?
     this_card_can: Esta tarjeta solamente puede ser enviada a una dirección en California.
