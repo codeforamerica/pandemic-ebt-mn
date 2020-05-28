@@ -7,9 +7,6 @@ class FormNavigation
     AlreadyReceivedController,
     ChildrenController,
     AddStudentController,
-    JustSoYouKnowController,
-    ResidentialAddressController,
-    SameAddressController,
     MailingAddressController,
     ContactController,
     SignatureController,
@@ -34,6 +31,13 @@ class FormNavigation
     return unless index
 
     controller_until_end = controllers[index + 1..]
+    seek(controller_until_end)
+  end
+
+  def skip_to_next
+    return unless index
+
+    controller_until_end = controllers[index + 2..]
     seek(controller_until_end)
   end
 
