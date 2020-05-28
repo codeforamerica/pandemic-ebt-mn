@@ -4,7 +4,7 @@ RSpec.describe 'Journey', type: :feature do
   describe 'Full journey with attempt to resubmit' do
     it 'blocks the user from resubmitting' do
       visit root_path
-      expect(page).to have_text 'Get help buying food while schools are closed.'
+      expect(page).to have_text 'Get help buying food while schools are closed'
       click_on('Learn more', match: :first)
       expect(page).to have_text 'Information about P-EBT'
       visit root_path
