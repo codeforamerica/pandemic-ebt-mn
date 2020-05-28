@@ -30,6 +30,11 @@ class FormsController < ApplicationController
     step_path(next_step.to_param, params) if next_step
   end
 
+  def skip_to_next_path(params = {})
+    next_step = form_navigation.skip_to_next
+    step_path(next_step.to_param, params) if next_step
+  end
+
   def self.show?(_household)
     true
   end

@@ -38,17 +38,6 @@ RSpec.describe 'Journey', type: :feature do
       expect(page).to have_text 'Jane Johnson'
       expect(page).to have_text 'Joe Johnson'
       click_on 'Continue'
-      expect(page).to have_text 'Just so you know'
-      click_on 'Continue'
-      expect(page).to have_text 'What address does Joe Johnson’s school have on file?'
-      fill_in 'What is the street address?', with: '123 Elm Street'
-      fill_in 'What is the city?', with: 'Oakland'
-      fill_in 'What is the ZIP code?', with: '96021'
-      choose 'No, use a different address for mail'
-      click_on 'Continue'
-      expect(page).to have_text 'Are all students at your house registered at school using this address?'
-      choose "I'm not sure"
-      click_on 'Continue'
       expect(page).to have_text 'Where should we mail your P-EBT card?'
       fill_in 'What is the street address?', with: '948 Baker Street'
       fill_in 'What is the unit or apartment (optional)?', with: 'Apt 2'
@@ -65,7 +54,7 @@ RSpec.describe 'Journey', type: :feature do
       expect(page).to have_text 'Your application is done!'
       click_on 'Good'
       expect(page).to have_text 'Thank you for your feedback!'
-      visit residential_address_steps_path
+      visit mailing_address_steps_path
       click_on 'Continue'
       expect(page).to have_text 'Your application is done!'
     end

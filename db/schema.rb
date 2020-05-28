@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_22_231342) do
+ActiveRecord::Schema.define(version: 2020_05_28_174138) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,23 +33,16 @@ ActiveRecord::Schema.define(version: 2020_05_22_231342) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "received_card", default: 0
-    t.string "residential_street"
-    t.string "residential_city"
-    t.string "residential_zip_code"
-    t.integer "has_mailing_address", default: 0
     t.string "mailing_street"
     t.string "mailing_city"
     t.string "mailing_zip_code"
     t.string "signature"
     t.datetime "submitted_at"
     t.integer "application_experience", default: 0
-    t.string "residential_street_2"
     t.string "mailing_street_2"
     t.integer "experiment_group", default: 0
     t.string "email_address"
     t.string "language", limit: 2
-    t.integer "registered_homeless", default: 0
-    t.integer "same_residential_address", default: 0
     t.index ["submitted_at"], name: "index_households_on_submitted_at"
   end
 

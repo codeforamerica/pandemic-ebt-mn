@@ -13,7 +13,7 @@ class ChildrenController < FormsController
       if @form.valid?
         @form.save
         update_session
-        redirect_to(just_so_you_know_steps_path)
+        redirect_to(skip_to_next_path)
       else
         flash.now[:errors] = @form.errors.messages.values.flatten
         render :edit

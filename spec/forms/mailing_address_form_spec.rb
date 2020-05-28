@@ -18,15 +18,6 @@ describe MailingAddressForm do
       expect(household.mailing_zip_code).to eq('96021')
     end
 
-    it 'does not remove has_mailing_address' do
-      household = Household.create(is_eligible: :yes, has_mailing_address: :yes)
-      form = described_class.new(household, { mailing_street: '123 Elm Street', mailing_city: 'Oakland',
-                                              mailing_zip_code: '96021' })
-      form.save
-      household.reload
-      expect(household.has_mailing_address).to eq('yes')
-    end
-
     it 'is valid without address 2 line' do
       household = Household.create(is_eligible: :yes)
       form = described_class.new(household, { mailing_street: '123 Elm Street', mailing_city: 'Oakland',
