@@ -114,7 +114,7 @@ es:
       </ul>
   sorry:
     header: Este programa es solamente para niños que reciben comidas escolares gratis o a precio reducido
-    you_can_also_html: You can also call the Minnesota Minnesota Food HelpLine at <a href="tel:+16514869860">(651)
+    you_can_also_html: You can also call the Minnesota Food HelpLine at <a href="tel:+16514869860">(651)
       486-9860</a> or <a href="tel:+18887111151">(888) 711-1151</a>.
   received_card:
     alt_text_card: A card with a picture of a lake that says Minnesota on it
