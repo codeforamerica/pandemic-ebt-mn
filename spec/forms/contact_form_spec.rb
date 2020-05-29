@@ -14,7 +14,15 @@ describe ContactForm do
       expect(household.phone_number).to eq('5551231234')
     end
 
-    it 'handles invalid phone number' do
+    it 'handles an invalid phone number' do
+      household = Household.create(is_eligible: :yes)
+      form = described_class.new(household, { phone_number: 'asdf' })
+
+      expect(form).not_to be_valid
+      expect(form.errors.first[1]).to eq('Please enter a valid phone number.')
+    end
+
+    it 'handles a too short phone number' do
       household = Household.create(is_eligible: :yes)
       form = described_class.new(household, { phone_number: '123-3323' })
 
