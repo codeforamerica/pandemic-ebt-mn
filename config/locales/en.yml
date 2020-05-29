@@ -139,9 +139,8 @@ en:
     if_theres_a_problem_html: If there’s a problem with your card, you can call Minnesota’s EBT customer service
       center at <a href="tel:+18889972227">(888) 997-2227</a>, 24 hours a day, 7 days a week.
   children:
-    header: List all the students in your house.
-    one_at_a_time: One at a time, add all students in elementary, middle, and high school. This can include pre-K or
-      TK students who get free breakfast or lunch at school.
+    header: Add all the students in your house
+    one_at_a_time: One at a time, add all students who are between the ages of 5 and 18 years old.
     students: Students in your house
     child_has_been: Child has been removed
     remove: (remove)

@@ -13,7 +13,7 @@ RSpec.describe 'Deleting a child', type: :feature do
       expect(page).to have_text 'Is the student able to receive free or reduced price meals'
       choose 'Yes'
       click_on 'Continue'
-      expect(page).to have_text 'List all the students in your house'
+      expect(page).to have_text 'Add all the students in your house'
       click_on 'Add a student'
       expect(page).to have_text 'Add a student.'
       fill_in 'First name', with: 'Jane'
