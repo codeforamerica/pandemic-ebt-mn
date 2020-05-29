@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_28_174138) do
+ActiveRecord::Schema.define(version: 2020_05_29_223334) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 2020_05_28_174138) do
     t.integer "experiment_group", default: 0
     t.string "email_address"
     t.string "language", limit: 2
+    t.string "phone_number"
     t.index ["submitted_at"], name: "index_households_on_submitted_at"
   end
 

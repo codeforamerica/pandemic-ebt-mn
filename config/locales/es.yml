@@ -155,6 +155,7 @@ es:
     email_address: ¿Cuál es su dirección de correo electrónico? (opcional)
     we_need_your_email: Necesitamos su dirección de correo electrónico para comunicarnos con usted si hay algún problema
       con su solicitud.
+    phone_number: What is your phone number? (optional)
   signature:
     header: Agrega la firma de un padre o guardián.
     type_your_full: Ingrese su nombre legal completo aquí para firmar este formulario. Al ingresar su nombre usted
@@ -182,6 +183,7 @@ es:
   validations:
     please_add_student: Por favor agregue un estudiante.
     email_address: Por favor, introduce una dirección de correo electrónico válida.
+    phone_number: Please enter a valid phone number.
     first_name: Por favor agregue el primer nombre.
     last_name: Por favor agregue el apellido.
     school_type: Por favor seleccione que tipo de escuela atienden.
