@@ -11,8 +11,9 @@ es:
     what_is_the_city: ¿Cual es la ciudad?
     what_is_the_zip: ¿Cual es el código postal?
     go_back: Regresa
-    if_your_family: Si su familiar aún necesita ayuda comprando alimentos, puede solicitar CalFresh
-      (también conocido como estampillas de comida).
+    if_your_family_html: Si su familiar aún necesita ayuda comprando alimentos, puede
+      <a href="https://applymn.dhs.mn.gov/" target="_blank">solicitar SNAP</a> (también conocido como estampillas de
+      comida).
     please_choose: Por favor escoja una opción
     demo: Este sitio web es solamente para usar de ejemplo.
     general_error: Ha habido un problema de nuesta parte.
@@ -112,9 +113,9 @@ es:
         solicitud.</li>
       </ul>
   sorry:
-    header: Este programa es solamente para niños que reciben comidas escolares gratis o a precio reducido.
-    many_immigrants_can_html: La mayoría de inmigrantes pueden obtener CalFresh. <a href="https://www.getcalfresh.org/en/immigrants" target="_blank">Aprenda más sobre CalFresh e inmigración.</a>
-    you_can_also_html: También puede encontrar su <a href="http://www.cafoodbanks.org/find-food-bank" target="_blank">banco de alimentos más cercano.</a>
+    header: Este programa es solamente para niños que reciben comidas escolares gratis o a precio reducido
+    you_can_also_html: You can also call the Minnesota Food HelpLine at <a href="tel:+16514869860">(651)
+      486-9860</a> or <a href="tel:+18887111151">(888) 711-1151</a>.
   received_card:
     alt_text_card: A card with a picture of a lake that says Minnesota on it
     header: Does your household use food benefits (SNAP/EBT) or participate in Minnesota’s Family Investment Program

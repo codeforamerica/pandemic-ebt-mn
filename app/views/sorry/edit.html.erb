@@ -8,17 +8,13 @@
 <div class="form-card__content">
   <div class="grid">
     <div class="grid__item">
-      <p class="with-padding-small text--left"><%= t("shared.if_your_family") %></p>
-      <p class="with-padding-small text--left"><%= t("sorry.many_immigrants_can_html") %></p>
-      <p class="with-padding-small text--left"><%= t("sorry.you_can_also_html") %></p>
+      <p><%= t("shared.if_your_family_html") %></p>
+      <p><%= t("sorry.you_can_also_html") %></p>
     </div>
   </div>
 </div>
 <div class="form-card__footer">
-  <div class="grid__item spacing-below-35">
-    <%= link_to t("shared.apply_for_cf"), "https://www.getcalfresh.org", class: "button button--primary" %>
-  </div>
   <div class="grid__item">
-    <%= link_to raw("<i class=\"icon-arrow_back\"></i>#{t("shared.go_back")}"), :back, class: "button" %>
+    <%= link_to t("shared.back_to_home"), root_path, class: "button" %>
   </div>
 </div>

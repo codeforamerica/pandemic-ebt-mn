@@ -11,8 +11,8 @@ en:
     what_is_the_city: What is the city?
     what_is_the_zip: What is the ZIP code?
     go_back: Go back
-    if_your_family: If your family still needs help buying groceries, you can apply for CalFresh (also known as Food
-      Stamps).
+    if_your_family_html: If your family still needs help buying groceries, you can
+      <a href="https://applymn.dhs.mn.gov/" target="_blank">apply for SNAP</a> (also known as Food Stamps).
     please_choose: Please choose an option.
     demo: This site is for example purposes only.
     general_error: There has been a problem on our end.
@@ -124,9 +124,9 @@ en:
         <li>Our school provides free breakfast or lunch to all students in the school without an application.</li>
       </ul>
   sorry:
-    header: This program is only for students who can get free and reduced price school meals.
-    many_immigrants_can_html: Many immigrants can get CalFresh. <a href="https://www.getcalfresh.org/en/immigrants" target="_blank">Learn more about CalFresh and immigration.</a>
-    you_can_also_html: You can also find your <a href="http://www.cafoodbanks.org/find-food-bank" target="_blank">nearest food bank.</a>
+    header: This program is only for students who can get free and reduced price school meals
+    you_can_also_html: You can also call the Minnesota Food HelpLine at <a href="tel:+16514869860">(651)
+      486-9860</a> or <a href="tel:+18887111151">(888) 711-1151</a>.
   received_card:
     alt_text_card: A card with a picture of a lake that says Minnesota on it
     header: Does your household use food benefits (SNAP/EBT) or participate in Minnesota’s Family Investment Program
