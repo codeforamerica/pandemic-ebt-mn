@@ -16,6 +16,7 @@ en:
     please_choose: Please choose an option.
     demo: This site is for example purposes only.
     general_error: There has been a problem on our end.
+    back_to_home: Back to home
   index:
     coming_soon_html: Coming soon&colon;
     header: Get help buying food while schools are closed
@@ -131,12 +132,12 @@ en:
     header: Does your household use food benefits (SNAP/EBT) or participate in Minnesota’s Family Investment Program
       (MFIP)?
     it_looks_like_html: The card may look like this&colon;
-  already_received:
+  done:
     header: You’re all done!
-    you_dont_need: You don’t need to fill this form out. The P-EBT card will be automatically loaded like a debit card
-      to buy food.
-    if_theres_a_problem_html: If there’s a problem with your card, you can call California’s EBT customer service
-      center at <a href="tel:+18773289677">(877) 328-9677</a>, 24 hours a day, 7 days a week.
+    you_dont_need: You don’t need to fill out this form. Your SNAP/EBT or MFIP card will be automatically loaded with
+      your P-EBT benefits. You will receive $325 for each student in your house.
+    if_theres_a_problem_html: If there’s a problem with your card, you can call Minnesota’s EBT customer service
+      center at <a href="tel:+18889972227">(888) 997-2227</a>, 24 hours a day, 7 days a week.
   children:
     header: List all the students in your house.
     one_at_a_time: One at a time, add all students in elementary, middle, and high school. This can include pre-K or

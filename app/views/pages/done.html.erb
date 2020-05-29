@@ -2,14 +2,17 @@
 
 <div class="form-card__header spacing-below-35">
   <h1 class="form-card__title">
-    <%= t("already_received.header") %>
+    <%= t("done.header") %>
   </h1>
 </div>
 <div class="form-card__content">
   <div class="grid">
     <div class="grid__item">
-      <p class="text text--left"><%= t("already_received.you_dont_need") %></p>
-      <p class="text text--left"><%= t("already_received.if_theres_a_problem_html") %></p>
+      <p class="text text--left"><%= t("done.you_dont_need") %></p>
+      <p class="text text--left"><%= t("done.if_theres_a_problem_html") %></p>
     </div>
   </div>
+</div>
+<div class="form-card__footer">
+  <%= link_to(t("shared.back_to_home"), root_path, class: "button") %>
 </div>

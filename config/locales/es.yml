@@ -16,6 +16,7 @@ es:
     please_choose: Por favor escoja una opción
     demo: Este sitio web es solamente para usar de ejemplo.
     general_error: Ha habido un problema de nuesta parte.
+    back_to_home: Back to home
   index:
     coming_soon_html: Próximamente&colon;
     header: Reciba ayuda para comprar comida mientras escuelas están cerradas.
@@ -119,12 +120,12 @@ es:
     header: Does your household use food benefits (SNAP/EBT) or participate in Minnesota’s Family Investment Program
       (MFIP)?
     it_looks_like_html: The card may look like this&colon;
-  already_received:
+  done:
     header: ¡Ya terminó!
-    you_dont_need: Si ya recibió esta tarjeta, no necesita completar este formulario. Puede usarla como una tarjeta de
-      débito para comprar alimentos.
-    if_theres_a_problem_html: Si hay un problema con su tarjeta, puede llamar al número de servicio EBT al
-      <a href="tel:+18773289677">(877) 328-9677</a>, 24 horas al día, 7 días a la semana.
+    you_dont_need: You don’t need to fill out this form. Your SNAP/EBT or MFIP card will be automatically loaded with
+      your P-EBT benefits. You will receive $325 for each student in your house.
+    if_theres_a_problem_html: If there’s a problem with your card, you can call Minnesota’s EBT customer service
+      center at <a href="tel:+18889972227">(888) 997-2227</a>, 24 hours a day, 7 days a week.
   children:
     header: Enumere a todos los estudiantes en su casa.
     one_at_a_time: Uno a uno, agregue a todos los estudiantes de primaria, secundaria y preparatoria. Esto puede incluir
