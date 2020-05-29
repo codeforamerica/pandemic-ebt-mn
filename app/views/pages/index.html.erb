@@ -16,7 +16,7 @@
   <section class="slab slab--hero">
     <div class="grid">
       <div class="grid__item width-three-fourths">
-        <h2 class="heading-60">
+        <h2 class="heading-60 spacing-above-35">
           <% if (ENV["COMING_SOON"] == "1") && !@is_early %>
             <em><%= t("index.coming_soon_html") %></em>
           <% end %>
@@ -35,10 +35,7 @@
               <%= render partial: 'apply_now', locals: { is_early: @is_early } %>
             </div>
             <div class="grid__item width-one-half">
-              <% if (ENV["COMING_SOON"] == "1") && !@is_early %>
-              <% else %>
-                <a href="<%= info_path %>"><button class="button"><%= t("index.learn_more") %></button></a>
-              <% end %>
+              <a href="<%= mn_info_url %>" target="_blank"><button class="button"><%= t("index.learn_more") %></button></a>
             </div>
           </div>
         </div>
@@ -60,10 +57,7 @@
       <div class="grid__item width-five-twelfths">
         <h3><%= t("index.questions_about") %></h3>
         <p class="form-card__body-text"><%= t("index.learn_more_about") %></p>
-        <% if (ENV["COMING_SOON"] == "1") && !@is_early %>
-        <% else %>
-          <a href="<%= info_path %>"><button class="button spacing-below-35"><%= t("index.learn_more") %></button></a>
-        <% end %>
+        <a href="<%= mn_info_url %>" target="_blank"><button class="button spacing-below-35"><%= t("index.learn_more") %></button></a>
       </div>
       <div class="grid__item shift-one-twelfth width-five-twelfths">
         <h3><%= t("index.with_a_pebt_html") %></h3>
