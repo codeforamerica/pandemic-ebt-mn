@@ -8,7 +8,6 @@ class ContactForm < Form
   validates :phone_number, format: { with: /\d{10}/, message: proc { I18n.t('validations.phone_number') },
                                      if: :phone_number_present? }
 
-
   def save
     attributes = attributes_for(:household)
     household.update(attributes)
