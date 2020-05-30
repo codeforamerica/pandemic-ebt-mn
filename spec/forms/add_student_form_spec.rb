@@ -3,7 +3,7 @@ require 'rails_helper'
 describe AddStudentForm do
   before do
     @household = Household.create(is_eligible: :yes)
-    @valid_form = described_class.new(@household, { first_name: 'Jane', last_name: 'Smith', dob_month: '12', dob_day: '10', dob_year: '2010', school_type: 'public_school' })
+    @valid_form = described_class.new(@household, { first_name: 'Jane', last_name: 'Smith', dob_month: '12', dob_day: '10', dob_year: '2010', school_registration_gender: 'F', school_attended_name: 'CFA Middle', school_attended_grade: '8' })
   end
 
   after do
@@ -56,25 +56,57 @@ describe AddStudentForm do
     end
   end
 
-  describe '#presence_of_school_type_field' do
-    it 'is invalid if school type is not present' do
+  describe '#presence_of_school_registration_gender_field' do
+    it 'is invalid if school registered gender is not present' do
       form = @valid_form.dup
-      form.school_type = ''
-      expect(form).not_to be_valid
-    end
-
-    it 'is invalid if school type is not one of the accepted types' do
-      form = @valid_form.dup
-      form.school_type = 'obviously_invalid_response'
+      form.school_registration_gender = ''
       expect(form).not_to be_valid
     end
 
     it 'has a relevant error message' do
       form = @valid_form.dup
-      form.school_type = ''
+      form.school_registration_gender = ''
       form.valid?
       expect(form.errors.count).to eq(1)
-      expect(form.errors.first[1]).to eq('Please select which type of school they attend.')
+      expect(form.errors.first[1]).to eq('Please enter the gender listed on their school registration')
+    end
+  end
+
+  describe '#presence_of_school_attended_name_field' do
+    it 'is invalid if school name is not present' do
+      form = @valid_form.dup
+      form.school_attended_name = ''
+      expect(form).not_to be_valid
+    end
+
+    it 'has a relevant error message' do
+      form = @valid_form.dup
+      form.school_attended_name = ''
+      form.valid?
+      expect(form.errors.count).to eq(1)
+      expect(form.errors.first[1]).to eq('Please enter the name of the school they attended')
+    end
+  end
+
+  describe '#presence_of_school_attended_grade_field' do
+    it 'is invalid if school grade is not present' do
+      form = @valid_form.dup
+      form.school_attended_grade = ''
+      expect(form).not_to be_valid
+    end
+
+    it 'is invalid if a bad school grade is entered' do
+      form = @valid_form.dup
+      form.school_attended_grade = '13'
+      expect(form).not_to be_valid
+    end
+
+    it 'has a relevant error message' do
+      form = @valid_form.dup
+      form.school_attended_grade = ''
+      form.valid?
+      expect(form.errors.count).to eq(1)
+      expect(form.errors.first[1]).to eq('Please enter the grade they were in')
     end
   end
 end

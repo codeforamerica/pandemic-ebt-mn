@@ -1,8 +1,10 @@
 class AddStudentForm < Form
-  set_attributes_for :child, :first_name, :last_name, :dob_day, :dob_month, :dob_year, :school_type
+  set_attributes_for :child, :first_name, :last_name, :dob_day, :dob_month, :dob_year, :school_registration_gender, :school_attended_name, :school_attended_grade
   validates_presence_of :first_name, message: proc { I18n.t('validations.first_name') }
   validates_presence_of :last_name, message: proc { I18n.t('validations.last_name') }
-  validates :school_type, inclusion: { in: Child.school_types.keys, message: proc { I18n.t('validations.school_type') } }
+  validates_presence_of :school_registration_gender, message: proc { I18n.t('validations.gender') }
+  validates_presence_of :school_attended_name, message: proc { I18n.t('validations.school_name') }
+  validates :school_attended_grade, inclusion: { in: (1..12).map(&:to_s).append('K', 'PK'), message: proc { I18n.t('validations.school_grade') } }
   validate :presence_of_dob_fields
 
   def save
@@ -11,7 +13,9 @@ class AddStudentForm < Form
       first_name: form_attributes[:first_name],
       last_name: form_attributes[:last_name],
       dob: [form_attributes[:dob_day], form_attributes[:dob_month], form_attributes[:dob_year]].join('/'),
-      school_type: form_attributes[:school_type],
+      school_registration_gender: form_attributes[:school_registration_gender],
+      school_attended_name: form_attributes[:school_attended_name],
+      school_attended_grade: form_attributes[:school_attended_grade],
       suid: SuidGenerator.generate
     }
     household.children.create(attributes)
