@@ -2,8 +2,8 @@ require 'rails_helper'
 require 'csv'
 
 HEADERS = %w[ suid household_id student_first_name student_last_name student_dob student_gender student_school_name student_school_grade parent_signature
-              mailing_street mailing_street_2 mailing_city mailing_state
-              mailing_zip_code email_address language submitted_at application_experience confirmation_code ].freeze
+              mailing_street mailing_street_2 mailing_city mailing_state mailing_zip_code
+              email_address phone_number language submitted_at application_experience confirmation_code ].freeze
 
 RSpec.describe 'Exporting Children as CSV', type: :feature do
   def row_for_child(child)

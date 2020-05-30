@@ -168,6 +168,7 @@ en:
     header: How can we contact you?
     email_address: What is your email address? (optional)
     we_need_your_email: We need your email address to get in touch with you if there are any problems with your application.
+    phone_number: What is your phone number? (optional)
   signature:
     alt_text_pen: a black and silver pen
     header: Add a parent or guardian’s signature.
@@ -197,6 +198,7 @@ en:
     please_add_student: Please add a student.
     email_address: Please enter a valid email address.
     first_name: Please fill in their first name.
+    phone_number: Please enter a valid phone number.
     last_name: Please fill in their last name.
     gender: Please enter the gender listed on their school registration
     school_name: Please enter the name of the school they attended

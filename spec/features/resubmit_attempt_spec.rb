@@ -49,7 +49,8 @@ RSpec.describe 'Journey', type: :feature do
       fill_in 'What is the ZIP code?', with: '55105'
       click_on 'Continue'
       expect(page).to have_text 'How can we contact you?'
-      fill_in :form_email_address, with: 'test@test.com'
+      fill_in 'What is your email address? (optional)', with: Faker::Internet.email
+      fill_in 'What is your phone number? (optional)', with: '555-123-1234'
       click_on 'Continue'
       expect(page).to have_text 'Add a parent or guardian’s signature.'
       expect(page).to have_text 'Type your full legal name here to sign this form. By entering your name you agree you have been honest on this form.'
