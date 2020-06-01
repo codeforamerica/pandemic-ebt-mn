@@ -2,12 +2,12 @@ Rails.application.routes.draw do
   resources :children, only: [:index] if Rails.env.staging? || Rails.env.development?
   mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)
   root 'pages#index'
+  get '/info', to: redirect('https://mn.gov/dhs/p-ebt/'), as: 'info'
   get '/:locale' => 'pages#index'
 
   scope '(:locale)', locale: /#{I18n.available_locales.join('|')}/ do
     get 'early' => 'pages#early', as: 'early'
     get 'how' => 'pages#how', as: 'how'
-    get 'info' => 'pages#info', as: 'info'
     get 'card' => 'pages#card', as: 'card'
     get 'done' => 'pages#done', as: 'done'
 
