@@ -8,7 +8,7 @@ describe ParentForm do
       @household_params = {
         parent_first_name: Faker::Name.first_name,
         parent_last_name: Faker::Name.last_name,
-        parent_birthdate: Faker::Date.in_date_period(year: 1970)
+        parent_dob: Faker::Date.in_date_period(year: 1970)
       }
       @form = described_class.new(@household, @household_params)
     end
@@ -21,7 +21,7 @@ describe ParentForm do
 
       expect(@household.parent_first_name).to eq(@household_params[:parent_first_name])
       expect(@household.parent_last_name).to eq(@household_params[:parent_last_name])
-      expect(@household.parent_birthdate).to eq(@household_params[:parent_birthdate])
+      expect(@household.parent_dob).to eq(@household_params[:parent_dob])
     end
 
     it 'requires first name' do
@@ -35,7 +35,7 @@ describe ParentForm do
     end
 
     it 'requires birthdate' do
-      @form.parent_birthdate = nil
+      @form.parent_dob = nil
       expect(@form).not_to be_valid
     end
   end
