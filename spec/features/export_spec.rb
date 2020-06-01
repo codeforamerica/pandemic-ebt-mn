@@ -62,6 +62,10 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
       expect(File).to exist(@output_file_name)
     end
 
+    it 'Outputs the same number of columns in the rows as the header' do
+      expect(@csv_data.map(&:length)).to all(eq(@csv_data.headers.length))
+    end
+
     it 'Exports all children' do
       expect(@csv_data.count).to eq(Child.submitted.count)
     end

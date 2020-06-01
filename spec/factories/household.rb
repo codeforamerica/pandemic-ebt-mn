@@ -8,7 +8,7 @@ FactoryBot.define do
     language { I18n.available_locales[rand(I18n.available_locales.count)] }
     parent_first_name { Faker::Name.first_name }
     parent_last_name { Faker::Name.last_name }
-    parent_dob {  }
+    parent_dob { Faker::Date.in_date_period(year: 1970) }
 
     trait :with_mailing_address do
       mailing_street { Faker::Address.unique.street_address }
