@@ -119,7 +119,7 @@ es:
     header: ¡Su solicitud está lista!
     write_down_your_html: Escriba su número de confirmación&colon;
     if_approved: Si su solicitud es aprobada, recibirá una tarjeta P-EBT dentro de los siguientes 12 días que puede usar para comprar alimentos.
-    learn_more_html: <a href="/es/info">Aprenda más</a> sobre el programa P-EBT.
+    learn_more_html: <a href="/info">Aprenda más</a> sobre el programa P-EBT.
     if_approved_question: ¿Si se aprueba, ¿cuánto recibiré en beneficios de P-EBT?
     if_approved_answer_1_html: Recibirá una tarjeta P-EBT a nombre del niño mayor en su hogar que se cargará con $365
       por cada niño aprobado para comprar alimentos en la mayoría de los supermercados y mercados de alimentos.
