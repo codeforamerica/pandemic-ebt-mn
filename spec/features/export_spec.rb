@@ -88,5 +88,12 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
       unsubmitted_child_row = row_for_child @unsubmitted_child
       expect(unsubmitted_child_row).to eq(nil)
     end
+
+    it 'Exports parent info' do
+      random_child_row = row_for_child @child_with_email
+      expect(random_child_row['parent_first_name']).to eq(@child_with_email.household.parent_first_name)
+      expect(random_child_row['parent_last_name']).to eq(@child_with_email.household.parent_last_name)
+      expect(random_child_row['parent_dob']).to eq(@child_with_email.household.parent_dob.to_s)
+    end
   end
 end
