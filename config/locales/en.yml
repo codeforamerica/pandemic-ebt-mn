@@ -151,6 +151,10 @@ en:
     first_name: First name
     legally: Legally as it appears on school records.
     last_name: Last name
+    what_is_their_dob: What is their date of birth?
+    what_type_of_school: What type of school does this student attend?
+    public_school: Public school (including charter school)
+    private_school: Private school (including religious school)
     when_were_they_born: When were they born?
     what_registered_gender: What gender is listed on their school registration?
     gender_female: Female
@@ -160,6 +164,12 @@ en:
     pre_k: Pre-K
     kindergarten: Kindergarten
     grade: grade
+  parent:
+    header: Add a parent or guardian
+    helper_text: This person will be the point of contact on this application. They should use their information to set up a pin when your card arrives.
+    first_name: First name
+    last_name: Last name
+    what_is_their_dob: When were they born?
   mailing_address:
     header: Where should we mail your P-EBT card?
     this_card_can: This card can only be mailed to an address in California.

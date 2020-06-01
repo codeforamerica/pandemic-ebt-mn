@@ -1,9 +1,10 @@
 require 'rails_helper'
 require 'csv'
 
-HEADERS = %w[ suid household_id student_first_name student_last_name student_dob student_gender student_school_name student_school_grade parent_signature
-              mailing_street mailing_street_2 mailing_city mailing_state mailing_zip_code
-              email_address phone_number language submitted_at application_experience confirmation_code ].freeze
+HEADERS = %w[ suid household_id student_first_name student_last_name student_dob student_gender student_school_name
+              student_school_grade parent_signature mailing_street mailing_street_2 mailing_city mailing_state mailing_zip_code
+              parent_first_name parent_last_name parent_dob email_address phone_number language submitted_at application_experience
+              confirmation_code ].freeze
 
 RSpec.describe 'Exporting Children as CSV', type: :feature do
   def row_for_child(child)
@@ -62,6 +63,10 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
       expect(File).to exist(@output_file_name)
     end
 
+    it 'Outputs the same number of columns in the rows as the header' do
+      expect(@csv_data.map(&:length)).to all(eq(@csv_data.headers.length))
+    end
+
     it 'Exports all children' do
       expect(@csv_data.count).to eq(Child.submitted.count)
     end
@@ -83,6 +88,13 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     it 'Only exports submitted children' do
       unsubmitted_child_row = row_for_child @unsubmitted_child
       expect(unsubmitted_child_row).to eq(nil)
+    end
+
+    it 'Exports parent info' do
+      random_child_row = row_for_child @child_with_email
+      expect(random_child_row['parent_first_name']).to eq(@child_with_email.household.parent_first_name)
+      expect(random_child_row['parent_last_name']).to eq(@child_with_email.household.parent_last_name)
+      expect(random_child_row['parent_dob']).to eq(@child_with_email.household.parent_dob.to_s)
     end
   end
 end

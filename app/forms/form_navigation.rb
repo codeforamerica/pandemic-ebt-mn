@@ -6,6 +6,7 @@ class FormNavigation
     ChildrenController,
     AddStudentController,
     MailingAddressController,
+    ParentController,
     ContactController,
     SignatureController,
     SuccessController

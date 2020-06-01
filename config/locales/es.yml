@@ -147,6 +147,9 @@ es:
     public_school: Escuela pública (incluyendo escuela autónoma o escuela "charter")
     private_school: Escuela privada (incluyendo escuela religiosa)
     please_add_student: Por favor agregue un estudiante.
+  parent:
+    first_name: Primer nombre
+    last_name: Apellido
   mailing_address:
     header: ¿Donde deberíamos enviar su tarjeta de P-EBT?
     this_card_can: Esta tarjeta solamente puede ser enviada a una dirección en California.
