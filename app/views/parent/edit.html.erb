@@ -10,13 +10,13 @@
     <div class="form-card__content">
       <div class="grid">
         <div class="grid__item">
-          <p class="text text--left"><%= t("add_student.one_at_a_time_add") %></p>
+          <p class="text text--left"><%= t("parent.helper_text") %></p>
         </div>
       </div>
       <div class="grid">
         <div class="grid__item text--left">
-          <%= f.cfa_input_field(:parent_first_name, t("parent.first_name"), help_text: t("parent.legally")) %>
-          <%= f.cfa_input_field(:parent_last_name, t("parent.last_name"), help_text: t("parent.legally")) %>
+          <%= f.cfa_input_field(:parent_first_name, t("parent.first_name")) %>
+          <%= f.cfa_input_field(:parent_last_name, t("parent.last_name")) %>
           <%= f.cfa_date_select(
                   :parent_dob,
                   t("parent.what_is_their_dob"),
