@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_01_140842) do
+ActiveRecord::Schema.define(version: 2020_06_01_210928) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,6 +50,15 @@ ActiveRecord::Schema.define(version: 2020_06_01_140842) do
     t.string "parent_last_name"
     t.date "parent_dob"
     t.index ["submitted_at"], name: "index_households_on_submitted_at"
+  end
+
+  create_table "schools", force: :cascade do |t|
+    t.string "state_organization_id"
+    t.string "organization_name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["organization_name"], name: "index_schools_on_organization_name"
+    t.index ["state_organization_id"], name: "index_schools_on_state_organization_id"
   end
 
 end
