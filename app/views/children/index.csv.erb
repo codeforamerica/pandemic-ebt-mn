@@ -4,7 +4,9 @@
 <%= csv_field(:student_first_name) -%>
 <%= csv_field(:student_last_name) -%>
 <%= csv_field(:student_dob) -%>
-<%= csv_field(:student_school_type) -%>
+<%= csv_field(:student_gender) -%>
+<%= csv_field(:student_school_name) -%>
+<%= csv_field(:student_school_grade) -%>
 <%= csv_field(:parent_signature) -%>
 <%= csv_field(:mailing_street) -%>
 <%= csv_field(:mailing_street_2) -%>
@@ -27,7 +29,9 @@
 <%= csv_field(child.first_name) -%>
 <%= csv_field(child.last_name) -%>
 <%= csv_field(child.dob) -%>
-<%= csv_field(child.school_type.to_s.gsub(/_school/, '')) -%>
+<%= csv_field(child.school_registration_gender) -%>
+<%= csv_field(child.school_attended_name) -%>
+<%= csv_field(child.school_attended_grade) -%>
 <%= csv_field(child.household.signature) -%>
 <%= csv_field(child.household.mailing_street) -%>
 <%= csv_field(child.household.mailing_street_2) -%>

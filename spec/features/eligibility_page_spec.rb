@@ -20,7 +20,7 @@ RSpec.describe 'Eligibility page', type: :feature do
         click_on 'Continue'
         expect(page).to have_text 'Are any of these true for your family?'
         click_on 'Yes'
-        expect(page).to have_text 'List all the students in your house.'
+        expect(page).to have_text 'Add all the students in your house'
       end
     end
 

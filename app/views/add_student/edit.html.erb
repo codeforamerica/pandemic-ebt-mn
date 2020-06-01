@@ -19,19 +19,40 @@
           <%= f.cfa_input_field(:last_name, t("add_student.last_name"), help_text: t("add_student.legally")) %>
           <%= f.cfa_date_select(
                   :dob,
-                  t("add_student.what_is_their_dob"),
+                  t("add_student.when_were_they_born"),
                   options: {
                       start_year: Time.now.year,
                       end_year: Time.now.year - 30,
                   }
               ) %>
-          <%= f.cfa_radio_set(:school_type,
-                              label_text: t("add_student.what_type_of_school"),
+          <%= f.cfa_radio_set(:school_registration_gender,
+                              label_text: t("add_student.what_registered_gender"),
                               collection: [
-                                  {value: :public_school, label: t("add_student.public_school")},
-                                  {value: :private_school, label: t("add_student.private_school")}
+                                  {value: 'F', label: t("add_student.gender_female")},
+                                  {value: 'M', label: t("add_student.gender_male")}
                               ]
               )%>
+          <%= f.cfa_input_field(:school_attended_name, t("add_student.school_name")) %>
+          <%= f.cfa_select(
+            :school_attended_grade,
+            t("add_student.school_grade"),
+            [
+              [t("add_student.pre_k"), "PK"],
+              [t("add_student.kindergarten"), "K"],
+              ["1st " + t("add_student.grade"), "1"],
+              ["2nd " + t("add_student.grade"), "2"],
+              ["3rd " + t("add_student.grade"), "3"],
+              ["4th " + t("add_student.grade"), "4"],
+              ["5th " + t("add_student.grade"), "5"],
+              ["6th " + t("add_student.grade"), "6"],
+              ["7th " + t("add_student.grade"), "7"],
+              ["8th " + t("add_student.grade"), "8"],
+              ["9th " + t("add_student.grade"), "9"],
+              ["10th " + t("add_student.grade"), "10"],
+              ["11th " + t("add_student.grade"), "11"],
+              ["12th " + t("add_student.grade"), "12"],
+            ]
+          ) %>
         </div>
       </div>
       <div class="form-card__footer">

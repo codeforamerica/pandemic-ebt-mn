@@ -139,17 +139,15 @@ en:
     if_theres_a_problem_html: If there’s a problem with your card, you can call Minnesota’s EBT customer service
       center at <a href="tel:+18889972227">(888) 997-2227</a>, 24 hours a day, 7 days a week.
   children:
-    header: List all the students in your house.
-    one_at_a_time: One at a time, add all students in elementary, middle, and high school. This can include pre-K or
-      TK students who get free breakfast or lunch at school.
+    header: Add all the students in your house
+    one_at_a_time: One at a time, add all students who are between the ages of 5 and 18 years old.
     students: Students in your house
     child_has_been: Child has been removed
     remove: (remove)
     add: Add a student
   add_student:
     header: Add a student.
-    one_at_a_time_add: One at a time, add all students in elementary, middle, and high school. This can include pre-K or
-      TK students who get free breakfast or lunch at school.
+    one_at_a_time_add: One at a time, add all students who are between the ages of 5 and 18 years old.
     first_name: First name
     legally: Legally as it appears on school records.
     last_name: Last name
@@ -157,6 +155,15 @@ en:
     what_type_of_school: What type of school does this student attend?
     public_school: Public school (including charter school)
     private_school: Private school (including religious school)
+    when_were_they_born: When were they born?
+    what_registered_gender: What gender is listed on their school registration?
+    gender_female: Female
+    gender_male: Male
+    school_name: What school did they attend during the 2019 - 2020 school year?
+    school_grade: What grade were they in during the 2019 - 2020 school year?
+    pre_k: Pre-K
+    kindergarten: Kindergarten
+    grade: grade
   parent:
     header: Add a parent or guardian
     helper_text: This person will be the point of contact on this application. They should use their information to set up a pin when your card arrives.
@@ -200,10 +207,12 @@ en:
   validations:
     please_add_student: Please add a student.
     email_address: Please enter a valid email address.
+    first_name: Please fill in their first name.
     phone_number: Please enter a valid phone number.
-    first_name: Please fill in their last name.
     last_name: Please fill in their last name.
-    school_type: Please select which type of school they attend.
+    gender: Please enter the gender listed on their school registration
+    school_name: Please enter the name of the school they attended
+    school_grade: Please enter the grade they were in
     dob: Please fill in their date of birth.
     address: Please fill in the street address.
     address_2: Please enter a shorter unit or apartment.
