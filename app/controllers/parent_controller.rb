@@ -1,2 +1,2 @@
-class SignatureController < FormsController
+class ParentController < FormsController
 end

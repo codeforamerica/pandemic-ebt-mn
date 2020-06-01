@@ -44,6 +44,13 @@ RSpec.describe 'Journey', type: :feature do
       fill_in 'What is the city?', with: 'St Paul'
       fill_in 'What is the ZIP code?', with: '55105'
       click_on 'Continue'
+      expect(page).to have_text 'Add a parent or guardian'
+      fill_in 'First name', with: 'Christine'
+      fill_in 'Last name', with: 'Johnson'
+      select 'June', from: 'Month'
+      select '22', from: 'Day'
+      select '1984', from: 'Year'
+      click_on 'Continue'
       expect(page).to have_text 'How can we contact you?'
       fill_in 'What is your email address? (optional)', with: Faker::Internet.email
       fill_in 'What is your phone number? (optional)', with: '555-123-1234'
