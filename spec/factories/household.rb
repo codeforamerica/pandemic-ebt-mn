@@ -6,6 +6,9 @@ FactoryBot.define do
     submitted_at { Faker::Time.backward(days: 14) }
     application_experience { %w[unfilled good bad ok][rand(4)] }
     language { I18n.available_locales[rand(I18n.available_locales.count)] }
+    parent_first_name { Faker::Name.first_name }
+    parent_last_name { Faker::Name.last_name }
+    parent_dob {  }
 
     trait :with_mailing_address do
       mailing_street { Faker::Address.unique.street_address }
