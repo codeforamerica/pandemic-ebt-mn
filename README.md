@@ -1,7 +1,7 @@
 # P-EBT
 ![Tests - develop](https://github.com/codeforamerica/pandemic-ebt/workflows/Tests/badge.svg)
 
-Staging Environment: [https://ca-staging.p-ebt.org/](https://ca-staging.p-ebt.org/)
+Staging Environment: [https://mn-staging.p-ebt.org/](https://mn-staging.p-ebt.org/)
 
 ### Development
 - `bundle`

@@ -102,13 +102,13 @@ en:
     grade: grade
   parent:
     header: Add a parent or guardian
-    helper_text: This person will be the point of contact on this application. They should use their information to set up a pin when your card arrives.
+    helper_text: This person will be the point of contact on this application. They should use their information to set up a PIN when your P-EBT card arrives.
     first_name: First name
     last_name: Last name
     what_is_their_dob: When were they born?
   mailing_address:
     header: Where should we mail your P-EBT card?
-    this_card_can: This card can only be mailed to an address in California.
+    this_card_can: This card can only be mailed to an address in Minnesota.
   contact:
     alt_text_bubble: a speech balloon with three dots
     header: How can we contact you?
@@ -153,6 +153,6 @@ en:
     address: Please fill in the street address.
     address_2: Please enter a shorter unit or apartment.
     city: Please fill in the city.
-    zip_code: Please fill in a valid CA ZIP code.
+    zip_code: Please fill in a valid MN ZIP code.
     signature: Please enter your signature.
     choose_address: Please choose where to send mail.
