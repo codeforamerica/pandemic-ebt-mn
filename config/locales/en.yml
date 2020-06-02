@@ -102,7 +102,7 @@ en:
     grade: grade
   parent:
     header: Add a parent or guardian
-    helper_text: This person will be the point of contact on this application. They should use their information to set up a pin when your card arrives.
+    helper_text: This person will be the point of contact on this application. They should use their information to set up a PIN when your P-EBT card arrives.
     first_name: First name
     last_name: Last name
     what_is_their_dob: When were they born?
