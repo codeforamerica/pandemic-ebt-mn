@@ -12,6 +12,11 @@ class School
     end
   end
 
+  def self.find_id_by_name(org_name)
+    school_array = SCHOOL_LIST.find { |_org_id, school_name| school_name == org_name } || []
+    school_array.first
+  end
+
   def self.where(term)
     term ||= ''
     SCHOOL_LIST.select { |_org_id, school_name| school_name.downcase.include?(term.downcase) }
