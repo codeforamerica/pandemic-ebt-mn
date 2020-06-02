@@ -103,8 +103,8 @@ en:
   parent:
     header: Add a parent or guardian
     helper_text: This person will be the point of contact on this application. They should use their information to set up a PIN when your P-EBT card arrives.
-    first_name: First name
-    last_name: Last name
+    first_name: What's their first name?
+    last_name: What's their last name?
     what_is_their_dob: When were they born?
   mailing_address:
     header: Where should we mail your P-EBT card?
