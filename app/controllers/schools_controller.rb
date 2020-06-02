@@ -3,10 +3,6 @@ class SchoolsController < ApplicationController
   skip_around_action :switch_locale
 
   def index
-    render json: School.where('organization_name ILIKE ?',
-                              "%#{params[:term]}%")
-                       .order(:organization_name)
-                       .limit(3)
-                       .to_json(only: %i[label value])
+    render json: School.find_sorted_by_term(params[:term])
   end
 end

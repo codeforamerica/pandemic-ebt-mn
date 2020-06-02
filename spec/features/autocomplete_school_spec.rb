@@ -2,8 +2,6 @@ require 'rails_helper'
 
 RSpec.describe 'Autocompleting a school', type: :feature do
   before do
-    School.create({ state_organization_id: 1001, organization_name: 'CFA High' })
-    School.create({ state_organization_id: 1002, organization_name: 'CFA Middle' })
     @unknown_school_name = 'Some school that does not exist'
   end
 
