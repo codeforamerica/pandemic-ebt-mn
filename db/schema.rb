@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_01_140842) do
+ActiveRecord::Schema.define(version: 2020_06_01_213516) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,12 +22,10 @@ ActiveRecord::Schema.define(version: 2020_06_01_140842) do
     t.bigint "household_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "suid"
     t.string "school_registration_gender", limit: 1
     t.string "school_attended_name"
     t.string "school_attended_grade", limit: 2
     t.index ["household_id"], name: "index_children_on_household_id"
-    t.index ["suid"], name: "index_children_on_suid", unique: true
   end
 
   create_table "households", force: :cascade do |t|
@@ -49,6 +47,8 @@ ActiveRecord::Schema.define(version: 2020_06_01_140842) do
     t.string "parent_first_name"
     t.string "parent_last_name"
     t.date "parent_dob"
+    t.integer "huid"
+    t.index ["huid"], name: "index_households_on_huid", unique: true
     t.index ["submitted_at"], name: "index_households_on_submitted_at"
   end
 

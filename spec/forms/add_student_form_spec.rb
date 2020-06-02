@@ -24,7 +24,6 @@ describe AddStudentForm do
       expect(@household.children.first.dob.day).to eq(10)
       expect(@household.children.first.dob.month).to eq(12)
       expect(@household.children.first.dob.year).to eq(2010)
-      expect(@household.children.first.suid).to be_present
     end
   end
 
