@@ -19,6 +19,7 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     @child_with_mailing_address = create(:child, household_id: create(:household, :with_mailing_address).id)
     @child_from_today = create(:child, household: create(:household, :submitted_today))
     @child_from_yesterday = create(:child, household: create(:household, :submitted_yesterday))
+    @child_with_double_quotes = create(:child, household: create(:household, mailing_street_2: 'Apt "B"'))
   end
 
   after(:all) do
@@ -73,6 +74,11 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     it 'Only exports submitted children' do
       unsubmitted_child_row = row_for_child @unsubmitted_child
       expect(unsubmitted_child_row).to eq(nil)
+    end
+
+    it 'Escapes double quotes' do
+      row = row_for_child @child_with_double_quotes
+      expect(row['mailing_street_2']).to eq(@child_with_double_quotes.household.mailing_street_2)
     end
 
     it 'Exports parent info' do
