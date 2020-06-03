@@ -23,6 +23,7 @@
 <%= csv_field(:language) -%>
 <%= csv_field(:submitted_at) -%>
 <%= csv_field(:application_experience) -%>
+<%= csv_field(:experiment_group) -%>
 <%= csv_field(:maxis_id, last: true) -%>
 <% # Data -%>
 <%- @children.in_batches.each_record do |child| -%>
@@ -50,6 +51,7 @@
 <%= csv_field(child.household.language) -%>
 <%= csv_field(child.household.submitted_at) -%>
 <%= csv_field(child.household.application_experience) -%>
+<%= csv_field(child.household.experiment_group) -%>
 <%= csv_field(child.household.confirmation_code, last: true) -%>
 <%- end -%>
 <%- #HACK forced data in csv -%>

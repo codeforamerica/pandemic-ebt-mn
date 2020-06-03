@@ -4,7 +4,7 @@ require 'csv'
 HEADERS = %w[ child_id student_first_name student_last_name student_dob student_gender
               student_school_name student_school_id student_school_grade student_school_breakfast_cep student_school_lunch_cep
               parent_signature mailing_street mailing_street_2 mailing_city mailing_state mailing_zip_code parent_first_name
-              parent_last_name parent_dob email_address phone_number language submitted_at application_experience maxis_id ].freeze
+              parent_last_name parent_dob email_address phone_number language submitted_at application_experience experiment_group maxis_id ].freeze
 
 RSpec.describe 'Exporting Children as CSV', type: :feature do
   def row_for_child(child)
@@ -40,6 +40,7 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
                                   household_id: create(:household, :with_email).id,
                                   school_attended_name: 'Rum River South',
                                   school_attended_id: '526079020000')
+    @child_with_double_quotes = create(:child, household: create(:household, mailing_street_2: 'Apt "B"'))
   end
 
   after(:all) do
@@ -94,6 +95,11 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     it 'Only exports submitted children' do
       unsubmitted_child_row = row_for_child @unsubmitted_child
       expect(unsubmitted_child_row).to eq(nil)
+    end
+
+    it 'Escapes double quotes' do
+      row = row_for_child @child_with_double_quotes
+      expect(row['mailing_street_2']).to eq(@child_with_double_quotes.household.mailing_street_2)
     end
 
     it 'Exports parent info' do
