@@ -9,8 +9,6 @@ RSpec.describe 'Early Screen', type: :feature do
     it 'does show apply now when the environment variable is set' do
       visit '/early'
       expect(page).to have_link 'Apply now'
-      expect(page).not_to have_text 'California'
-      expect(page).not_to have_text 'CA'
     end
   end
 end
