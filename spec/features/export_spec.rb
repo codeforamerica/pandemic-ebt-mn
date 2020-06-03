@@ -37,9 +37,9 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
                                   school_attended_name: 'Friendship Academy of Fine Arts Charter',
                                   school_attended_id: '74079010000')
     @child_with_non_cep_school = create(:child,
-                                  household_id: create(:household, :with_email).id,
-                                  school_attended_name: 'Rum River South',
-                                  school_attended_id: '526079020000')
+                                        household_id: create(:household, :with_email).id,
+                                        school_attended_name: 'Rum River South',
+                                        school_attended_id: '526079020000')
     @child_with_double_quotes = create(:child, household: create(:household, mailing_street_2: 'Apt "B"'))
   end
 

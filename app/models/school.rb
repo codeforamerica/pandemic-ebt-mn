@@ -2,7 +2,7 @@ class School
   NAME_HEADER = 'name'.freeze
   LUNCH_CEP_HEADER = 'lunch_cep'.freeze
   BREAKFAST_CEP_HEADER = 'breakfast_cep'.freeze
-  ALLOWED_CEP_RESULTS = ['Community Eligibility Provision', 'Provision 2']
+  ALLOWED_CEP_RESULTS = ['Community Eligibility Provision', 'Provision 2'].freeze
 
   def self.find_sorted_by_term(term)
     filtered_results = where(term)
