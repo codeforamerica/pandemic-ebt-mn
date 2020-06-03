@@ -109,6 +109,11 @@ en:
   mailing_address:
     header: Where should we mail your P-EBT card?
     this_card_can: This card can only be mailed to an address in Minnesota.
+  just_so_you_know:
+    header: Just so you know
+    text_1: The card will be issued to the adult in the household that completed the application.
+    text_2: Adults in the household will be able to use it to shop for the whole family.
+    text_3: If you applied for more than one student, all benefits will be on this one card.
   contact:
     header: How can we contact you?
     email_address: What is your email address? (optional)

@@ -48,6 +48,8 @@ RSpec.describe 'Journey', type: :feature do
       fill_in 'What is the city?', with: 'St Paul'
       fill_in 'What is the ZIP code?', with: '55105'
       click_on 'Continue'
+      expect(page).to have_text 'Just so you know'
+      click_on 'Continue'
       expect(page).to have_text 'Add a parent or guardian'
       fill_in 'What\'s their first name?', with: 'Christine'
       fill_in 'What\'s their last name?', with: 'Johnson'
