@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)
   root 'pages#index'
   get '/info', to: redirect('https://mn.gov/dhs/p-ebt/'), as: 'info'
+  get '/schools' => 'schools#index'
   get '/:locale' => 'pages#index'
 
   scope '(:locale)', locale: /#{I18n.available_locales.join('|')}/ do
