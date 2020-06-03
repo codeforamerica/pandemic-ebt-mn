@@ -1,7 +1,8 @@
 require 'rails_helper'
 require 'csv'
 
-HEADERS = %w[ child_id student_first_name student_last_name student_dob student_gender student_school_name student_school_id student_school_grade
+HEADERS = %w[ child_id student_first_name student_last_name student_dob student_gender
+              student_school_name student_school_id student_school_grade student_school_breakfast_cep student_school_lunch_cep
               parent_signature mailing_street mailing_street_2 mailing_city mailing_state mailing_zip_code parent_first_name
               parent_last_name parent_dob email_address phone_number language submitted_at application_experience maxis_id ].freeze
 
@@ -19,6 +20,22 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     @child_with_mailing_address = create(:child, household_id: create(:household, :with_mailing_address).id)
     @child_from_today = create(:child, household: create(:household, :submitted_today))
     @child_from_yesterday = create(:child, household: create(:household, :submitted_yesterday))
+    @child_with_breakfast_cep = create(:child,
+                                       household_id: create(:household, :with_email).id,
+                                       school_attended_name: 'Reach Programs',
+                                       school_attended_id: '616051010000')
+    @child_with_lunch_cep = create(:child,
+                                   household_id: create(:household, :with_email).id,
+                                   school_attended_name: 'St. Mary\s Mission',
+                                   school_attended_id: '310038001000')
+    @child_with_breakfast_p2 = create(:child,
+                                      household_id: create(:household, :with_email).id,
+                                      school_attended_name: 'Crossroads Montessori',
+                                      school_attended_id: '10625465000')
+    @child_with_lunch_p2 = create(:child,
+                                  household_id: create(:household, :with_email).id,
+                                  school_attended_name: 'Friendship Academy of Fine Arts Charter',
+                                  school_attended_id: '74079010000')
   end
 
   after(:all) do
@@ -80,6 +97,32 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
       expect(random_child_row['parent_first_name']).to eq(@child_with_email.household.parent_first_name)
       expect(random_child_row['parent_last_name']).to eq(@child_with_email.household.parent_last_name)
       expect(random_child_row['parent_dob']).to eq(@child_with_email.household.parent_dob.to_s)
+    end
+
+    it 'Exports no CEP information when a school does not match' do
+      child_row = row_for_child @child_with_email
+      expect(child_row['student_school_breakfast_cep']).to be_empty
+      expect(child_row['student_school_lunch_cep']).to be_empty
+    end
+
+    it 'Exports matching school CEP information if breakfast matches' do
+      child_row = row_for_child @child_with_breakfast_cep
+      expect(child_row['student_school_breakfast_cep']).to eq('Community Eligibility Provision')
+    end
+
+    it 'Exports matching school CEP information if lunch matches' do
+      child_row = row_for_child @child_with_lunch_cep
+      expect(child_row['student_school_lunch_cep']).to eq('Community Eligibility Provision')
+    end
+
+    it 'Exports matching school P2 information if breakfast matches' do
+      child_row = row_for_child @child_with_breakfast_p2
+      expect(child_row['student_school_breakfast_cep']).to eq('Provision 2')
+    end
+
+    it 'Exports matching school P2 information if lunch matches' do
+      child_row = row_for_child @child_with_lunch_p2
+      expect(child_row['student_school_lunch_cep']).to eq('Provision 2')
     end
   end
 

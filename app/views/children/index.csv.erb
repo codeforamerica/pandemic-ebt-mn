@@ -7,6 +7,8 @@
 <%= csv_field(:student_school_name) -%>
 <%= csv_field(:student_school_id) -%>
 <%= csv_field(:student_school_grade) -%>
+<%= csv_field(:student_school_breakfast_cep) -%>
+<%= csv_field(:student_school_lunch_cep) -%>
 <%= csv_field(:parent_signature) -%>
 <%= csv_field(:mailing_street) -%>
 <%= csv_field(:mailing_street_2) -%>
@@ -32,6 +34,8 @@
 <%= csv_field(child.school_attended_name) -%>
 <%= csv_field(child.school_attended_id) -%>
 <%= csv_field(child.school_attended_grade) -%>
+<%= csv_field(School.breakfast_cep_for_school(child.school_attended_id)) -%>
+<%= csv_field(School.lunch_cep_for_school(child.school_attended_id)) -%>
 <%= csv_field(child.household.signature) -%>
 <%= csv_field(child.household.mailing_street) -%>
 <%= csv_field(child.household.mailing_street_2) -%>
