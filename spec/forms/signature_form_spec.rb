@@ -12,6 +12,7 @@ describe SignatureForm do
 
       expect(household.signature).to eq('John Hancock')
       expect(household.submitted_at).not_to be_nil
+      expect(household.huid).not_to be_nil
     end
   end
 end

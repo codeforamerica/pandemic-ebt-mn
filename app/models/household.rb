@@ -7,10 +7,16 @@ class Household < ApplicationRecord
   enum experiment_group: { unfilled: 0, ca_early: 1 }
 
   def confirmation_code
-    children.order(:dob).first.suid.scan(/.{5}/).join('-')
+    return nil if huid.blank?
+
+    "99-#{huid.to_s.rjust(6, '0')}"
   end
 
   def youngest_child
     children.order(:dob).last
+  end
+
+  def self.next_huid
+    (Household.maximum(:huid) || 0) + 1
   end
 end

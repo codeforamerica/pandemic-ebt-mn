@@ -3,6 +3,6 @@ class SignatureForm < Form
   validates_presence_of :signature, message: proc { I18n.t('validations.signature') }
 
   def save
-    household.update(attributes_for(:household).merge({ submitted_at: Time.zone.now }))
+    Household.transaction { household.update(attributes_for(:household).merge({ submitted_at: Time.zone.now, huid: (household.huid || Household.next_huid) })) }
   end
 end

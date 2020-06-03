@@ -7,6 +7,5 @@ FactoryBot.define do
     school_registration_gender { %w[F M][rand(2)] }
     school_attended_name { Faker::Company.name + ' School' }
     school_attended_grade { Faker::Number.between(from: 1, to: 12).to_s }
-    suid { SuidGenerator.generate }
   end
 end
