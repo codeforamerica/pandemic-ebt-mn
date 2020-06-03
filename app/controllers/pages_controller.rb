@@ -14,7 +14,7 @@ class PagesController < ApplicationController
       render 'early'
     else
       @is_early = true
-      session[:experiment_group] = 'ca_early'
+      session[:experiment_group] = 'mn_early'
       render 'index'
     end
   end
