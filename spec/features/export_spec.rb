@@ -36,6 +36,10 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
                                   household_id: create(:household, :with_email).id,
                                   school_attended_name: 'Friendship Academy of Fine Arts Charter',
                                   school_attended_id: '74079010000')
+    @child_with_non_cep_school = create(:child,
+                                  household_id: create(:household, :with_email).id,
+                                  school_attended_name: 'Rum River South',
+                                  school_attended_id: '526079020000')
   end
 
   after(:all) do
@@ -123,6 +127,12 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     it 'Exports matching school P2 information if lunch matches' do
       child_row = row_for_child @child_with_lunch_p2
       expect(child_row['student_school_lunch_cep']).to eq('Provision 2')
+    end
+
+    it 'Only Exports information if a school is CEP or P2' do
+      child_row = row_for_child @child_with_non_cep_school
+      expect(child_row['student_school_lunch_cep']).to eq('')
+      expect(child_row['student_school_breakfast_cep']).to eq('')
     end
   end
 
