@@ -9,6 +9,7 @@ FactoryBot.define do
     parent_first_name { Faker::Name.first_name }
     parent_last_name { Faker::Name.last_name }
     parent_dob { Faker::Date.in_date_period(year: 1970) }
+    huid { Household.next_huid }
 
     trait :with_mailing_address do
       mailing_street { Faker::Address.unique.street_address }
@@ -19,6 +20,7 @@ FactoryBot.define do
     trait :unsubmitted do
       submitted_at { nil }
       signature { nil }
+      huid { nil }
     end
 
     trait :submitted_today do

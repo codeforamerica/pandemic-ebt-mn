@@ -1,6 +1,5 @@
 class Household < ApplicationRecord
   has_many :children
-  before_save :set_huid
 
   enum is_eligible: { unfilled: 0, yes: 1, no: 2, dont_know: 3 }, _prefix: :is_eligible
   enum received_card: { unfilled: 0, yes: 1, no: 2 }, _prefix: :received_card
@@ -17,11 +16,7 @@ class Household < ApplicationRecord
     children.order(:dob).last
   end
 
-  protected
-
-  def set_huid
-    return if submitted_at.blank?
-
-    self.huid ||= (Household.maximum(:huid) || 0) + 1
+  def self.next_huid
+    (Household.maximum(:huid) || 0) + 1
   end
 end
