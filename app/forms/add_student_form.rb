@@ -15,7 +15,9 @@ class AddStudentForm < Form
       dob: [form_attributes[:dob_day], form_attributes[:dob_month], form_attributes[:dob_year]].join('/'),
       school_registration_gender: form_attributes[:school_registration_gender],
       school_attended_name: form_attributes[:school_attended_name],
-      school_attended_grade: form_attributes[:school_attended_grade]
+      school_attended_grade: form_attributes[:school_attended_grade],
+      school_attended_id: School.find_id_by_name(form_attributes[:school_attended_name]),
+      suid: SuidGenerator.generate
     }
     household.children.create(attributes)
     household.save

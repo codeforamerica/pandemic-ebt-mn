@@ -1,3 +1,10 @@
+<script>
+$( function() {
+  $( "#form_school_attended_name" ).autocomplete({
+    source: "/schools"
+  });
+} );
+</script>
 <% content_for(:template_name, "card") %>
 <%= form_with url: add_student_steps_path, method: :put, local: true do %>
   <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>

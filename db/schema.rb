@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_01_213516) do
+ActiveRecord::Schema.define(version: 2020_06_02_222546) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2020_06_01_213516) do
     t.string "school_registration_gender", limit: 1
     t.string "school_attended_name"
     t.string "school_attended_grade", limit: 2
+    t.string "school_attended_id", limit: 11
     t.index ["household_id"], name: "index_children_on_household_id"
   end
 

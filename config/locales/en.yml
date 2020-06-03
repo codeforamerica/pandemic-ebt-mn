@@ -102,21 +102,19 @@ en:
     grade: grade
   parent:
     header: Add a parent or guardian
-    helper_text: This person will be the point of contact on this application. They should use their information to set up a pin when your card arrives.
-    first_name: First name
-    last_name: Last name
+    helper_text: This person will be the point of contact on this application. They should use their information to set up a PIN when your P-EBT card arrives.
+    first_name: What's their first name?
+    last_name: What's their last name?
     what_is_their_dob: When were they born?
   mailing_address:
     header: Where should we mail your P-EBT card?
     this_card_can: This card can only be mailed to an address in Minnesota.
   contact:
-    alt_text_bubble: a speech balloon with three dots
     header: How can we contact you?
     email_address: What is your email address? (optional)
     we_need_your_email: We need your email address to get in touch with you if there are any problems with your application.
     phone_number: What is your phone number? (optional)
   signature:
-    alt_text_pen: a black and silver pen
     header: Add a parent or guardian’s signature.
     type_your_full: Type your full legal name here to sign this form. By entering your name you agree you have been
       honest on this form.
