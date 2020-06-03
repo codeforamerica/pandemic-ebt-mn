@@ -5,13 +5,13 @@ RSpec.describe EligibleController do
 
   describe '#update' do
     it 'updates the experiment group if present' do
-      session[:experiment_group] = 'ca_early'
+      session[:experiment_group] = 'mn_early'
       put :update, params: { form: { is_eligible: 'no' }, locale: I18n.default_locale }
 
       household = Household.last
 
       expect(household.is_eligible).to eq('no')
-      expect(household.experiment_group).to eq('ca_early')
+      expect(household.experiment_group).to eq('mn_early')
     end
   end
 end
