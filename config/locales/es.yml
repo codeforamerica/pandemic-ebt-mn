@@ -40,7 +40,7 @@ es:
     give_us_your_basic_html: <b>Comparta información básica.</b>
     we_will_ask: Preguntaremos por los nombres de los estudiantes y sus fechas de nacimiento, el nombre de un padre o guardían, y por su correo postal.
     your_school_will_make_sure_html: <b>Nosotros nos aseguraremos de que usted sea elegible.</b>
-    we_will_check: Verificaremos si su familia puede obtener P-EBT.
+    we_will_check: Verificaremos para asegurarnos de que su familia pueda obtener P-EBT. El estado de inmigración no se considera en su elegibilidad para P-EBT.
     get_a_p_ebt_card_html: <b>Reciba la tarjeta de P-EBT por correo.</b>
     if_approved: Si su solicitud es aprobada, usted recibirá una tarjeta P-EBT dentro de 10 días cargada con dinero para alimentos. La tarjeta será cargada con dinero para alimentos, y vendrá con instrucciones sobre como usarla.
   eligible:
@@ -137,10 +137,12 @@ es:
   validations:
     please_add_student: Por favor agregue un estudiante.
     email_address: Por favor, introduce una dirección de correo electrónico válida.
-    phone_number: Please enter a valid phone number.
     first_name: Por favor agregue el primer nombre.
+    phone_number: Please enter a valid phone number.
     last_name: Por favor agregue el apellido.
-    school_type: Por favor seleccione que tipo de escuela atienden.
+    gender: Por favor agregue su género.
+    school_name: Por favor agregue su escuela.
+    school_grade: Por favor agregue su grado.
     dob: Por favor agregue su fecha de nacimiento.
     address: Por favor agregue la dirección postal.
     address_2: Por favor agregue el numero de apartamiento/unidad.
@@ -148,6 +150,3 @@ es:
     zip_code: Por favor agregue un código postal válido por Minnesota.
     signature: Por favor agregue su firma.
     choose_address: Por favor seleccione a dónde enviar el correo.
-    gender: Por favor agregue su género.
-    school_name: Por favor agregue su escuela.
-    school_grade: Por favor agregue su grado.
