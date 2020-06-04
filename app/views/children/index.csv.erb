@@ -46,6 +46,6 @@
 <%= csv_field(child.household.submitted_at) -%>
 <%= csv_field(child.household.application_experience) -%>
 <%= csv_field(child.household.experiment_group) -%>
-<%= csv_field(child.household.confirmation_code, last: true) -%>
+<%= csv_field(child.household.confirmation_code.to_s.gsub(/-/, ''), last: true) -%>
 <%- end -%>
 <%- #HACK forced data in csv -%>
