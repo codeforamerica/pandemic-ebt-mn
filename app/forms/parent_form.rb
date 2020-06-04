@@ -3,6 +3,7 @@ class ParentForm < Form
   validates :parent_first_name, presence: { message: I18n.t('validations.first_name') }
   validates :parent_last_name, presence: { message: I18n.t('validations.last_name') }
   validate :presence_of_parent_dob_fields
+  validate :validity_of_date
 
   def save
     form_attributes = attributes_for(:household)
@@ -16,9 +17,15 @@ class ParentForm < Form
 
   protected
 
+  def validity_of_date
+    Date.parse [@parent_dob_day, @parent_dob_month, @parent_dob_year].join('/') if @parent_dob_day.present? && @parent_dob_month.present? && @parent_dob_year.present?
+  rescue ArgumentError
+    errors.add(:parent_dob, proc { I18n.t('validations.dob') })
+  end
+
   def presence_of_parent_dob_fields
     %i[parent_dob_year parent_dob_month parent_dob_day].detect do |attr|
-      errors.add(:dob, proc { I18n.t('validations.dob') }) if public_send(attr).blank?
+      errors.add(:parent_dob, proc { I18n.t('validations.dob') }) if public_send(attr).blank?
     end
   end
 end
