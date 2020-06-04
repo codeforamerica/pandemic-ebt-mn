@@ -87,6 +87,11 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
       expect(random_child_row['parent_last_name']).to eq(@child_with_email.household.parent_last_name)
       expect(random_child_row['parent_dob']).to eq(@child_with_email.household.parent_dob.to_s)
     end
+
+    it 'Exports confirmation code without dashes' do
+      random_child_row = row_for_child @child_with_email
+      expect(random_child_row['maxis_id']).to match(/\d{8}/)
+    end
   end
 
   context 'when exporting children by date' do
