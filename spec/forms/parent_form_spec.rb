@@ -41,5 +41,12 @@ describe ParentForm do
       @form.parent_dob_day = nil
       expect(@form).not_to be_valid
     end
+
+    it 'requires a real date' do
+      @form.parent_dob_day = '31'
+      @form.parent_dob_month = '2'
+      @form.parent_dob_year = '1999'
+      expect(@form).not_to be_valid
+    end
   end
 end
