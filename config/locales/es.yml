@@ -16,6 +16,7 @@ es:
     demo: Este sitio web es solamente para usar de ejemplo.
     general_error: Ha habido un problema de nuesta parte.
     back_to_home: Back to home
+    header_logo_alt_text: Logo para el Departamento de Educación y Servicios Sociales de Minnesota
   index:
     coming_soon_html: Próximamente&colon;
     header: Reciba ayuda para comprar comida mientras escuelas están cerradas.
@@ -60,22 +61,19 @@ es:
       </ul>
   sorry:
     header: Este programa es solamente para niños que reciben comidas escolares gratis o a precio reducido
-    you_can_also_html: You can also call the Minnesota Food HelpLine at <a href="tel:+16514869860">(651)
-      486-9860</a> or <a href="tel:+18887111151">(888) 711-1151</a>.
+    many_immigrants_can_html: Muchos inmigrantes pueden obtener SNAP / EBT. Si le preocupa cómo esto podría afectar su estado migratorio, llame a Asistencia Legal al <a href="tel:18002924150">800-292-4150</a>.
+    you_can_also_html: También puede llamar a la línea de Ayuda Alimentaria de Minnesota al <a href="tel:16514869860">651-486-9860</a> o al <a href="tel:18887111151">888-711-1151</a>. Hay intérpretes disponibles.
   received_card:
-    alt_text_card: A card with a picture of a lake that says Minnesota on it
-    header: Does your household use food benefits (SNAP/EBT) or participate in Minnesota’s Family Investment Program
-      (MFIP)?
-    it_looks_like_html: The card may look like this&colon;
+    alt_text_card: Una tarjeta con una imagen de un paisaje que tiene "Minnesota EBT" inscrita en ella.
+    header: ¿Su hogar participa en programas para beneficios alimentarios (SNAP / EBT) o participa en el Programa de Inversión Familiar de Minnesota (MFIP)?
+    it_looks_like_html: Su tarjeta quizas se parece así&colon;
   done:
-    header: ¡Ya terminó!
-    you_dont_need: You don’t need to fill out this form. Your SNAP/EBT or MFIP card will be automatically loaded with
-      your P-EBT benefits. You will receive $325 for each student in your house.
-    if_theres_a_problem_html: If there’s a problem with your card, you can call Minnesota’s EBT customer service
-      center at <a href="tel:+18889972227">(888) 997-2227</a>, 24 hours a day, 7 days a week.
+    header: ¡Ya acabo!
+    you_dont_need: No necesita completar este formulario. Su tarjeta SNAP / EBT o MFIP se cargará automáticamente con sus beneficios P-EBT. Recibirá $ 325 por cada estudiante en su casa.
+    if_theres_a_problem_html: Si hay un problema con su tarjeta, puede llamar al Centro de Servicio al Cliente EBT de Minnesota al <a href="tel:18889972227">(888) 997-2227</a>, las 24 horas del día, los 7 días de la semana.
   children:
     header: Enumere a todos los estudiantes en su casa.
-    one_at_a_time: Uno a uno, agregue a todos los estudiantes de primaria, secundaria y preparatoria. Esto puede incluir
+    one_at_a_time: Uno a uno, agregue todos los estudiantes que tenían entre 5 a 18 años de edad a partir del 1 de septiembre de 2019. Esto puede incluir a los estudiantes que reciben desayuno o almuerzo gratis en la escuela.
       a estudiantes de pre-K o TK que reciben desayuno o almuerzo gratis en la escuela.
     students: Estudiantes en su casa
     child_has_been: Sacamos el niño de la lista
@@ -83,7 +81,7 @@ es:
     add: Agregue un estudiante.
   add_student:
     header: Agregue un estudiante.
-    one_at_a_time_add: Uno a uno, agregue a todos los estudiantes de primaria, secundaria y preparatoria. Esto puede
+    one_at_a_time_add: Uno a uno, agregue todos los estudiantes que tenían entre 5 a 18 años de edad a partir del 1 de septiembre de 2019. Esto puede incluir a los estudiantes que reciben desayuno o almuerzo gratis en la escuela.
       incluir a estudiantes de pre-K o TK que reciben desayuno o almuerzo gratis en la escuela.
     first_name: Primer nombre
     legally: Legalmente como aparece en registros escolares.
@@ -98,7 +96,11 @@ es:
     last_name: Apellido
   mailing_address:
     header: ¿Donde deberíamos enviar su tarjeta de P-EBT?
-    this_card_can: Esta tarjeta solamente puede ser enviada a una dirección en Minnesota.
+    this_card_can: Esta tarjeta solo puede ser enviada por correo a una dirección en Minnesota.
+  just_so_you_know:
+    text_1: La tarjeta será enviada al adulto en el hogar que completo la solicitud.
+    text_2: Si usted aplico para mas de un niño, todos los beneficios estarán en esta tarjeta.
+    text_3: Los adultos en el hogar pueden usar la tarjeta para comprar despensa para toda la familia.
   contact:
     header: ¿Cómo podemos contactarlo?
     email_address: ¿Cuál es su dirección de correo electrónico? (opcional)
@@ -116,8 +118,7 @@ es:
     if_approved: Si su solicitud es aprobada, usted recibirá una tarjeta P-EBT dentro de 10 días cargada con dinero para alimentos. La tarjeta será cargada con dinero para alimentos, y vendrá con instrucciones sobre como usarla.
     learn_more_html: <a href="/info">Aprenda más</a> sobre el programa P-EBT.
     if_approved_question: ¿Si se aprueba, ¿cuánto recibiré en beneficios de P-EBT?
-    if_approved_answer_1_html: Recibirá una tarjeta P-EBT a nombre del niño mayor en su hogar que se cargará con $325
-      por cada niño aprobado para comprar alimentos en la mayoría de los supermercados y mercados de alimentos.
+    if_approved_answer_1_html: Recibirá una tarjeta P-EBT por correo cargada con $325 por cada niño aprobado para comprar alimentos en la mayoría de supermercados o mercados de comida.
     if_approved_answer_2_html: También puede usar la tarjeta P-EBT para comprar alimentos en línea en
       <a target="_blank" href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818">Amazon</a>
       y
