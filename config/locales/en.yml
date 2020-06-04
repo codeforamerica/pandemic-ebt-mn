@@ -143,9 +143,9 @@ en:
     first_name: Please fill in their first name.
     phone_number: Please enter a valid phone number.
     last_name: Please fill in their last name.
-    gender: Please enter the gender listed on their school registration
-    school_name: Please enter the name of the school they attended
-    school_grade: Please enter the grade they were in
+    gender: Please fill in their gender.
+    school_name: Please fill in their school.
+    school_grade: Please fill in their grade.
     dob: Please fill in their date of birth.
     address: Please fill in the street address.
     address_2: Please enter a shorter unit or apartment.

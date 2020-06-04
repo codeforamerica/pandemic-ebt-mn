@@ -81,8 +81,7 @@ es:
     add: Agregue un estudiante.
   add_student:
     header: Agregue un estudiante.
-    one_at_a_time_add: Uno a uno, agregue todos los estudiantes que tenían entre 5 a 18 años de edad a partir del 1 de septiembre de 2019. Esto puede incluir a los estudiantes que reciben desayuno o almuerzo gratis en la escuela.
-      incluir a estudiantes de pre-K o TK que reciben desayuno o almuerzo gratis en la escuela.
+    one_at_a_time_add: Uno a uno, agregue a todos los estudiantes que tengan entre 5 a 18 años de edad.
     first_name: Primer nombre
     legally: Legalmente como aparece en registros escolares.
     last_name: Apellido
@@ -90,7 +89,11 @@ es:
     what_type_of_school: ¿Qué tipo de escuela atiende este estudiante?
     public_school: Escuela pública (incluyendo escuela autónoma o escuela "charter")
     private_school: Escuela privada (incluyendo escuela religiosa)
+    what_registered_gender: ¿Bajo que género esta registrado en la escuela?
     please_add_student: Por favor agregue un estudiante.
+    grade: grado
+    pre_k: Pre-K
+    kindergarten: Kindergarten
   parent:
     first_name: Primer nombre
     last_name: Apellido
@@ -144,3 +147,6 @@ es:
     zip_code: Por favor agregue un código postal válido por Minnesota.
     signature: Por favor agregue su firma.
     choose_address: Por favor seleccione a dónde enviar el correo.
+    gender: Por favor agregue su género.
+    school_name: Por favor agregue su escuela.
+    school_grade: Por favor agregue su grado.

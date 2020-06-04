@@ -67,7 +67,7 @@ describe AddStudentForm do
       form.school_registration_gender = ''
       form.valid?
       expect(form.errors.count).to eq(1)
-      expect(form.errors.first[1]).to eq('Please enter the gender listed on their school registration')
+      expect(form.errors.first[1]).to eq('Please fill in their gender.')
     end
   end
 
@@ -83,7 +83,7 @@ describe AddStudentForm do
       form.school_attended_name = ''
       form.valid?
       expect(form.errors.count).to eq(1)
-      expect(form.errors.first[1]).to eq('Please enter the name of the school they attended')
+      expect(form.errors.first[1]).to eq('Please fill in their school.')
     end
   end
 
@@ -105,7 +105,7 @@ describe AddStudentForm do
       form.school_attended_grade = ''
       form.valid?
       expect(form.errors.count).to eq(1)
-      expect(form.errors.first[1]).to eq('Please enter the grade they were in')
+      expect(form.errors.first[1]).to eq('Please fill in their grade.')
     end
   end
 end
