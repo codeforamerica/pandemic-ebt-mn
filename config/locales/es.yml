@@ -5,15 +5,13 @@ es:
     i_dont_know: No sé
     not_sure: No estoy seguro/a.
     continue: Continuar
-    apply_for_cf: Solicite CalFresh
+    apply_for_cf: Aplica para SNAP/EBT
     what_is_the_street: ¿Cual es su dirección?
     what_is_the_unit: ¿Cual es el numero de apartamento (Opcional)?
     what_is_the_city: ¿Cual es la ciudad?
     what_is_the_zip: ¿Cual es el código postal?
     go_back: Regresa
-    if_your_family_html: Si su familiar aún necesita ayuda comprando alimentos, puede
-      <a href="https://applymn.dhs.mn.gov/" target="_blank">solicitar SNAP</a> (también conocido como estampillas de
-      comida).
+    if_your_family_html: Si su familia necesita ayuda para comprar alimentos, usted puede <a href="https://applymn.dhs.mn.gov/" target="_blank">aplicar para SNAP/EBT</a> (también conocido como Estampillas de Comida).
     please_choose: Por favor escoja una opción
     demo: Este sitio web es solamente para usar de ejemplo.
     general_error: Ha habido un problema de nuesta parte.
@@ -21,17 +19,16 @@ es:
   index:
     coming_soon_html: Próximamente&colon;
     header: Reciba ayuda para comprar comida mientras escuelas están cerradas.
-    apply_starting: Solicite en este sitio web a partir del 22 de mayo.
+    apply_starting: Aplica en este sitio empezando el 8 de Junio a las 12 del medio día.
     apply_by: Registrese para P-EBT antes del 30 de junio.
     apply_now: Registrese ahora
-    about: Este programa, llamado P-EBT, es para niños que normalmente reciben alimentos gratis o a precio reducido en
-      la escuela. Solicite para recibir $325 por cada niño para comprar alimentos.
+    about: Este programa, tambien llamado P-EBT, es para estudiantes que normalmente pueden recibir comidas escolares gratis o a precio reducido. Aplica y reciba hasta $325 por niño para comprar alimentos.
     children_may: Los niños pueden continuar recibiendo comidas “para llevar” o alimentos en los sitios de alimentación
       de emergencia ofrecidos por las escuelas y espacios comunitarios, incluso si están recibiendo beneficios de P-EBT.
     questions_about: ¿Preguntas sobre P-EBT?
     learn_more_about: Aprenda más sobre este programa.
     learn_more: Aprenda más
-    joint_program: Este es un programa conjunto del Departamento de Educación y Servicios Sociales de Minnesota.
+    joint_program: Este es un programa conjunto de los Departamentos de Educación y Servicios Sociales de Minnesota.
     with_a_pebt_html: Con una tarjeta P-EBT, puede comprar despensa&colon;
     most_groceries: En la mayoria de supermercados
     most_farmers: En la mayoria de mercados de agricultores
@@ -39,13 +36,11 @@ es:
   how:
     header_html: Así es como funciona&colon;
     give_us_your_basic_html: <b>Comparta información básica.</b>
-    we_will_ask: Nosotros aseguramos que usted sea elegible. Le preguntaremos por los nombres de sus hijos y fechas de
-      nacimiento, el nombre de un padre o guardian, y la dirección que está registrada con la escuela.
+    we_will_ask: Preguntaremos por los nombres de los estudiantes y sus fechas de nacimiento, el nombre de un padre o guardían, y por su correo postal.
     your_school_will_make_sure_html: <b>Nosotros nos aseguraremos de que usted sea elegible.</b>
     we_will_check: Verificaremos si su familia puede obtener P-EBT.
     get_a_p_ebt_card_html: <b>Reciba la tarjeta de P-EBT por correo.</b>
-    if_approved: Si su solicitud es aprobada, recibirá una tarjeta P-EBT en un plazo de 12 días, con dinero para comprar
-      alimentos. La tarjeta vendrá cargada con dinero para alimentos y con instrucciones sobre cómo usarla.
+    if_approved: Si su solicitud es aprobada, usted recibirá una tarjeta P-EBT dentro de 10 días cargada con dinero para alimentos. La tarjeta será cargada con dinero para alimentos, y vendrá con instrucciones sobre como usarla.
   eligible:
     header: ¿Su hijo es elegible para recibir comidas gratis o a precio reducido durante el año escolar?
     even_if_the_student: Incluso si el estudiante no come desayuno o almuerzo escolar, necesitamos saber si es elegible
@@ -118,7 +113,7 @@ es:
   success:
     header: ¡Su solicitud está lista!
     write_down_your_html: Escriba su número de confirmación&colon;
-    if_approved: Si su solicitud es aprobada, recibirá una tarjeta P-EBT dentro de los siguientes 10 días que puede usar para comprar alimentos.
+    if_approved: Si su solicitud es aprobada, usted recibirá una tarjeta P-EBT dentro de 10 días cargada con dinero para alimentos. La tarjeta será cargada con dinero para alimentos, y vendrá con instrucciones sobre como usarla.
     learn_more_html: <a href="/info">Aprenda más</a> sobre el programa P-EBT.
     if_approved_question: ¿Si se aprueba, ¿cuánto recibiré en beneficios de P-EBT?
     if_approved_answer_1_html: Recibirá una tarjeta P-EBT a nombre del niño mayor en su hogar que se cargará con $325

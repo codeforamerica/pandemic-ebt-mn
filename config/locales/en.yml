@@ -5,14 +5,13 @@ en:
     i_dont_know: I don't know
     not_sure: I'm not sure
     continue: Continue
-    apply_for_cf: Apply for CalFresh
+    apply_for_cf: Apply for SNAP/EBT
     what_is_the_street: What is the street address?
     what_is_the_unit: What is the unit or apartment (optional)?
     what_is_the_city: What is the city?
     what_is_the_zip: What is the ZIP code?
     go_back: Go back
-    if_your_family_html: If your family still needs help buying groceries, you can
-      <a href="https://applymn.dhs.mn.gov/" target="_blank">apply for SNAP</a> (also known as Food Stamps).
+    if_your_family_html: If your family still needs help buying groceries, you can <a href="https://applymn.dhs.mn.gov/" target="_blank">apply for SNAP/EBT</a> (also known as Food Stamps).
     please_choose: Please choose an option.
     demo: This site is for example purposes only.
     general_error: There has been a problem on our end.
@@ -20,11 +19,10 @@ en:
   index:
     coming_soon_html: Coming soon&colon;
     header: Get help buying food while schools are closed
-    apply_starting: Apply on this website starting June 8th at 12 noon.
+    apply_starting: Apply on this website starting June 8th at 12 Noon
     apply_by: Apply for P-EBT by June 30th
     apply_now: Apply now
-    about: This program, called P-EBT, is for students in Minnesota who are normally able to get free or reduced price school meals.
-      Apply and get up to $325 per child to spend on groceries.
+    about: This program, called P-EBT, is for students who are normally able to get free or reduced price school meals. Apply and get up to $325 per child to spend on groceries.
     children_may: Children may continue to receive "grab n go" meals or emergency food at COVID-19 emergency feeding
       sites offered by schools and community locations, even if they are receiving P-EBT benefits.
     questions_about: Questions about P-EBT?
@@ -38,13 +36,11 @@ en:
   how:
     header_html: Here's how it works&colon;
     give_us_your_basic_html: <b>Share some basic information.</b>
-    we_will_ask: We’ll ask the students’ names and birthdates, the name of a parent or guardian, and the
-      address you’re registered at the school with.
+    we_will_ask:  We’ll ask the students’ names and birthdates, the name of a parent or guardian, and the mailing address.
     your_school_will_make_sure_html: <b>We will make sure you're eligible.</b>
     we_will_check: We'll check to make sure your family can get P-EBT.
     get_a_p_ebt_card_html: <b>Get a P-EBT card in the mail.</b>
-    if_approved: If approved, you'll get a P-EBT card with money on it for groceries within 12 days. The card will be
-      loaded with grocery money and come with instructions on how to use it.
+    if_approved: If approved, you'll get a P-EBT card with money on it for groceries within 10 days. The card will be loaded with grocery money and come with instructions on how to use it.
   eligible:
     header: Is the student able to receive free or reduced price meals during the school year?
     even_if_the_student: Even if the student does not eat school breakfast or lunch, we need to know if they are
@@ -127,7 +123,7 @@ en:
   success:
     header: Your application is done!
     write_down_your_html: Write down your confirmation number&colon;
-    if_approved: If approved, you'll get a P-EBT card that you can use to buy groceries within the next 10 days.
+    if_approved: If approved, you'll get a P-EBT card with money on it for groceries within 10 days. The card will be loaded with grocery money and come with instructions on how to use it.
     learn_more_html: <a href="/info">Learn more</a> about the P-EBT program.
     if_approved_question: If approved, how much in P-EBT benefits will I get?
     if_approved_answer_1_html: You will receive one P-EBT card in the oldest child's name that will be loaded with $325
