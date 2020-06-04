@@ -16,6 +16,7 @@ en:
     demo: This site is for example purposes only.
     general_error: There has been a problem on our end.
     back_to_home: Back to home
+    header_logo_alt_text: Minnesota Department of Education and Human Services logo
   index:
     coming_soon_html: Coming soon&colon;
     header: Get help buying food while schools are closed
@@ -57,29 +58,27 @@ en:
       </ul>
   sorry:
     header: This program is only for students who can get free and reduced price school meals
-    you_can_also_html: You can also call the Minnesota Food HelpLine at <a href="tel:+16514869860">(651)
-      486-9860</a> or <a href="tel:+18887111151">(888) 711-1151</a>.
+    many_immigrants_can_html:  Many immigrants can get SNAP/EBT. If you are worried about how this could impact your immigration status, call Legal Aid at <a href="tel:18002924150">800-292-4150</a>.
+    you_can_also_html: You can also call the Minnesota Food HelpLine at <a href="tel:16514869860">651-486-9860</a> or <a href="tel:18887111151">888-711-1151</a>. Interpreters are available.
   received_card:
-    alt_text_card: A card with a picture of a lake that says Minnesota on it
-    header: Does your household use food benefits (SNAP/EBT) or participate in Minnesota’s Family Investment Program
-      (MFIP)?
+    alt_text_card: A card with a picture of a landscape on it that says Minnesota EBT on it
+    header: Does your household use food benefits (SNAP/EBT) or participate in Minnesota's Family Investment Program (MFIP)?
     it_looks_like_html: The card may look like this&colon;
   done:
     header: You’re all done!
-    you_dont_need: You don’t need to fill out this form. Your SNAP/EBT or MFIP card will be automatically loaded with
-      your P-EBT benefits. You will receive $325 for each student in your house.
+    you_dont_need: You don’t need to fill out this form. Your SNAP/EBT or MFIP card will be automatically loaded with your P-EBT benefits. You will receive $325 for each student in your house.
     if_theres_a_problem_html: If there’s a problem with your card, you can call Minnesota’s EBT customer service
       center at <a href="tel:+18889972227">(888) 997-2227</a>, 24 hours a day, 7 days a week.
   children:
     header: Add all the students in your house
-    one_at_a_time: One at a time, add all students who are between the ages of 5 and 18 years old.
+    one_at_a_time: One at a time, add all students age 5-18 as of September 1, 2019. This can include students who get free breakfast or lunch at school.
     students: Students in your house
     child_has_been: Child has been removed
     remove: (remove)
     add: Add a student
   add_student:
     header: Add a student.
-    one_at_a_time_add: One at a time, add all students who are between the ages of 5 and 18 years old.
+    one_at_a_time_add: One at a time, add all students age 5-18 as of September 1, 2019. This can include students who get free breakfast or lunch at school.
     first_name: First name
     legally: Legally as it appears on school records.
     last_name: Last name
@@ -108,8 +107,8 @@ en:
   just_so_you_know:
     header: Just so you know
     text_1: The card will be issued to the adult in the household that completed the application.
-    text_2: Adults in the household will be able to use it to shop for the whole family.
-    text_3: If you applied for more than one student, all benefits will be on this one card.
+    text_2: If you applied for more than one student, all benefits will be on this one card.
+    text_3: Adults in the household will be able to use it to shop for the whole family.
   contact:
     header: How can we contact you?
     email_address: What is your email address? (optional)
@@ -126,8 +125,7 @@ en:
     if_approved: If approved, you'll get a P-EBT card with money on it for groceries within 10 days. The card will be loaded with grocery money and come with instructions on how to use it.
     learn_more_html: <a href="/info">Learn more</a> about the P-EBT program.
     if_approved_question: If approved, how much in P-EBT benefits will I get?
-    if_approved_answer_1_html: You will receive one P-EBT card in the oldest child's name that will be loaded with $325
-      for each approved child to purchase food at most grocery stores and food markets.
+    if_approved_answer_1_html: You will receive one P-EBT card in the mail that will be loaded with $325 for each approved child to purchase food at most grocery stores and food markets.
     if_approved_answer_2_html: You can also use the P-EBT card to order groceries online at
       <a target="_blank" href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818">Amazon</a>
       and
