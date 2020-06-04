@@ -1,7 +1,7 @@
 require 'rails_helper'
 require 'csv'
 
-HEADERS = %w[ child_id student_first_name student_last_name student_dob student_gender student_school_name student_school_id student_school_grade
+HEADERS = %w[ child_id student_first_name student_last_name student_dob student_gender student_school_name student_school_grade
               parent_signature mailing_street mailing_street_2 mailing_city mailing_state mailing_zip_code parent_first_name
               parent_last_name parent_dob email_address phone_number language submitted_at application_experience experiment_group maxis_id ].freeze
 
