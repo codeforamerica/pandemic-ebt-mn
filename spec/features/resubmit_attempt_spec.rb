@@ -69,7 +69,6 @@ RSpec.describe 'Journey', type: :feature do
       click_on 'Good'
       expect(page).to have_text 'Thank you for your feedback!'
       visit mailing_address_steps_path
-      click_on 'Continue'
       expect(page).to have_text 'Your application is done!'
     end
   end
