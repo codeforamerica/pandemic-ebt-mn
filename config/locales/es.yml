@@ -15,7 +15,7 @@ es:
     please_choose: Por favor escoja una opción
     demo: Este sitio web es solamente para usar de ejemplo.
     general_error: Ha habido un problema de nuesta parte.
-    back_to_home: Back to home
+    back_to_home: Volver a página principal
     header_logo_alt_text: Logo para el Departamento de Educación y Servicios Sociales de Minnesota
     language: Español
   index:
@@ -119,7 +119,7 @@ es:
     email_address: ¿Cuál es su dirección de correo electrónico? (opcional)
     we_need_your_email: Necesitamos su dirección de correo electrónico para comunicarnos con usted si hay algún problema
       con su solicitud.
-    phone_number: What is your phone number? (optional)
+    phone_number: ¿Cuál es su número de teléfono? (opcional)
   signature:
     header: Agrega la firma de un padre o guardián.
     type_your_full: Ingrese su nombre legal completo aquí para firmar este formulario. Al ingresar su nombre usted
@@ -147,7 +147,7 @@ es:
     please_add_student: Por favor agregue un estudiante.
     email_address: Por favor, introduce una dirección de correo electrónico válida.
     first_name: Por favor agregue el primer nombre.
-    phone_number: Please enter a valid phone number.
+    phone_number: Por favor agregue un número de teléfono válido.
     last_name: Por favor agregue el apellido.
     gender: Por favor agregue su género.
     school_name: Por favor agregue su escuela.
