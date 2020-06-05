@@ -95,13 +95,22 @@ es:
     grade: grado
     pre_k: Pre-K
     kindergarten: Kindergarten
+    when_were_they_born: ¿Cuando nacieron?
+    gender_female: Femenino
+    gender_male: Masculino
+    school_name: ¿A qué escuela asistieron durante el año escolar 2019-2020?
+    school_grade: ¿En qué grado estuvieron durante el año escolar 2019-2020?
   parent:
+    header: Agregue un padre o guardían
     first_name: Primer nombre
     last_name: Apellido
+    helper_text: Esta persona será el contacto principal en esta solicitud. Deben usar su información para configurar un PIN cuando llegue su tarjeta P-EBT.
+    what_is_their_dob: ¿Cuando nacieron?
   mailing_address:
     header: ¿Donde deberíamos enviar su tarjeta de P-EBT?
     this_card_can: Esta tarjeta solo puede ser enviada por correo a una dirección en Minnesota.
   just_so_you_know:
+    header: Solo para que sepas
     text_1: La tarjeta será enviada al adulto en el hogar que completo la solicitud.
     text_2: Si usted aplico para mas de un niño, todos los beneficios estarán en esta tarjeta.
     text_3: Los adultos en el hogar pueden usar la tarjeta para comprar despensa para toda la familia.
