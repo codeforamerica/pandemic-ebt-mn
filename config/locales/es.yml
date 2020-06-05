@@ -127,6 +127,7 @@ es:
     submit: Entrege la solicitud
   success:
     header: ¡Su solicitud está lista!
+    no_confirmation_email: No recibirá un correo electrónico de confirmación, pero su solicitud a sido enviada correctamente.
     write_down_your_html: Escriba su número de confirmación&colon;
     if_approved: Si su solicitud es aprobada, usted recibirá una tarjeta P-EBT dentro de 10 días cargada con dinero para alimentos. La tarjeta será cargada con dinero para alimentos, y vendrá con instrucciones sobre como usarla.
     learn_more_html: <a href="/info">Aprenda más</a> sobre el programa P-EBT.

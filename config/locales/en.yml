@@ -122,6 +122,7 @@ en:
     submit: Submit Application
   success:
     header: Your application is done!
+    no_confirmation_email: You won't receive a confirmation email, but your application has been successfully submitted.
     write_down_your_html: Write down your confirmation number&colon;
     if_approved: If approved, you'll get a P-EBT card with money on it for groceries within 10 days. The card will be loaded with grocery money and come with instructions on how to use it.
     learn_more_html: <a href="/info">Learn more</a> about the P-EBT program.
