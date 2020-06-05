@@ -42,7 +42,7 @@ es:
     your_school_will_make_sure_html: <b>Nosotros nos aseguraremos de que usted sea elegible.</b>
     we_will_check: Verificaremos para asegurarnos de que su familia pueda obtener P-EBT. El estado de inmigración no se considera en su elegibilidad para P-EBT.
     get_a_p_ebt_card_html: <b>Reciba la tarjeta de P-EBT por correo.</b>
-    if_approved: Si su solicitud es aprobada, usted recibirá una tarjeta P-EBT dentro de 10 días cargada con dinero para alimentos. La tarjeta será cargada con dinero para alimentos, y vendrá con instrucciones sobre como usarla.
+    if_approved: Si su solicitud es aprobada, usted recibirá una tarjeta P-EBT dentro de 30 días cargada con dinero para alimentos. La tarjeta será cargada con dinero para alimentos, y vendrá con instrucciones sobre como usarla.
   eligible:
     header: ¿Su hijo es elegible para recibir comidas gratis o a precio reducido durante el año escolar?
     even_if_the_student: Incluso si el estudiante no come desayuno o almuerzo escolar, necesitamos saber si es elegible
@@ -129,7 +129,7 @@ es:
     header: ¡Su solicitud está lista!
     no_confirmation_email: No recibirá un correo electrónico de confirmación, pero su solicitud a sido enviada correctamente.
     write_down_your_html: Escriba su número de confirmación&colon;
-    if_approved: Si su solicitud es aprobada, usted recibirá una tarjeta P-EBT dentro de 10 días cargada con dinero para alimentos. La tarjeta será cargada con dinero para alimentos, y vendrá con instrucciones sobre como usarla.
+    if_approved: Si su solicitud es aprobada, usted recibirá una tarjeta P-EBT dentro de 30 días cargada con dinero para alimentos. La tarjeta será cargada con dinero para alimentos, y vendrá con instrucciones sobre como usarla.
     learn_more_html: <a href="/info">Aprenda más</a> sobre el programa P-EBT.
     if_approved_question: ¿Si se aprueba, ¿cuánto recibiré en beneficios de P-EBT?
     if_approved_answer_1_html: Recibirá una tarjeta P-EBT por correo cargada con $325 por cada niño aprobado para comprar alimentos en la mayoría de supermercados o mercados de comida.

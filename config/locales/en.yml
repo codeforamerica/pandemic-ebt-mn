@@ -42,7 +42,7 @@ en:
     your_school_will_make_sure_html: <b>We will make sure you're eligible.</b>
     we_will_check: We'll check to make sure your family can get P-EBT. Immigration status is not considered in your eligibility for P-EBT.
     get_a_p_ebt_card_html: <b>Get a P-EBT card in the mail.</b>
-    if_approved: If approved, you'll get a P-EBT card with money on it for groceries within 10 days. The card will be loaded with grocery money and come with instructions on how to use it.
+    if_approved: If approved, you'll get a P-EBT card with money on it for groceries within 30 days. The card will be loaded with grocery money and come with instructions on how to use it.
   eligible:
     header: Is the student able to receive free or reduced price meals during the school year?
     even_if_the_student: Even if the student does not eat school breakfast or lunch, we need to know if they are
@@ -124,7 +124,7 @@ en:
     header: Your application is done!
     no_confirmation_email: You won't receive a confirmation email, but your application has been successfully submitted.
     write_down_your_html: Write down your confirmation number&colon;
-    if_approved: If approved, you'll get a P-EBT card with money on it for groceries within 10 days. The card will be loaded with grocery money and come with instructions on how to use it.
+    if_approved: If approved, you'll get a P-EBT card with money on it for groceries within 30 days. The card will be loaded with grocery money and come with instructions on how to use it.
     learn_more_html: <a href="/info">Learn more</a> about the P-EBT program.
     if_approved_question: If approved, how much in P-EBT benefits will I get?
     if_approved_answer_1_html: You will receive one P-EBT card in the mail that will be loaded with $325 for each approved child to purchase food at most grocery stores and food markets.
