@@ -5,7 +5,7 @@ class SuccessController < FormsController
       redirect_to(children_steps_path)
       return
     end
-    super
+    @form = form_class.from_household(current_household)
   end
 
   def update

@@ -3,6 +3,10 @@ class FormsController < ApplicationController
   helper_method :current_household
 
   def edit
+    if current_household.submitted_at.present?
+      redirect_to(success_steps_path)
+      return
+    end
     @form = form_class.from_household(current_household)
   end
 
