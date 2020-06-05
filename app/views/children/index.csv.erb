@@ -1,51 +1,7 @@
 <% # Header Row -%>
-<%= csv_field(:child_id) -%>
-<%= csv_field(:student_first_name) -%>
-<%= csv_field(:student_last_name) -%>
-<%= csv_field(:student_dob) -%>
-<%= csv_field(:student_gender) -%>
-<%= csv_field(:student_school_name) -%>
-<%= csv_field(:student_school_grade) -%>
-<%= csv_field(:parent_signature) -%>
-<%= csv_field(:mailing_street) -%>
-<%= csv_field(:mailing_street_2) -%>
-<%= csv_field(:mailing_city) -%>
-<%= csv_field(:mailing_state) -%>
-<%= csv_field(:mailing_zip_code) -%>
-<%= csv_field(:parent_first_name) -%>
-<%= csv_field(:parent_last_name) -%>
-<%= csv_field(:parent_dob) -%>
-<%= csv_field(:email_address) -%>
-<%= csv_field(:phone_number) -%>
-<%= csv_field(:language) -%>
-<%= csv_field(:submitted_at) -%>
-<%= csv_field(:application_experience) -%>
-<%= csv_field(:experiment_group) -%>
-<%= csv_field(:maxis_id, last: true) -%>
+<%= CSV.generate { |csv| csv << Child.csv_headers } -%>
 <% # Data -%>
 <%- @children.in_batches.each_record do |child| -%>
-<%= csv_field(child.id) -%>
-<%= csv_field(child.first_name) -%>
-<%= csv_field(child.last_name) -%>
-<%= csv_field(child.dob) -%>
-<%= csv_field(child.school_registration_gender) -%>
-<%= csv_field(child.school_attended_name) -%>
-<%= csv_field(child.school_attended_grade) -%>
-<%= csv_field(child.household.signature) -%>
-<%= csv_field(child.household.mailing_street) -%>
-<%= csv_field(child.household.mailing_street_2) -%>
-<%= csv_field(child.household.mailing_city) -%>
-<%= csv_field('MN') -%>
-<%= csv_field(child.household.mailing_zip_code) -%>
-<%= csv_field(child.household.parent_first_name) -%>
-<%= csv_field(child.household.parent_last_name) -%>
-<%= csv_field(child.household.parent_dob) -%>
-<%= csv_field(child.household.email_address) -%>
-<%= csv_field(child.household.phone_number) -%>
-<%= csv_field(child.household.language) -%>
-<%= csv_field(child.household.submitted_at) -%>
-<%= csv_field(child.household.application_experience) -%>
-<%= csv_field(child.household.experiment_group) -%>
-<%= csv_field(child.household.confirmation_code.to_s.gsub(/-/, ''), last: true) -%>
+<%= CSV.generate { |csv| csv << child.csv_row }.html_safe -%>
 <%- end -%>
 <%- #HACK forced data in csv -%>
