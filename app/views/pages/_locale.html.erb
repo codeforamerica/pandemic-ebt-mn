@@ -1,3 +1,6 @@
 <% if I18n.locale != :en %>
   <%= link_to "English", url_for(locale: :en), class: "toolbar__item text--small link--subtle" %>
 <% end %>
+<% if I18n.locale != :es %>
+  <%= link_to "Español", url_for(locale: :es), class: "toolbar__item text--small link--subtle" %>
+<% end %>
