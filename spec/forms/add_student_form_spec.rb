@@ -55,6 +55,16 @@ describe AddStudentForm do
     end
   end
 
+  describe '#validity_of_date' do
+    it 'requires a real date' do
+      form = @valid_form.dup
+      form.dob_day = '31'
+      form.dob_month = '2'
+      form.dob_year = '1999'
+      expect(form).not_to be_valid
+    end
+  end
+
   describe '#presence_of_school_registration_gender_field' do
     it 'is invalid if school registered gender is not present' do
       form = @valid_form.dup
@@ -67,7 +77,7 @@ describe AddStudentForm do
       form.school_registration_gender = ''
       form.valid?
       expect(form.errors.count).to eq(1)
-      expect(form.errors.first[1]).to eq('Please enter the gender listed on their school registration')
+      expect(form.errors.first[1]).to eq('Please fill in their gender.')
     end
   end
 
@@ -83,7 +93,7 @@ describe AddStudentForm do
       form.school_attended_name = ''
       form.valid?
       expect(form.errors.count).to eq(1)
-      expect(form.errors.first[1]).to eq('Please enter the name of the school they attended')
+      expect(form.errors.first[1]).to eq('Please fill in their school.')
     end
   end
 
@@ -105,7 +115,7 @@ describe AddStudentForm do
       form.school_attended_grade = ''
       form.valid?
       expect(form.errors.count).to eq(1)
-      expect(form.errors.first[1]).to eq('Please enter the grade they were in')
+      expect(form.errors.first[1]).to eq('Please fill in their grade.')
     end
   end
 end

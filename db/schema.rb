@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_04_000211) do
+ActiveRecord::Schema.define(version: 2020_06_04_194523) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,7 +32,6 @@ ActiveRecord::Schema.define(version: 2020_06_04_000211) do
     t.integer "is_eligible", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "received_card", default: 0
     t.string "mailing_street"
     t.string "mailing_city"
     t.string "mailing_zip_code"

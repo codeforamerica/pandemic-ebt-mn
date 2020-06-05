@@ -17,6 +17,7 @@ es:
     general_error: Ha habido un problema de nuesta parte.
     back_to_home: Back to home
     header_logo_alt_text: Logo para el Departamento de Educación y Servicios Sociales de Minnesota
+    language: Español
   index:
     coming_soon_html: Próximamente&colon;
     header: Reciba ayuda para comprar comida mientras escuelas están cerradas.
@@ -39,7 +40,7 @@ es:
     give_us_your_basic_html: <b>Comparta información básica.</b>
     we_will_ask: Preguntaremos por los nombres de los estudiantes y sus fechas de nacimiento, el nombre de un padre o guardían, y por su correo postal.
     your_school_will_make_sure_html: <b>Nosotros nos aseguraremos de que usted sea elegible.</b>
-    we_will_check: Verificaremos si su familia puede obtener P-EBT.
+    we_will_check: Verificaremos para asegurarnos de que su familia pueda obtener P-EBT. El estado de inmigración no se considera en su elegibilidad para P-EBT.
     get_a_p_ebt_card_html: <b>Reciba la tarjeta de P-EBT por correo.</b>
     if_approved: Si su solicitud es aprobada, usted recibirá una tarjeta P-EBT dentro de 10 días cargada con dinero para alimentos. La tarjeta será cargada con dinero para alimentos, y vendrá con instrucciones sobre como usarla.
   eligible:
@@ -81,8 +82,7 @@ es:
     add: Agregue un estudiante.
   add_student:
     header: Agregue un estudiante.
-    one_at_a_time_add: Uno a uno, agregue todos los estudiantes que tenían entre 5 a 18 años de edad a partir del 1 de septiembre de 2019. Esto puede incluir a los estudiantes que reciben desayuno o almuerzo gratis en la escuela.
-      incluir a estudiantes de pre-K o TK que reciben desayuno o almuerzo gratis en la escuela.
+    one_at_a_time_add: Uno a uno, agregue a todos los estudiantes que tengan entre 5 a 18 años de edad.
     first_name: Primer nombre
     legally: Legalmente como aparece en registros escolares.
     last_name: Apellido
@@ -90,14 +90,27 @@ es:
     what_type_of_school: ¿Qué tipo de escuela atiende este estudiante?
     public_school: Escuela pública (incluyendo escuela autónoma o escuela "charter")
     private_school: Escuela privada (incluyendo escuela religiosa)
+    what_registered_gender: ¿Bajo que género esta registrado en la escuela?
     please_add_student: Por favor agregue un estudiante.
+    grade: grado
+    pre_k: Pre-K
+    kindergarten: Kindergarten
+    when_were_they_born: ¿Cuando nacieron?
+    gender_female: Femenino
+    gender_male: Masculino
+    school_name: ¿A qué escuela asistieron durante el año escolar 2019-2020?
+    school_grade: ¿En qué grado estuvieron durante el año escolar 2019-2020?
   parent:
+    header: Agregue un padre o guardían
     first_name: Primer nombre
     last_name: Apellido
+    helper_text: Esta persona será el contacto principal en esta solicitud. Deben usar su información para configurar un PIN cuando llegue su tarjeta P-EBT.
+    what_is_their_dob: ¿Cuando nacieron?
   mailing_address:
     header: ¿Donde deberíamos enviar su tarjeta de P-EBT?
     this_card_can: Esta tarjeta solo puede ser enviada por correo a una dirección en Minnesota.
   just_so_you_know:
+    header: Solo para que sepas
     text_1: La tarjeta será enviada al adulto en el hogar que completo la solicitud.
     text_2: Si usted aplico para mas de un niño, todos los beneficios estarán en esta tarjeta.
     text_3: Los adultos en el hogar pueden usar la tarjeta para comprar despensa para toda la familia.
@@ -133,10 +146,12 @@ es:
   validations:
     please_add_student: Por favor agregue un estudiante.
     email_address: Por favor, introduce una dirección de correo electrónico válida.
-    phone_number: Please enter a valid phone number.
     first_name: Por favor agregue el primer nombre.
+    phone_number: Please enter a valid phone number.
     last_name: Por favor agregue el apellido.
-    school_type: Por favor seleccione que tipo de escuela atienden.
+    gender: Por favor agregue su género.
+    school_name: Por favor agregue su escuela.
+    school_grade: Por favor agregue su grado.
     dob: Por favor agregue su fecha de nacimiento.
     address: Por favor agregue la dirección postal.
     address_2: Por favor agregue el numero de apartamiento/unidad.

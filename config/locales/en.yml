@@ -17,6 +17,7 @@ en:
     general_error: There has been a problem on our end.
     back_to_home: Back to home
     header_logo_alt_text: Minnesota Department of Education and Human Services logo
+    language: English
   index:
     coming_soon_html: Coming soon&colon;
     header: Get help buying food while schools are closed
@@ -39,7 +40,7 @@ en:
     give_us_your_basic_html: <b>Share some basic information.</b>
     we_will_ask:  We’ll ask the students’ names and birthdates, the name of a parent or guardian, and the mailing address.
     your_school_will_make_sure_html: <b>We will make sure you're eligible.</b>
-    we_will_check: We'll check to make sure your family can get P-EBT.
+    we_will_check: We'll check to make sure your family can get P-EBT. Immigration status is not considered in your eligibility for P-EBT.
     get_a_p_ebt_card_html: <b>Get a P-EBT card in the mail.</b>
     if_approved: If approved, you'll get a P-EBT card with money on it for groceries within 10 days. The card will be loaded with grocery money and come with instructions on how to use it.
   eligible:
@@ -143,9 +144,9 @@ en:
     first_name: Please fill in their first name.
     phone_number: Please enter a valid phone number.
     last_name: Please fill in their last name.
-    gender: Please enter the gender listed on their school registration
-    school_name: Please enter the name of the school they attended
-    school_grade: Please enter the grade they were in
+    gender: Please fill in their gender.
+    school_name: Please fill in their school.
+    school_grade: Please fill in their grade.
     dob: Please fill in their date of birth.
     address: Please fill in the street address.
     address_2: Please enter a shorter unit or apartment.
