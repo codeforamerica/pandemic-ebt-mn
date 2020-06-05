@@ -18,6 +18,8 @@ Layout/SpaceAroundMethodCallOperator:
   Enabled: false
 Lint/DeprecatedOpenSSLConstant:
   Enabled: true
+Lint/MixedRegexpCaptureTypes:
+  Enabled: true
 Lint/RaiseException:
   Enabled: false
 Lint/StructNewOverride:
@@ -66,6 +68,10 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
+Style/RedundantRegexpCharacterClass:
+  Enabled: true
+Style/RedundantRegexpEscape:
+  Enabled: true
 Style/Semicolon:
   Exclude:
     - config/routes.rb
