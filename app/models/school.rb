@@ -26,6 +26,7 @@ class School
 
   def self.where(term)
     term ||= ''
-    SCHOOL_LIST.select { |name| name.downcase.include?(term.downcase) }
+    schools = SCHOOL_LIST.map { |row| row['Name'] }
+    schools.select { |name| name.downcase.include?(term.downcase) }
   end
 end

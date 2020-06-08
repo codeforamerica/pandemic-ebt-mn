@@ -3,17 +3,17 @@ require 'rails_helper'
 describe 'School' do
   before do
     stub_const('SCHOOL_LIST', [
-                 'A Great School',
-                 'Another Great School',
-                 'Best School Ever',
-                 'Completely Awesome School',
-                 'Great Expectations',
-                 'Superschool of Awesome',
-                 'Superschool of OK',
-                 'Superschool of Superheroes',
-                 'The Greatest School',
-                 'The Superest School'
-               ])
+      'A Great School',
+      'Another Great School',
+      'Best School Ever',
+      'Completely Awesome School',
+      'Great Expectations',
+      'Superschool of Awesome',
+      'Superschool of OK',
+      'Superschool of Superheroes',
+      'The Greatest School',
+      'The Superest School'
+    ].map { |school| HashWithIndifferentAccess.new('Name': school) })
   end
 
   describe '#where' do
