@@ -49,7 +49,7 @@ describe AddStudentForm do
       @household.children.first
 
       expect(@household.children.first.school_attended_name).to eq('A School That Does Not Exist')
-      expect(@household.children.first.school_attended_id).to eq('')
+      expect(@household.children.first.school_attended_id).to be_nil
     end
   end
 

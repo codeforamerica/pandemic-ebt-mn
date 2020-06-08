@@ -111,8 +111,8 @@ describe 'School' do
       expect(School.org_id_for(school)).to eq expected
     end
 
-    it 'returns an empty string for no matches' do
-      expected = ''
+    it 'returns nil for no matches' do
+      expected = nil
       school = 'School of Awesome Rock'
       expect(School.org_id_for(school)).to eq expected
     end
