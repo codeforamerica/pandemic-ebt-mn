@@ -4,7 +4,7 @@ class SignatureForm < Form
 
   def save
     Household.transaction do
-      Household.lock('FOR UPDATE')
+      Household.connection.execute('LOCK households IN ACCESS EXCLUSIVE MODE')
       household.update(attributes_for(:household).merge({ submitted_at: Time.zone.now, huid: (household.huid || Household.next_huid) }))
     end
   end
