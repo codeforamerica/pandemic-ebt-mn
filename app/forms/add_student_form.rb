@@ -1,5 +1,5 @@
 class AddStudentForm < Form
-  set_attributes_for :child, :first_name, :last_name, :dob_day, :dob_month, :dob_year, :school_registration_gender, :school_attended_name, :school_attended_grade
+  set_attributes_for :child, :first_name, :last_name, :dob_day, :dob_month, :dob_year, :school_registration_gender, :school_attended_name, :school_attended_id, :school_attended_grade
   validates_presence_of :first_name, message: proc { I18n.t('validations.first_name') }
   validates_presence_of :last_name, message: proc { I18n.t('validations.last_name') }
   validates_presence_of :school_registration_gender, message: proc { I18n.t('validations.gender') }
@@ -16,7 +16,8 @@ class AddStudentForm < Form
       dob: [form_attributes[:dob_day], form_attributes[:dob_month], form_attributes[:dob_year]].join('/'),
       school_registration_gender: form_attributes[:school_registration_gender],
       school_attended_name: form_attributes[:school_attended_name],
-      school_attended_grade: form_attributes[:school_attended_grade]
+      school_attended_grade: form_attributes[:school_attended_grade],
+      school_attended_id: School.org_id_for(form_attributes[:school_attended_name])
     }
     household.children.create(attributes)
     household.save
