@@ -10,9 +10,9 @@ RSpec.describe SchoolsController do
     it 'filters data when presented with a search term' do
       get :index, params: { term: 'High' }
       expected = [
-        'High School For Recording Arts',
-        'High School Summer Program',
-        'Higher Ground Academy'
+        'High School for Recording Arts',
+        'Higher Ground Academy',
+        'Higher Ground Secondary Academy'
       ].map { |e| { value: e, label: e } }.to_json
       expect(response.body).to eq(expected)
     end
@@ -20,9 +20,9 @@ RSpec.describe SchoolsController do
     it 'filters data when presented with a partial search term' do
       get :index, params: { term: 'Mid' }
       expected = [
-        'Mid State Ed Dist Steps Trans. Prog',
-        'Middle Area Learning Center',
-        'Middle Level Alternative Program'
+        'Mid-State Education District',
+        'Middleton Elementary',
+        'AFSA Middle School'
       ].map { |e| { value: e, label: e } }.to_json
       expect(response.body).to eq(expected)
     end
@@ -30,9 +30,9 @@ RSpec.describe SchoolsController do
     it 'filters data regardless of case' do
       get :index, params: { term: 'mid' }
       expected = [
-        'Mid State Ed Dist Steps Trans. Prog',
-        'Middle Area Learning Center',
-        'Middle Level Alternative Program'
+        'Mid-State Education District',
+        'Middleton Elementary',
+        'AFSA Middle School'
       ].map { |e| { value: e, label: e } }.to_json
       expect(response.body).to eq(expected)
     end
@@ -40,9 +40,9 @@ RSpec.describe SchoolsController do
     it 'returns all data when search term is empty' do
       get :index, params: { term: '' }
       expected = [
-        '112 ALC Independent Study',
-        '112 ALC Middle School',
-        '112 ALC Seat-Based'
+        '916 Mahtomedi Academy',
+        'ACGC Elementary',
+        'ACGC Secondary'
       ].map { |e| { value: e, label: e } }.to_json
       expect(response.body).to eq(expected)
     end
@@ -56,9 +56,9 @@ RSpec.describe SchoolsController do
     it 'limits the results to 3 items, sorted alphabetically' do
       get :index, params: { term: 'Elementary' }
       expected = [
-        'Elementary ALC Targeted Services',
-        'Elementary Extended Year Program',
-        'Elementary Lighthouse'
+        'ACGC Elementary',
+        'Ada Borup Elementary',
+        'Adams Elementary'
       ].map { |e| { value: e, label: e } }.to_json
       expect(response.body).to eq(expected)
     end
