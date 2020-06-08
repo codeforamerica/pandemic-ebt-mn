@@ -19,7 +19,7 @@ class School
     final.map do |name|
       {
         value: name,
-        label: name
+        label: "#{name} - #{city_for(name)}"
       }
     end
   end
@@ -28,5 +28,19 @@ class School
     term ||= ''
     schools = SCHOOL_LIST.map { |row| row['Name'] }
     schools.select { |name| name.downcase.include?(term.downcase) }
+  end
+
+  def self.org_id_for(school_name)
+    school = SCHOOL_LIST.find { |row| row['Name'].casecmp(school_name).zero? }
+    return '' if school.nil?
+
+    school['stateorganizationid']
+  end
+
+  def self.city_for(school_name)
+    school = SCHOOL_LIST.find { |row| row['Name'].casecmp(school_name).zero? }
+    return '' if school.nil?
+
+    school['Site City']
   end
 end

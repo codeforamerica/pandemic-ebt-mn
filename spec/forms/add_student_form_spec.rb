@@ -25,6 +25,32 @@ describe AddStudentForm do
       expect(@household.children.first.dob.month).to eq(12)
       expect(@household.children.first.dob.year).to eq(2010)
     end
+
+    it 'saves the school org id to the database if we can match it' do
+      form = @valid_form.dup
+      form.school_attended_name = 'Alden - Conger Elementary'
+      form.valid?
+      form.save
+
+      @household.reload
+      @household.children.first
+
+      expect(@household.children.first.school_attended_name).to eq('Alden - Conger Elementary')
+      expect(@household.children.first.school_attended_id).to eq('10242002000')
+    end
+
+    it 'does not save an org id if the user enters a school not in the list' do
+      form = @valid_form.dup
+      form.school_attended_name = 'A School That Does Not Exist'
+      form.valid?
+      form.save
+
+      @household.reload
+      @household.children.first
+
+      expect(@household.children.first.school_attended_name).to eq('A School That Does Not Exist')
+      expect(@household.children.first.school_attended_id).to eq('')
+    end
   end
 
   describe '#presence_of_dob_fields' do
