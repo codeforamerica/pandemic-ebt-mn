@@ -2,6 +2,7 @@ require 'rails_helper'
 require 'csv'
 
 HEADERS = %w[ child_id student_first_name student_last_name student_dob student_gender student_school_name student_school_grade
+              student_school_id student_school_breakfast_cep student_school_lunch_cep
               parent_signature mailing_street mailing_street_2 mailing_city mailing_state mailing_zip_code parent_first_name
               parent_last_name parent_dob email_address phone_number language submitted_at application_experience experiment_group maxis_id ].freeze
 
@@ -20,6 +21,7 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     @child_from_today = create(:child, household: create(:household, :submitted_today))
     @child_from_yesterday = create(:child, household: create(:household, :submitted_yesterday))
     @child_with_double_quotes = create(:child, household: create(:household, mailing_street_2: 'Apt "B"'))
+    @child_at_matched_school = create(:child, household: create(:household), school_attended_name: 'Centennial Elementary', school_attended_id: '10280695000')
   end
 
   after(:all) do
@@ -91,6 +93,20 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     it 'Exports confirmation code without dashes' do
       random_child_row = row_for_child @child_with_email
       expect(random_child_row['maxis_id']).to match(/\d{8}/)
+    end
+
+    it 'Exports school information when matched' do
+      random_child_row = row_for_child @child_at_matched_school
+      expect(random_child_row['student_school_id']).to eq('10280695000')
+      expect(random_child_row['student_school_breakfast_cep']).to eq('Provision 2')
+      expect(random_child_row['student_school_lunch_cep']).to eq('Regular')
+    end
+
+    it 'Exports blank school information when not matched' do
+      random_child_row = row_for_child @child_with_email
+      expect(random_child_row['student_school_id']).to be_nil
+      expect(random_child_row['student_school_breakfast_cep']).to be_nil
+      expect(random_child_row['student_school_lunch_cep']).to be_nil
     end
   end
 
