@@ -66,7 +66,7 @@ es:
     you_can_also_html: También puede llamar a la línea de Ayuda Alimentaria de Minnesota al <a href="tel:16514869860">651-486-9860</a> o al <a href="tel:18887111151">888-711-1151</a>. Hay intérpretes disponibles.
   received_card:
     alt_text_card: Una tarjeta con una imagen de un paisaje que tiene "Minnesota EBT" inscrita en ella.
-    header: ¿Su hogar participa en programas para beneficios alimentarios (SNAP / EBT) o participa en el Programa de Inversión Familiar de Minnesota (MFIP)?
+    header: ¿Su hogar actualmente recibe beneficios para alimentos (SNAP/FS/EBT) o participa en el programa de Inversión Familiar de Minnesota (MFIP)?
     it_looks_like_html: Su tarjeta quizas se parece así&colon;
   done:
     header: ¡Ya acabo!
