@@ -63,7 +63,7 @@ en:
     you_can_also_html: You can also call the Minnesota Food HelpLine at <a href="tel:16514869860">651-486-9860</a> or <a href="tel:18887111151">888-711-1151</a>. Interpreters are available.
   received_card:
     alt_text_card: A card with a picture of a landscape on it that says Minnesota EBT on it
-    header: Does your household use food benefits (SNAP/EBT) or participate in Minnesota's Family Investment Program (MFIP)?
+    header: Does your household currently get food benefits (SNAP/FS/EBT) or participate in Minnesota’s Family Investment program (MFIP?)
     it_looks_like_html: The card may look like this&colon;
   done:
     header: You’re all done!

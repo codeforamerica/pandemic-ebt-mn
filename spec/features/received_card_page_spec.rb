@@ -8,7 +8,7 @@ RSpec.describe 'Journey', type: :feature do
       click_on 'Apply now'
       expect(page).to have_text "Here's how it works"
       click_on 'Continue'
-      expect(page).to have_text 'Does your household use food benefits (SNAP/EBT)'
+      expect(page).to have_text 'Does your household currently get food benefits (SNAP/FS/EBT)'
       click_on 'Yes'
       expect(page).to have_text 'You’re all done'
     end
