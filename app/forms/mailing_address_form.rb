@@ -4,8 +4,15 @@ class MailingAddressForm < Form
   validates :mailing_street_2, length: { maximum: 128, too_long: proc { I18n.t('validations.address_2') } }
   validates_presence_of :mailing_city, message: proc { I18n.t('validations.city') }
   validates :mailing_zip_code, inclusion: { in: VALID_ZIP_CODES, message: proc { I18n.t('validations.zip_code') } }
+  before_validation :strip_zip
 
   def save
     household.update(attributes_for(:household))
+  end
+
+  protected
+
+  def strip_zip
+    @mailing_zip_code.strip!
   end
 end
