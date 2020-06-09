@@ -47,5 +47,13 @@ describe MailingAddressForm do
 
       expect(form).not_to be_valid
     end
+
+    it 'trims zip codes' do
+      @form.mailing_zip_code = '55105 '
+      expect(@form).to be_valid
+
+      @form.save
+      expect(@household.mailing_zip_code).to eq('55105')
+    end
   end
 end
