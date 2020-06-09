@@ -124,6 +124,8 @@ es:
     header: Agrega la firma de un padre o guardián.
     type_your_full: Ingrese su nombre legal completo aquí para firmar este formulario. Al ingresar su nombre usted
       acepta que ha sido honesto en este formulario.
+    did_you_get_help: ¿Le ayudó una organización comunitaria a aplicar?
+    community_organization: Nombre de la organización
     submit: Entrege la solicitud
   success:
     header: ¡Su solicitud está lista!

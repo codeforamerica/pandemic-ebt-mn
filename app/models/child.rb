@@ -26,6 +26,8 @@ class Child < ApplicationRecord
       School.breakfast_cep_for(school_attended_id),
       School.lunch_cep_for(school_attended_id),
       household.signature,
+      household.did_you_get_help,
+      household.community_organization,
       household.mailing_street,
       household.mailing_street_2,
       household.mailing_city,
@@ -57,6 +59,8 @@ class Child < ApplicationRecord
       student_school_breakfast_cep
       student_school_lunch_cep
       parent_signature
+      did_you_get_help
+      community_organization
       mailing_street
       mailing_street_2
       mailing_city

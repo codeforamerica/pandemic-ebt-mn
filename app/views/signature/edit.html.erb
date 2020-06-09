@@ -20,6 +20,14 @@
           <%= f.cfa_input_field(:signature, "") %>
         </div>
       </div>
+      <%= f.cfa_radio_set_with_follow_up(:did_you_get_help,
+                          label_text: t("signature.did_you_get_help"),
+                          collection: [
+                              {value: 'no', label: t('shared.no')},
+                              {value: 'yes', label: t("shared.yes")}
+                          ],
+                          second_follow_up: -> { f.cfa_input_field(:community_organization, t('signature.community_organization')) }
+      )%>
       <div class="form-card__footer">
         <%= f.button t("signature.submit"), class: "button button--primary" %>
       </div>

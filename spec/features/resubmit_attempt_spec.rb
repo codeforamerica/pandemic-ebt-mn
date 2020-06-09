@@ -64,6 +64,8 @@ RSpec.describe 'Journey', type: :feature do
       expect(page).to have_text 'Add a parent or guardian’s signature.'
       expect(page).to have_text 'Type your full legal name here to sign this form. By entering your name you agree you have been honest on this form.'
       fill_in 'form_signature', with: 'Julia Johnson'
+      choose 'Yes'
+      fill_in 'Name of the organization', with: 'USDR'
       click_on 'Submit Application'
       expect(page).to have_text 'Your application is done!'
       click_on 'Good'
