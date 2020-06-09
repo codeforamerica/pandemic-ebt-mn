@@ -13,6 +13,6 @@ class MailingAddressForm < Form
   protected
 
   def strip_zip
-    @mailing_zip_code.strip!
+    @mailing_zip_code.to_s.strip!
   end
 end
