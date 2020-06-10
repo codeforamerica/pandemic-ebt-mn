@@ -1,7 +1,7 @@
 require 'rails_helper'
 require 'csv'
 
-HEADERS = %w[ child_id student_first_name student_last_name student_dob student_gender student_school_name student_school_grade
+HEADERS = %w[ child_id student_first_name student_last_name student_dob student_gender student_school_name student_school_grade student_school_type student_school_formatted_id
               student_school_id student_school_breakfast_cep student_school_lunch_cep parent_signature did_you_get_help community_organization
               mailing_street mailing_street_2 mailing_city mailing_state mailing_zip_code parent_first_name
               parent_last_name parent_dob email_address phone_number language submitted_at application_experience experiment_group maxis_id ].freeze
@@ -103,10 +103,12 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     end
 
     it 'Exports school information when matched' do
-      random_child_row = row_for_child @child_at_matched_school
-      expect(random_child_row['student_school_id']).to eq('10280695000')
-      expect(random_child_row['student_school_breakfast_cep']).to eq('Provision 2')
-      expect(random_child_row['student_school_lunch_cep']).to eq('Regular')
+      matched_child_row = row_for_child @child_at_matched_school
+      expect(matched_child_row['student_school_id']).to eq('10280695000')
+      expect(matched_child_row['student_school_breakfast_cep']).to eq('Provision 2')
+      expect(matched_child_row['student_school_lunch_cep']).to eq('Regular')
+      expect(matched_child_row['student_school_type']).to eq('School')
+      expect(matched_child_row['student_school_formatted_id']).to eq('0280-01-695')
     end
 
     it 'Exports blank school information when not matched' do
