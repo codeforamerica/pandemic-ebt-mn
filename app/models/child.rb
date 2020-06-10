@@ -22,6 +22,8 @@ class Child < ApplicationRecord
       school_registration_gender,
       school_attended_name,
       school_attended_grade,
+      School.type_for(school_attended_id),
+      School.formatted_org_id_for(school_attended_id),
       school_attended_id,
       School.breakfast_cep_for(school_attended_id),
       School.lunch_cep_for(school_attended_id),
@@ -55,6 +57,8 @@ class Child < ApplicationRecord
       student_gender
       student_school_name
       student_school_grade
+      student_school_type
+      student_school_formatted_id
       student_school_id
       student_school_breakfast_cep
       student_school_lunch_cep

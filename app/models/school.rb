@@ -5,6 +5,8 @@ class School
   FIELD_SCHOOL_CITY = 'Site City'.freeze
   FIELD_BREAKFAST_CEP = 'School Breakfast Program Partici'.freeze
   FIELD_LUNCH_CEP = 'Nat School Lunch Program Partici'.freeze
+  FIELD_FORMATTED_ORG_ID = 'formattedOrganizationID'.freeze
+  FIELD_SCHOOL_TYPE = 'recordType'.freeze
 
   def self.find_sorted_by_term(term)
     term ||= ''
@@ -53,5 +55,15 @@ class School
   def self.lunch_cep_for(school_id)
     school = SCHOOL_LIST.find { |row| row[FIELD_SCHOOL_ID].to_s == school_id }
     school.nil? ? nil : school[FIELD_LUNCH_CEP]
+  end
+
+  def self.formatted_org_id_for(school_id)
+    school = SCHOOL_LIST.find { |row| row[FIELD_SCHOOL_ID].to_s == school_id }
+    school.nil? ? nil : school[FIELD_FORMATTED_ORG_ID]
+  end
+
+  def self.type_for(school_id)
+    school = SCHOOL_LIST.find { |row| row[FIELD_SCHOOL_ID].to_s == school_id }
+    school.nil? ? nil : school[FIELD_SCHOOL_TYPE]
   end
 end

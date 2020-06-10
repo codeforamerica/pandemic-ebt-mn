@@ -2,6 +2,8 @@ require 'rails_helper'
 
 describe 'School' do
   STUBBED_ID = '1009001000'.freeze
+  STUBBED_FORMATTED_ID = '0280-01-695'.freeze
+  STUBBED_SCHOOL_TYPE = 'NONPUBLIC'.freeze
   STUBBED_CITY = 'St Paul'.freeze
   before do
     stub_const('SCHOOL_LIST', [
@@ -15,7 +17,15 @@ describe 'School' do
       'Superschool of Superheroes',
       'The Greatest School',
       'The Superest School'
-    ].map { |school| HashWithIndifferentAccess.new('Name': school, 'stateorganizationid': STUBBED_ID, 'Site City': STUBBED_CITY) })
+    ].map do |school|
+                                HashWithIndifferentAccess.new(
+                                  'Name': school,
+                                  'stateorganizationid': STUBBED_ID,
+                                  'formattedOrganizationID': STUBBED_FORMATTED_ID,
+                                  'recordType': STUBBED_SCHOOL_TYPE,
+                                  'Site City': STUBBED_CITY
+                                )
+                              end)
   end
 
   describe '#where' do
@@ -95,6 +105,34 @@ describe 'School' do
                     value: 'Great Expectations' }]
       actual = School.find_sorted_by_term('Great Expectations')
       expect(actual).to eq(expected)
+    end
+  end
+
+  describe '#formatted_org_id_for' do
+    it 'returns the formatted state organization id for matches' do
+      expected = STUBBED_FORMATTED_ID
+      school = STUBBED_ID
+      expect(School.formatted_org_id_for(school)).to eq expected
+    end
+
+    it 'returns nil for no matches' do
+      expected = nil
+      school = ''
+      expect(School.formatted_org_id_for(school)).to eq expected
+    end
+  end
+
+  describe '#type_for' do
+    it 'returns the school type for matches' do
+      expected = STUBBED_SCHOOL_TYPE
+      school = STUBBED_ID
+      expect(School.type_for(school)).to eq expected
+    end
+
+    it 'returns nil for no matches' do
+      expected = nil
+      school = ''
+      expect(School.type_for(school)).to eq expected
     end
   end
 
