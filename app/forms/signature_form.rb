@@ -8,7 +8,7 @@ class SignatureForm < Form
       Household.connection.execute('LOCK households IN ACCESS EXCLUSIVE MODE')
       form_attributes = attributes_for(:household)
       attributes = {
-        signature: form_attributes[:signature].gsub(NULL_BYTE, ' ').strip,
+        signature: form_attributes[:signature].to_s.gsub(NULL_BYTE, ' ').strip,
         huid: (household.huid || Household.next_huid)
       }
       household.update(attributes.merge({ submitted_at: Time.zone.now }))
