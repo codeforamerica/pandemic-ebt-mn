@@ -4,13 +4,15 @@ describe SignatureForm do
   describe '#save' do
     it 'updates the existing household' do
       household = Household.create(is_eligible: :yes)
-      form = described_class.new(household, { signature: 'John Hancock' })
+      form = described_class.new(household, { signature: 'John Hancock', did_you_get_help: 'yes', community_organization: 'USDR' })
       form.valid?
       form.save
 
       household.reload
 
       expect(household.signature).to eq('John Hancock')
+      expect(household.did_you_get_help).to eq('yes')
+      expect(household.community_organization).to eq('USDR')
       expect(household.submitted_at).not_to be_nil
       expect(household.huid).not_to be_nil
     end

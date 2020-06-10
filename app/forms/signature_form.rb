@@ -1,5 +1,5 @@
 class SignatureForm < Form
-  set_attributes_for :household, :signature
+  set_attributes_for :household, :signature, :community_organization, :did_you_get_help
   validates_presence_of :signature, message: proc { I18n.t('validations.signature') }
 
   def save

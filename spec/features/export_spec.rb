@@ -2,8 +2,8 @@ require 'rails_helper'
 require 'csv'
 
 HEADERS = %w[ child_id student_first_name student_last_name student_dob student_gender student_school_name student_school_grade
-              student_school_id student_school_breakfast_cep student_school_lunch_cep
-              parent_signature mailing_street mailing_street_2 mailing_city mailing_state mailing_zip_code parent_first_name
+              student_school_id student_school_breakfast_cep student_school_lunch_cep parent_signature did_you_get_help community_organization
+              mailing_street mailing_street_2 mailing_city mailing_state mailing_zip_code parent_first_name
               parent_last_name parent_dob email_address phone_number language submitted_at application_experience experiment_group maxis_id ].freeze
 
 RSpec.describe 'Exporting Children as CSV', type: :feature do
@@ -22,6 +22,7 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     @child_from_yesterday = create(:child, household: create(:household, :submitted_yesterday))
     @child_with_double_quotes = create(:child, household: create(:household, mailing_street_2: 'Apt "B"'))
     @child_at_matched_school = create(:child, household: create(:household), school_attended_name: 'Centennial Elementary', school_attended_id: '10280695000')
+    @child_with_community_organization = create(:child, household: create(:household, :with_community_organization))
   end
 
   after(:all) do
@@ -88,6 +89,12 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
       expect(random_child_row['parent_first_name']).to eq(@child_with_email.household.parent_first_name)
       expect(random_child_row['parent_last_name']).to eq(@child_with_email.household.parent_last_name)
       expect(random_child_row['parent_dob']).to eq(@child_with_email.household.parent_dob.to_s)
+    end
+
+    it 'Exports community_organization' do
+      kid_with_co = row_for_child @child_with_community_organization
+      expect(kid_with_co['community_organization']).to eq(@child_with_community_organization.household.community_organization)
+      expect(kid_with_co['did_you_get_help']).to eq('yes')
     end
 
     it 'Exports confirmation code without dashes' do
