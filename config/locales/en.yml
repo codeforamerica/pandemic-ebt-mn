@@ -119,6 +119,8 @@ en:
     header: Add a parent or guardian’s signature.
     type_your_full: Type your full legal name here to sign this form. By entering your name you agree you have been
       honest on this form.
+    did_you_get_help: Did a community organization help you apply?
+    community_organization: Name of the organization
     submit: Submit Application
   success:
     header: Your application is done!

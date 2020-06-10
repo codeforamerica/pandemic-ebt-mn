@@ -29,6 +29,11 @@ FactoryBot.define do
     trait :submitted_yesterday do
       submitted_at { 24.hours.ago }
     end
+
+    trait :with_community_organization do
+      community_organization { 'USDR' }
+      did_you_get_help { 'yes' }
+    end
   end
 
   trait :with_email do
