@@ -7,7 +7,7 @@ RSpec.describe 'Journey', type: :feature do
       click_on 'Apply now'
       expect(page).to have_text "Here's how it works"
       click_on 'Continue'
-      expect(page).to have_text 'Does your household currently get food benefits (SNAP/FS/EBT)'
+      expect(page).to have_text 'Did your household receive SNAP/FS/EBT food benefits or Minnesota\'s Family Investment Program (MFIP) benefits in March 2020?'
       click_on 'No'
       expect(page).to have_text 'Is the student able to receive free or reduced price meals'
       choose 'Yes'
