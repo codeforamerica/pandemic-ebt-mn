@@ -48,5 +48,12 @@ describe ParentForm do
       @form.parent_dob_year = '1999'
       expect(@form).not_to be_valid
     end
+
+    it 'requires the date to be in the past' do
+      @form.parent_dob_day = '15'
+      @form.parent_dob_month = '5'
+      @form.parent_dob_year = '2029'
+      expect(@form).not_to be_valid
+    end
   end
 end
