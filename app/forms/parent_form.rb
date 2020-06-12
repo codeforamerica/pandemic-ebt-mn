@@ -23,7 +23,7 @@ class ParentForm < Form
 
   def validity_of_date
     dob = Date.parse [@parent_dob_day, @parent_dob_month, @parent_dob_year].join('/') if @parent_dob_day.present? && @parent_dob_month.present? && @parent_dob_year.present?
-    errors.add(:dob, proc { I18n.t('validations.dob') }) if date_in_future?(dob)
+    errors.add(:parent_dob, proc { I18n.t('validations.dob') }) if date_in_future?(dob)
   rescue ArgumentError
     errors.add(:parent_dob, proc { I18n.t('validations.dob') })
   end
