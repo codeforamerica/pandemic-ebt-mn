@@ -1,6 +1,7 @@
 require 'thor'
 require 'csv'
 require './config/environment' # Load Rails
+require 'aws-sdk-s3'
 
 class Export < Thor
   desc 'children FILE', 'Exports children from the database to FILE (defaults to tmp/all.csv)'
@@ -26,6 +27,18 @@ class Export < Thor
     children = children.submitted_after(DateTime.now.midnight - days.to_i.days)
     children = children.submitted_before(DateTime.now.midnight)
     export(children, file_name)
+  end
+
+  desc 'upload_export_to_aws FILE', 'Uploads an export file to the S3 bucket specified in environment variables. Will overwrite files with the same name.'
+  def upload_export_to_aws(file)
+    required_variables = %w[AWS_REGION AWS_EXPORT_UPLOAD_BUCKET AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY]
+    required_variables.each { |var| raise Thor::Error, "ERROR: #{var} is required to be set as an environment variable" unless ENV.key?(var) }
+    raise Thor::Error, "ERROR: #{file} does not exist" unless File.exist?(file)
+
+    s3 = Aws::S3::Resource.new
+    obj = s3.bucket(ENV['AWS_EXPORT_UPLOAD_BUCKET']).object(file)
+    obj.upload_file(file)
+    puts 'Upload Complete!'
   end
 
   no_commands do
