@@ -13,6 +13,18 @@ class Child < ApplicationRecord
     "#{first_name} #{last_name}"
   end
 
+  def maxis_id
+    no_dash = household.confirmation_code.to_s.delete('-')
+    case no_dash
+    when '99000001'
+      '99999991'
+    when '99000002'
+      '99999992'
+    else
+      no_dash
+    end
+  end
+
   def csv_row
     [
       id,
@@ -44,7 +56,7 @@ class Child < ApplicationRecord
       household.submitted_at,
       household.application_experience,
       household.experiment_group,
-      household.confirmation_code.to_s.delete('-')
+      maxis_id
     ]
   end
 
