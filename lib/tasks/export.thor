@@ -29,7 +29,6 @@ class Export < Thor
   end
 
   no_commands do
-
     def export(children, file_name)
       File.delete(file_name) if File.exist?(file_name)
       CSV.open(file_name, 'w') do |file|
@@ -40,6 +39,5 @@ class Export < Thor
       end
       puts "EXPORT COMPLETE! Exported to #{file_name}"
     end
-
   end
 end
