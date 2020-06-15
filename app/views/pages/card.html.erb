@@ -18,6 +18,6 @@
   </div>
 </div>
 <div class="form-card__footer">
-  <a href="<%= done_path %>" class="button"><i class="button__icon emoji emoji--checkmark"></i> Yes</a>
-  <a href="<%= eligible_steps_path %>" value="no" class="button"><i class="button__icon emoji emoji--crossmark"></i> No</a>
+  <a href="<%= done_path %>" class="button"><i class="button__icon emoji emoji--checkmark"></i><%= t("shared.yes") %></a>
+  <a href="<%= eligible_steps_path %>" value="no" class="button"><i class="button__icon emoji emoji--crossmark"></i><%= t("shared.no") %></a>
 </div>
