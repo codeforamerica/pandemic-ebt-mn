@@ -7,4 +7,25 @@ describe 'Child' do
       expect(child.full_name).to eq('Jane Smith')
     end
   end
+
+  describe '#maxis_id' do
+    it 'returns an un-dashed ID from household huid' do
+      household = create(:household)
+      household.huid = 123
+      child = create(:child, household: household)
+      expect(child.maxis_id).to eq('99000123')
+    end
+
+    it 'returns a modified ID when household huid is 1 or 2' do
+      household = create(:household)
+      household.huid = 1
+      child = create(:child, household: household)
+      expect(child.maxis_id).to eq('99999991')
+
+      household2 = create(:household)
+      household2.huid = 2
+      child2 = create(:child, household: household2)
+      expect(child2.maxis_id).to eq('99999992')
+    end
+  end
 end
