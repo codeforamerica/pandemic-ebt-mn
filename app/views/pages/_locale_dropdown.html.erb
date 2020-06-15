@@ -1,0 +1,9 @@
+  <div class="select language--select">
+    <select class="select__element toolbar__item text--small language--selector"
+            name="language_select"
+            id="language_select"
+            onchange="javascript:location.href = this.value;">
+      <option <%="selected disabled" if I18n.locale == :en %> value="<%=url_for(locale: :en) %>">English</option>
+      <option <%="selected disabled" if I18n.locale == :es %> value="<%=url_for(locale: :es) %>">Español</option>
+    </select>
+  </div>
