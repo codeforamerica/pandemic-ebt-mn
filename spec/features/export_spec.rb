@@ -12,6 +12,7 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
   end
 
   before(:all) do
+    @output_file_name = Rails.root.join('tmp', 'all.csv')
     Child.delete_all
     Household.delete_all
     create_list(:child, 20)
@@ -29,14 +30,47 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     # prevent data leakage:
     Child.destroy_all
     Household.destroy_all
+    File.delete(@output_file_name) if File.exist?(@output_file_name)
+  end
+
+  context 'when exporting last 7 days' do
+    before(:all) do
+      midnight_7_days_ago = DateTime.now.midnight - 7.days
+      @child_from_midnight = create(:child, household: create(:household, submitted_at: DateTime.now.midnight))
+      @child_from_midnight_7_days_ago = create(:child, household: create(:household, submitted_at: midnight_7_days_ago))
+      @child_from_8_days_ago = create(:child, household: create(:household, submitted_at: DateTime.now - 8.days))
+      @captured_stdout = `thor export:last_x_days 7`
+      @csv_data = CSV.read(@output_file_name, headers: true)
+    end
+
+    it 'includes children created yesterday' do
+      yesterday_row = row_for_child @child_from_yesterday
+      expect(yesterday_row).not_to be_nil
+    end
+
+    it 'does not include children added today' do
+      today_row = row_for_child @child_from_today
+      expect(today_row).to be_nil
+    end
+
+    it 'does not include children added today at midnight' do
+      today_row = row_for_child @child_from_midnight
+      expect(today_row).to be_nil
+    end
+
+    it 'includes children added after midnight of the 7th day' do
+      midnight_row = row_for_child @child_from_midnight_7_days_ago
+      expect(midnight_row).not_to be_nil
+    end
+
+    it 'does not include children before 7 days ago' do
+      child_from_8_days_ago_row = row_for_child @child_from_8_days_ago
+      expect(child_from_8_days_ago_row).to be_nil
+    end
   end
 
   context 'when exporting submitted children' do
     before(:all) do
-      @output_file_name = Rails.root.join('tmp', 'all.csv')
-
-      File.delete(@output_file_name) if File.exist?(@output_file_name)
-
       @captured_stdout = `thor export:children`
     end
 
