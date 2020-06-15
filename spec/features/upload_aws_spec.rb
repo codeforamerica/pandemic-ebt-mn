@@ -25,20 +25,20 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
   # Note the use of `2>&1` which forces STDERR to STDOUT to let us check failures
 
   it 'raises an error if no file name passed' do
-    captured_stdout = `thor export:upload_export_to_aws 2>&1`
+    captured_stdout = run_command_redirected('thor export:upload_export_to_aws')
     expect(captured_stdout).not_to include(SUCCESS_MESSAGE)
     expect(captured_stdout).to include('was called with no arguments')
   end
 
   it 'raises an error if the AWS ENV Variables are not set' do
     @aws_vars.each { |var| ENV.delete(var) }
-    captured_stdout = `thor export:upload_export_to_aws #{@file_name} 2>&1`
+    captured_stdout = run_command_redirected("thor export:upload_export_to_aws #{@file_name}")
     expect(captured_stdout).not_to include(SUCCESS_MESSAGE)
     expect(captured_stdout).to include('is required to be set as an environment variable')
   end
 
   it 'raises an error if the file does not exist' do
-    captured_stdout = `thor export:upload_export_to_aws dummyfile.csv 2>&1`
+    captured_stdout = run_command_redirected('thor export:upload_export_to_aws dummyfile.csv')
     expect(captured_stdout).not_to include(SUCCESS_MESSAGE)
     expect(captured_stdout).to include('does not exist')
   end
