@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_09_190236) do
+ActiveRecord::Schema.define(version: 2020_06_16_143647) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,6 +50,12 @@ ActiveRecord::Schema.define(version: 2020_06_09_190236) do
     t.integer "huid"
     t.string "community_organization"
     t.integer "did_you_get_help", limit: 2, default: 0
+    t.string "clean_street_1"
+    t.string "clean_street_2"
+    t.string "clean_city"
+    t.string "clean_zip_code"
+    t.boolean "cleaned_address", default: false
+    t.index ["cleaned_address"], name: "index_households_on_cleaned_address"
     t.index ["huid"], name: "index_households_on_huid", unique: true
     t.index ["submitted_at"], name: "index_households_on_submitted_at"
   end

@@ -6,6 +6,8 @@ class Household < ApplicationRecord
   enum experiment_group: { unfilled: 0, mn_early: 1 }
   enum did_you_get_help: { unfilled: 0, yes: 1, no: 2 }, _prefix: :dygh
 
+  scope :submitted, -> { where.not(submitted_at: nil) }
+
   def confirmation_code
     return nil if huid.blank?
 

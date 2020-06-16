@@ -54,6 +54,8 @@ RSpec/NamedSubject:
 RSpec/BeforeAfterAll:
   Exclude:
     - spec/features/export_spec.rb
+RSpec/MessageSpies:
+  Enabled: false
 Style/Documentation:
   Enabled: false
 Style/ExponentialNotation:
