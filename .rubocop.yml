@@ -54,6 +54,7 @@ RSpec/NamedSubject:
 RSpec/BeforeAfterAll:
   Exclude:
     - spec/features/export_spec.rb
+    - spec/features/upload_aws_spec.rb
 RSpec/MessageSpies:
   Enabled: false
 Style/Documentation:
