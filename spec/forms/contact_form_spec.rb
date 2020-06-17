@@ -44,5 +44,19 @@ describe ContactForm do
 
       expect(form).to be_valid
     end
+
+    it 'rejects phone numbers that start with a 0' do
+      household = Household.create(is_eligible: :yes)
+      form = described_class.new(household, { phone_number: '(013) 555-1212' })
+
+      expect(form).not_to be_valid
+    end
+
+    it 'rejects phone numbers that start with a 1' do
+      household = Household.create(is_eligible: :yes)
+      form = described_class.new(household, { phone_number: '(113) 555-1212' })
+
+      expect(form).not_to be_valid
+    end
   end
 end
