@@ -1,0 +1,1 @@
+0 2 * * 1  thor export:last_x_days 7 tmp/$(date +'%Y-%m-%d').csv; thor export:upload_export_to_aws tmp/$(date +'%Y-%m-%d').csv
