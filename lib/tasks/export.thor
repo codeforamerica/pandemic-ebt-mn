@@ -36,7 +36,8 @@ class Export < Thor
     raise Thor::Error, "ERROR: #{file} does not exist" unless File.exist?(file)
 
     s3 = Aws::S3::Resource.new
-    obj = s3.bucket(ENV['AWS_EXPORT_UPLOAD_BUCKET']).object(file)
+    filename = file.split('/')[-1]
+    obj = s3.bucket(ENV['AWS_EXPORT_UPLOAD_BUCKET']).object("mn/#{Rails.env}/#{filename}")
     obj.upload_file(file)
     puts 'Upload Complete!'
   end
