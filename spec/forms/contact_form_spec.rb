@@ -29,5 +29,20 @@ describe ContactForm do
       expect(form).not_to be_valid
       expect(form.errors.first[1]).to eq('Please enter a valid phone number.')
     end
+
+    it 'handles phone numbers with alphanumeric characters' do
+      household = Household.create(is_eligible: :yes)
+      form = described_class.new(household, { phone_number: 'asdf8135551212' })
+
+      expect(form).not_to be_valid
+      expect(form.errors.first[1]).to eq('Please enter a valid phone number.')
+    end
+
+    it 'handles phone numbers with dashes and parenthesis' do
+      household = Household.create(is_eligible: :yes)
+      form = described_class.new(household, { phone_number: '(813) 555-1212' })
+
+      expect(form).to be_valid
+    end
   end
 end

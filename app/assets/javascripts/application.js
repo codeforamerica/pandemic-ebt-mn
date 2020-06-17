@@ -14,6 +14,7 @@
 //= require activestorage
 //= require mixpanel_loader
 //= require cfa_styleguide_main
+//= require jquery.mask
 
 var followUpQuestionClear = (function() {
     var fUQc = {

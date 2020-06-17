@@ -1,3 +1,6 @@
+<script type="text/javascript">
+  $('input[name="form[phone_number]"]').mask('(000) 000-0000');
+</script>
 <% content_for(:template_name, "card") %>
 <%= form_with url: contact_steps_path, method: :put, local: true do %>
   <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>

@@ -5,7 +5,7 @@ class ContactForm < Form
   before_validation do
     self.phone_number = phone_number.gsub(/[^0-9a-zA-Z]/, '')
   end
-  validates :phone_number, format: { with: /\d{10}/, message: proc { I18n.t('validations.phone_number') },
+  validates :phone_number, format: { with: /\A\d{10}\z/, message: proc { I18n.t('validations.phone_number') },
                                      if: :phone_number_present? }
 
   def save
