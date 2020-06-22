@@ -1,0 +1,142 @@
+so:
+  shared:
+    yes: Haa
+    no: Maya
+    i_dont_know: Ma aqaan
+    not_sure: Ma hubo
+    continue: Sii Wado
+    apply_for_cf: Codso SNAP/EBT
+    what_is_the_street: Waa maxay cinwaanka waddadu?
+    what_is_the_unit: Waa maxay qaybta guri (unit) ama abaarman (waa ikhtiyaari)?
+    what_is_the_city: Waa maxay magaaladu?
+    what_is_the_zip: Waa maxay sib koodhku?
+    go_back: Ku laabo
+    if_your_family_html: Haddii u qoyskaagu wali baahan yahay ka caawin iibsiga cuntada, waxaad kartaa <a href="https://applymn.dhs.mn.gov/" target="_blank">inaad codsataan SNAP/EBT</a> (oo walaibana loo yaqaan Food Stamps).
+    please_choose: Fadlan ka dooro xulasho.
+    demo: Bartan waxa loogu talagalay ujeeddooyin tusaale ahaan kaliya AH.
+    general_error: Dhibaato ayaa ka jirtay dhinacayaga.
+    back_to_home: Ku noqo kadinta
+    header_logo_alt_text: Astaanta (logo) Waaxda Waxbarashada iyo Adeegga Aadanaha Minnesota
+    language: Ingiriisi
+  index:
+    coming_soon_html: Dhawaan Imanaya&colon;
+    header: Hel ka caawin iibsasho cunto intay dugsiyadu xiran yihiin
+    apply_starting: Ka codso bartan internet laga bilaabo Juun 8deeda markay tahay 12 Duhur
+    apply_by: Codsato P-EBT kama damabayn Juun 30keeda
+    apply_now: Codso hadda
+    about: Barnaamijkan, oo loo yaqaan P-EBT, ayaa loogu talagalay ardayda sidii caadiga ahayd heli kari jiray cuntada dugsiga ee bilaashka ah ama qiimaha jaban leh. Codso oo u hel illaa $325 cunuggii kasta si loogu bixiyo kharshaka cuntada.
+    children_may: Carruurtu waxay sii wadan karaan inay ka helaan cuntooyon horay ka sii qaado ah "grab n go") ama goobaha quudinta xaaladaha degdegga ah ee COVID-19 ee ay bixiyaan dugsiyada iyo goobaha bulshada, xitaa haddii ay helaan dheefaha P-EBT.
+    questions_about: Su'aalo ku saabsan P-EBT?
+    learn_more_about: Ka ogow wax intaa u dheer barnaamijkan.
+    learn_more: Ka ogow wax intaa u dheer
+    joint_program: Kani waa barnaamij aya u wadajiraan Waaxda Waxbarashada Minnesota iyo Waaxda Adeegyada Aadanaha ee Minnesota.
+    with_a_pebt_html: Waxaad ku iibsan kartaa cuntooyin kaarka P-EBT&colon;
+    most_groceries: Markaad tagto dukaanka cuntada badankood
+    most_farmers: Markaad tagto suuqyada beeraleyda (farmer's markets) badankood
+    online: Onlayn ahaan Amazon iyo Walmart
+  how:
+    header_html: Waa sidan sida ay u shaqeyso&colon;
+    give_us_your_basic_html: <b>Noo sheeg macluumaadka aasaasiga ah qaarkood.</b>
+    we_will_ask: Waxaan weyddiin doonaa ardayda magacyadooda iyo taarkhda dhalashooyinkooda, magaca waalidka ama mas'uulka, iyo cinwaanka boostada.
+    your_school_will_make_sure_html: <b>Waxaan hubin doonnaa inaad uqalanto.</b>
+    we_will_check: Waxaan eegi doonnaa si aan u hubinno in qoyskaaga uu heli karo P-EBT. Xaaladda socdaalka (immigration) looma tixgalin doono uqalmitaankaaga P-EBT.
+    get_a_p_ebt_card_html: <b>Ku hel kaarka P-EBT boostada.</b>
+    if_approved: Haddii laguu oggolaado, waxaad heli doontaa kaarka P-EBT oo ay lacagi ku jirto looguna talagalay KAGA iibsiga cuntada dukaammada gudahooda 10 maalmood gudahood. Kaarka waxa lagu shubi doonaa lacag raashinka lagu soo iibsato lana socdaanna tilmaamaha sida loo isticmaalo.
+  eligible:
+    header: Ardaygu miyuu karaa inuu helo cuntooyinka bilaashaka ama jaban ah inta lagu jiro sannad dugsiyeedka?
+    even_if_the_student: Xitaa haddii ardaygu uusan cunin quraacda ama qadada dugsiga, waxaan u baahan nahay inaan ogaano inay uqalmaan barnaamijkan.
+    if_the_student: Haddii ardaygu u dhigto dugsi siiya cuntada lacag la'aanta ah qof kasta, uga jawaab haa.
+  meal_eligibility:
+    header_question: Midkoodna miyuu kuwani run u tahay qoyskaaga?
+    header_answer_html: <ul class=""list--bulleted"">   <li> Waxaan u buuxinay codsi warqad ah oo loogu talagalay cuntada dugsiga lacag la'aanta ah ama qiimaha jaban iyada oo qayb ka mid aah isqorista dugsiga. </li>   <li> Waxaan u buuxinay codsi warqad ah ma onlayn ah oo loogu talagalay cuntada dugsiga lacag la'aanta ah ama qiimaha jaban muddadii sannad dugsiyeedkan. </li>   <li> Dugsiyaga ayaa siiya ardayda qado ama quraac lacag la'aan ah. </li>   <li> Dugsiyagu wuxuu siiyaa quraac ama qado lacag la'aan ah dhammaan ardayda dugsiga bilaa buuxin codsi. </li> </ul> 
+  sorry:
+    header: Barnaamijkan waxa loogu talagalay ardayda heli kara cuntada lacag la'aanta iyo qiimaha jaban leh ee dugsiga
+    many_immigrants_can_html: Muhaajiriin badan ayaa heli kara SNAP/EBT. Haddii aad ka walwalsan tahay tani inay saamayn ku yeelan karto xaaladdaada imigreeshin, ka wac Legal Aid teleefoonka <a href=""tel:18002924150"">800-292-4150</a>.
+    you_can_also_html: Waxa kale oo aad ka wici kartaa khadka cuntada (Minnesota Food HelpLine) telefoonka  <a href=""tel:16514869860"">651-486-9860</a> ama <a href=""tel:18887111151"">888-711-1151</a>. Af-celiyeyaal (tarjumaanno) ayaa la heli karaa.
+  received_card:
+    alt_text_card: Kaar ku leh dusha sawir meel dibad ah oo ay ku qoran tahay Minnesota EBT dushiisa.
+    header: Reerkaagu miyuu isticmaalaa dheefaha cuntada (SNAP/EBT) ama ka qaybqaataa Barnaamijka Maalgalinta Qoyska ee Minnesota (MFIP)?
+    it_looks_like_html: Kaarku wuxuu u ekaan karaa sidan&colon;
+  done:
+    header: Waad dhammaystirtay!
+    you_dont_need: Uma baahnid inaad buuxiso foomkan. Kaarkaaga SNAP/EBT ama MFIP ayaa si isla markaaba ah loogu shubi doonaa dheefahaaga P-EBT. Waxaad u heli doontaa $325 ardaygii kasta ee gurigaaga ku nool.
+    if_theres_a_problem_html: Haddii kaarkaagu u dhibaato yeesho, waxaad ka wacdaa xarunta adeegga macaamiisha ee EBT ee Minnesota <a href=""tel:+18889972227"">(888) 997-2227</a>, 24ka saac maalintii, 7da maalmood usbuucii.
+  children:
+    header: Ku dar dhammaan ardayda gurigaaga ku nool
+    one_at_a_time: Kolba mid, ugu dar dhammaan ardayda da'doodu tahay 5-18 muddada laga soo bilaabo Sebtember 1, 2019. Kuwan waxa ka mid noqon kara ardayda k hela quraacda ama qadada lacag la'aanta ah dugsiga.
+    students: Ardayda gurigaaga ku nool
+    child_has_been: Ilmaha waa laga saaray.
+    remove: (Ka saar)
+    add: Ku dar arday 
+  add_student:
+    header: Ku dar Arday. 
+    one_at_a_time_add: Kolba mid, ugu dar dhammaan ardayda da'doodu tahay 5-18 muddada laga soo bilaabo Sebtember 1, 2019. Kuwan waxa ka mid noqon kara ardayda k hela quraacda ama qadada lacag la'aanta ah dugsiga.
+    first_name: Magaca hore
+    legally: Sharci ahaan sida ay uga muuqato diiwaannada dugsiga.
+    last_name: Magaca dambe
+    what_is_their_dob: Waa maxay taariikhda dhalashadoodu?
+    what_type_of_school: Nooc dugsigee ah ayay ardaydani dhigataa?
+    public_school: Dugsi dadweyne (kuna jiraan dugsi jaartarka)
+    private_school: Dugsiga gaar loo leeyahay (oo ay ku jiraan dugsi diimeed)
+    when_were_they_born: Goorma ayay dhasheen?
+    what_registered_gender: Waa maxay sinjiga (lab/deddig) ugu qoran diiwaangelinta dugsigooda?
+    gender_female: Dheddig
+    gender_male: Lab
+    school_name: Dugsigee ayay dhigteen sannad dugsiyeedkii 2019 - 2020?
+    school_grade: Darajo fasalkee ay ahaayeen sannad dugsiyeedkii 2019 - 2020?
+    pre_k: Tacliinta ka hor ah barbaarinta (Pre-K)
+    kindergarten: Dugsiga Barbaarinta (Kindergarten)
+    grade: darajo fasal
+  parent:
+    header: Ku dar waalid ama mas'uul
+    helper_text: Qofkani wuxuu noqon doonaa qofka loogala xiriirayo arrinta codsigan. Waa inay u isticmaalaan macluumaadkooda si ay u samaystaan furaha PIN markuu kaarkiina P-EBT idiin yimaad.
+    first_name: Waa maxay magacyadooda hore?
+    last_name: Waa maxay magacyadooda dambe?
+    what_is_their_dob: Goorma ayay dhasheen?
+  mailing_address:
+    header: Xagee ayaan kuugu soo dirnnaa kaarkaaga P-EBT?
+    this_card_can: Kaarkan waxa laguugu soo diri karaa cinwaan boosto kaliya ku yaal Minnesota.
+  just_so_you_know:
+    header: Si aad haddaba u ogsoonaato
+    text_1: Kaarka waxa loo saari doonaa muddakarka ah ee guriga jooga ee dhammaystiray codsiga.
+    text_2: Haddii aad codsatay tiro ka badan hal arday, dheefaha oo dhan ayaa ku jiri doona kaarkan.
+    text_3: Dadka muddakarka ah ee guriga ku nool waxay u isticmaali karaan inay ugu soo adeegaan qoyska oo dhan.
+  contact:
+    header: Sideen kuula soo xiriiri karnaa?
+    email_address: Waa maxay cinwaankaaga iimayl? (waa ikhtiyaari)
+    we_need_your_email: Waxaan u baahan nahay cinwaanka iimaylkaaga si aan kula soo xiriirno haddii ay jiraan wax dhibaatooyin ah oo ku saabsan codsigaaga.
+    phone_number: Waa maxay lamabarka telefoonkaagu? (waa ikhtiyaari)
+  signature:
+    header: Ku dar saxeexa waalidka ama mas'uulka ilmaha.
+    type_your_full: Ku qor magacaaga sharciga ah oo buuxa halkan si aad u saxeexdo foomkan. Maraad magacaaga galiso waxaad oggoshahay inaad foomkan si daacad ah aad wax ugu sheegayso foomkan.
+    submit: Gudbi Codsiga
+  success:
+    header: Codsigaagii waa dhammaystirtay!
+    write_down_your_html: Qor lambarkaaga xaqiijinta&colon;
+    if_approved: Haddii laguu oggolaado, waxaad heli doontaa kaarka P-EBT oo ay lacagi ku jirto looguna talagalay KAGA iibsiga cuntada dukaammada 10 maalmood gudahood. Kaarka waxa lagu shubi doonaa lacag raashinka lagu soo iibsato lana socdaanna tilmaamaha sida loo isticmaalo.
+    learn_more_html: <a href="/info">Wax ka ogow</a> arrimaha ku saabsan P-EBT.
+    if_approved_question: Haddii la oggolaado, intee in le'eg dheefta P-EBT ah yaan helayaa?
+    if_approved_answer_1_html: Waxaad ku heli doontaa hal kaar P-EBT boostada oo loogu soo shubi doono $325 cunug kasta oo la oggolaaday in loogu iibiyo cunnooyinka dukaamada iyo suuqyada cuntada intooda badan.
+    if_approved_answer_2_html: Waxa kale oo aad u adeegsan kartaa kaarka P-EBT inaad ka dalbato cuntada dukaammada onlayn meelahan <a target=""_blank"" href=""https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818"">Amazon</a> iyo <a target=""_blank"" href=""https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540"">Walmart</a>.
+    how_was_your_experience: Waa sidee waxyaabahaad kala soo kulanaty codsigan?
+    thank_you: Waad ku mahadsan tahay ra’yi-celintaada!
+    back_home: Ku noqo kadinta
+  footer:
+    info: Macluumaadka ku saabsan P-EBT
+    delivered_by_html: mn.p-ebt.org waa adeeg ay ku bixiso<a class=""link--subtle"" href=""https://www.codeforamerica.org/"" target=""_blank"">Code for America</a> magaca dadka Minnesota.
+  validations:
+    please_add_student: Fadlan ku dar arday.
+    email_address: Fadlan gali cinwaan iimayl sax ah.
+    first_name: Fadlan gali magacooda kowaad.
+    phone_number: Fadlan gali lambar telefoon oo sax ah.
+    last_name: Fadlan gali magacooda hore.
+    gender: Fadlan gali sinjigooda (lab ma dheddig).
+    school_name: Fadlan gali dugsigooda.
+    school_grade: Fadlan gali heerkooda fasal.
+    dob: Fadlan gali taariikhdooda dhalasho.
+    address: Fadlan gali cinwaanka waddada.
+    address_2: Fadlan gali qayb guri ama abaarman.
+    city: Fadlan gali magaalada.
+    zip_code: Fadlan gali SIB koodh MN oo sax ah.
+    signature: Fadlan gali saxeexaaga.
+    choose_address: Fadlan dooro halka waraaqaha boostada laguugu soo dirayo.

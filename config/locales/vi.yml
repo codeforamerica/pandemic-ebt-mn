@@ -1,0 +1,142 @@
+vi:
+  shared:
+    yes: Có
+    no: Không
+    i_dont_know: Tôi không biết
+    not_sure: Tôi không biết chắc
+    continue: Tiếp tục
+    apply_for_cf: Nộp đơn xin SNAP/EBT
+    what_is_the_street: Địa chỉ đường phố là gì?
+    what_is_the_unit: Căn hộ hoặc căn nhà là gì (không bắt buộc)?
+    what_is_the_city: Tên thành phố là gì?
+    what_is_the_zip: Mã bưu điện là gì?
+    go_back: Quay lại
+    if_your_family_html: Nếu gia đình quý vị vẫn cần trợ giúp mua thực phẩm, quý vị có thể <a href=""https://applymn.dhs.mn.gov/"" target=""_blank"">nộp đơn xin SNAP/EBT</a> (hay còn gọi là Phiếu thực phẩm).
+    please_choose: Vui lòng chọn một lựa chọn.
+    demo: Trang này chỉ dành để làm ví dụ.
+    general_error: Có trục trặc từ phía chúng tôi.
+    back_to_home: Trở lại trang chủ
+    header_logo_alt_text: Biểu trưng của Sở Giáo dục và Sở Nhân vụ Minnesota
+    language: tiếng Anh
+  index:
+    coming_soon_html: Sắp có&colon;
+    header: Được trợ giúp mua thực phẩm trong thời gian trường học đóng cửa
+    apply_starting: Nộp đơn xin trên trang mạng này bắt đầu từ 12 giờ trưa ngày 8 tháng Sáu
+    apply_by: Nộp đơn xin trợ cấp P-EBT trước ngày 30 tháng Sáu
+    apply_now: Nộp đơn ngay bây giờ
+    about: Chương trình này, hay còn gọi là P-EBT, là dành cho những học sinh thường có thể được cấp các bữa ăn miễn phí hoặc giảm giá tại trường học. Nộp đơn xin và được cấp tới tối đa $325 một đứa trẻ để mua thực phẩm.
+    children_may: Các trẻ em có thể tiếp tục được cấp thực phẩm dạng "đến lấy mang về" tại các địa điểm cung cấp thực phẩm khẩn cấp do đại dịch COVID-19 mà các trường học và địa điểm cộng đồng cung cấp, ngay cả khi các em đang được trợ cấp P-EBT.
+    questions_about: Quý vị có thắc mắc gì về P-EBT không?
+    learn_more_about: Tìm hiểu thêm về chương trình này.
+    learn_more: Tìm hiểu thêm
+    joint_program: Đây là chương trình kết hợp giữa Sở Giáo dục và Sở Nhân vụ Minnesota
+    with_a_pebt_html: Quý vị có thể sử dụng thẻ P-EBT để mua thực phẩm&colon;
+    most_groceries: Tại đa số các tiệm thực phẩm
+    most_farmers: Tại đa số các chợ nông trại
+    online: Trên mạng trực tuyến tại Amazon và Walmart
+  how:
+    header_html: Sau đây là cách thức sử dụng thẻ này&colon;
+    give_us_your_basic_html: <b>Chia sẻ một số thông tin căn bản.</b>
+    we_will_ask: Chúng tôi sẽ hỏi tên và ngày tháng năm sinh của các học sinh, tên của phụ huynh hoặc người giám hộ, và địa chỉ nhận thư.
+    your_school_will_make_sure_html: <b>Chúng tôi sẽ bảo đảm là quý vị hội đủ điều kiện.</b>
+    we_will_check: Chúng tôi sẽ kiểm tra để bảo đảm là gia đình quý vị có thể được cấp P-EBT. Tình trạng di trú không được xem xét đến khi quyết định tình trạng quý vị hội đủ điều kiện nhận trợ cấp P-EBT.
+    get_a_p_ebt_card_html: <b>Nhận thẻ P-EBT qua thư bưu điện.</b>
+    if_approved: Nếu được chấp thuận, quý vị sẽ nhận được thẻ P-EBT nạp sẵn tiền để mua thực phẩm trong vòng 10 ngày. Thẻ này sẽ được nạp tiền mua thực phẩm và kèm theo hướng dẫn về cách thức sử dụng thẻ.
+  eligible:
+    header: Học sinh có thể được cấp các bữa ăn miễn phí hoặc giảm giá trong năm học không?
+    even_if_the_student: Ngay cả khi học sinh không ăn sáng hoặc ăn trưa ở trường, chúng tôi cần biết là các em có hội đủ điều kiện tham gia chương trình này hay không.
+    if_the_student: Nếu học sinh đi học tại một trường phục vụ bữa ăn miễn phí cho tất cả mọi người, thì câu trả lời là có.
+  meal_eligibility:
+    header_question: Có câu nào trong số những câu này đúng với gia đình quý vị không?
+    header_answer_html: <ul class=""list--bulleted"">   <li>Chúng tôi đã điền tờ đơn xin nhận bữa ăn miễn phí hoặc giảm giá từ trường học trong thủ tục ghi danh học.</li>   <li>Chúng tôi đã điền đơn xin trên giấy hoặc trên mạng trực tuyến cho các bữa ăn miễn phí hoặc giảm giá từ trường học trong năm học này.</li>   <li>Trường chúng tôi phục vụ bữa trưa hoặc bữa sáng miễn phí cho học sinh.</li>   <li>Trường chúng tôi cung cấp bữa sáng hoặc bữa trưa miễn phí cho tất cả các học sinh ở trường mà không cần nộp đơn xin.</li> </ul> 
+  sorry:
+    header: Chương trình này chỉ dành cho những học sinh đủ tiêu chuẩn được cấp các bữa ăn miễn phí và giảm giá tại trường học
+    many_immigrants_can_html: Nhiều di dân có thể được trợ cấp SNAP/EBT. Nếu quý vị lo ngại việc này có thể ảnh hưởng tới tình trạng di trú của quý vị như thế nào, gọi Legal Aid (Tổ chức Trợ giúp pháp lý) tại <a href="tel:18002924150">800-292-4150</a>.
+    you_can_also_html: Quý vị cũng có thể gọi Đường dây trợ giúp thực phẩm của Minnesota (Minnesota Food HelpLine) tại số <a href="tel:16514869860">651-486-9860</a> hoặc <a href="tel:18887111151">888-711-1151</a>. Có thông dịch viên.
+  received_card:
+    alt_text_card: Thẻ có hình phong cảnh trên đó và có ghi chữ Minnesota EBT
+    header: Gia đình quý vị có sử dụng trợ cấp thực phẩm (SNAP/EBT) hoặc tham gia Chương trình Đầu tư gia đình của Minnesota (MFIP) không?
+    it_looks_like_html: Thẻ này có thể trông giống như thế này&colon;
+  done:
+    header: Quý vị đã làm xong!
+    you_dont_need: Quý vị không cần phải điền mẫu đơn này. Thẻ SNAP/EBT hoặc MFIP sẽ tự động nạp sẵn trợ cấp P-EBT của quý vị. Quý vị sẽ nhận được $325 cho mỗi học sinh trong gia đình quý vị.
+    if_theres_a_problem_html: Nếu gặp trục trặc với thẻ của quý vị, quý vị có thể gọi trung tâm dịch vụ khách hàng EBT của Minnesota tại số <a href="tel:+18889972227">(888) 997-2227</a>, 24 giờ trong ngày, 7 ngày một tuần.
+  children:
+    header: Thêm tất cả các học sinh trong gia đình quý vị
+    one_at_a_time: Từng người một, thêm tất cả các học sinh từ 5-18 tuổi tính đến ngày 1 tháng Chín, 2019. Trong đó có thể bao gồm những học sinh được cấp bữa sáng hoặc bữa trưa miễn phí ở trường.
+    students: Các học sinh trong gia đình quý vị
+    child_has_been: Đứa trẻ đã bị loại bỏ
+    remove: (loại bỏ)
+    add: Thêm một học sinh
+  add_student:
+    header: Thêm một học sinh.
+    one_at_a_time_add: Từng người một, thêm tất cả các học sinh từ 5-18 tuổi tính đến ngày 1 tháng Chín, 2019. Trong đó có thể bao gồm những học sinh được cấp bữa sáng hoặc bữa trưa miễn phí ở trường.
+    first_name: Tên
+    legally: Hợp pháp như ghi nguyên văn trong hồ sơ học bạ.
+    last_name: Họ
+    what_is_their_dob: Ngày tháng năm sinh của các em là gì?
+    what_type_of_school: Học sinh này theo học tại dạng trường học nào?
+    public_school: Trường công lập (bao gồm cả trường bán công độc lập [charter school])
+    private_school: Trường tư (bao gồm cả trường tôn giáo)
+    when_were_they_born: Ngày tháng năm sinh của họ?
+    what_registered_gender: Giới tính ghi trong hồ sơ đăng ký đi học của các em là gì?
+    gender_female: Nữ
+    gender_male: Nam
+    school_name: Trường học mà các em theo học trong năm học 2019 - 2020 là gì?
+    school_grade: Cấp lớp mà các em học trong năm học 2019 - 2020 là gì?
+    pre_k: Mầm non
+    kindergarten: Mẫu giáo
+    grade: lớp
+  parent:
+    header: Thêm một phụ huynh hoặc người giám hộ
+    helper_text: Người này sẽ là điểm liên lạc trong đơn xin này. Họ nên sử dụng thông tin của họ để lập mã PIN một khi nhận được thẻ P-EBT.
+    first_name: Tên của họ là gì?
+    last_name: Họ là gì?
+    what_is_their_dob: Ngày tháng năm sinh của họ?
+  mailing_address:
+    header: Chúng tôi nên gửi thẻ P-EBT của quý vị qua thư bưu điện đến đâu?
+    this_card_can: Thẻ này chỉ có thể được gửi qua thư bưu điện tới một địa chỉ ở tiểu bang Minnesota.
+  just_so_you_know:
+    header: Để quý vị biết như vậy
+    text_1: Thẻ này sẽ được cấp cho người lớn trong gia đình đã điền đơn xin.
+    text_2: Nếu quý vị nộp đơn xin cho hai học sinh trở lên, toàn bộ các trợ cấp sẽ ở trong một thẻ.
+    text_3: Những người lớn trong gia đình sẽ có thể sử dụng thẻ để mua sắm cho cả gia đình.
+  contact:
+    header: Chúng tôi có thể liên lạc với quý vị như thế nào?
+    email_address: Địa chỉ email của quý vị là gì? (không bắt buộc)
+    we_need_your_email: Chúng tôi cần địa chỉ email của quý vị để liên lạc với quý vị nếu có vấn đề gì về đơn xin của quý vị.
+    phone_number: Số điện thoại của quý vị là gì? (không bắt buộc)
+  signature:
+    header: Thêm chữ ký của phụ huynh hoặc người giám hộ.
+    type_your_full: Đánh máy họ tên hợp pháp đầy đủ của quý vị ở đây để ký mẫu đơn này. Khi nhập tên của quý vị, quý vị đồng ý rằng quý vị đã cung cấp thông tin trung thực trong mẫu đơn này.
+    submit: Gửi Đơn xin
+  success:
+    header: Đơn xin của quý vị đã hoàn tất!
+    write_down_your_html: Ghi lại mã số xác nhận của quý vị&colon;
+    if_approved: Nếu được chấp thuận, quý vị sẽ nhận được thẻ P-EBT nạp sẵn tiền để mua thực phẩm trong vòng 10 ngày. Thẻ này sẽ được nạp tiền mua thực phẩm và kèm theo hướng dẫn về cách thức sử dụng thẻ.
+    learn_more_html: <a href=""/info"">Learn more</a> about the P-EBT program.
+    if_approved_question: Nếu được chấp thuận, tôi sẽ nhận được bao nhiêu tiền trợ cấp P-EBT?
+    if_approved_answer_1_html: Quý vị sẽ nhận được một chiếc thẻ P-EBT qua bưu điện, có nạp sẵn $325 cho mỗi đứa trẻ được chấp thuận để mua thực phẩm tại đa số các tiệm thực phẩm và chợ thực phẩm.
+    if_approved_answer_2_html: Quý vị cũng có thể sử dụng thẻ P-EBT để đặt mua thực phẩm trên mạng trực tuyến tại <a target="_blank" href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818">Amazon</a> và <a target="_blank" href="https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540">Walmart</a>.
+    how_was_your_experience: Kinh nghiệm của quý vị với lần xin trợ cấp này như thế nào?
+    thank_you: Cám ơn ý kiến phản hồi của quý vị!
+    back_home: Trở lại trang chủ
+  footer:
+    info: Thông tin về về P-EBT
+    delivered_by_html: mn.p-ebt.org là dịch vụ được cung cấp bởi <a class="link--subtle" href="https://www.codeforamerica.org/" target="_blank">Code for America</a> thay mặt cho người dân Minnesota.
+  validations:
+    please_add_student: Vui lòng thêm vào một học sinh.
+    email_address: Vui lòng nhập vào địa chỉ email hợp lệ.
+    first_name: Vui lòng điền tên của học sinh.
+    phone_number: Vui lòng nhập vào một số điện thoại hợp lệ.
+    last_name: Vui lòng điền họ của học sinh.
+    gender: Vui lòng điền giới tính của học sinh.
+    school_name: Vui lòng điền trường của học sinh.
+    school_grade: Vui lòng điền cấp lớp của học sinh.
+    dob: Vui lòng điền ngày tháng năm sinh của học sinh.
+    address: Vui lòng điền địa chỉ có tên đường phố.
+    address_2: Vui lòng nhập vào căn hộ hoặc căn nhà có tên ngắn hơn.
+    city: Vui lòng nhập vào thành phố.
+    zip_code: Vui lòng nhập vào mã bưu điện hợp lệ ở tiểu bang Minnesota.
+    signature: Vui lòng ký tên vào.
+    choose_address: Vui lòng chọn nơi để gửi thư.
