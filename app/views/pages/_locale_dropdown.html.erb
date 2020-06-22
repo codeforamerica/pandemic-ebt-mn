@@ -5,5 +5,9 @@
             onchange="javascript:location.href = this.value;">
       <option <%="selected disabled" if I18n.locale == :en %> value="<%=url_for(locale: :en) %>">English</option>
       <option <%="selected disabled" if I18n.locale == :es %> value="<%=url_for(locale: :es) %>">Español</option>
+      <option <%="selected disabled" if I18n.locale == :hmn %> value="<%=url_for(locale: :hmn) %>">Ntawv Askiv</option>
+      <option <%="selected disabled" if I18n.locale == :ru %> value="<%=url_for(locale: :ru) %>">английский</option>
+      <option <%="selected disabled" if I18n.locale == :so %> value="<%=url_for(locale: :so) %>">Ingiriisi</option>
+      <option <%="selected disabled" if I18n.locale == :vi %> value="<%=url_for(locale: :vi) %>">tiếng Anh</option>
     </select>
   </div>
