@@ -140,3 +140,7 @@ hmn:
     zip_code: Thov tso tus zauv cheeb tsam ZIP uas muaj nyob hauv MN.
     signature: Thov xees koj lub npe.
     choose_address: Thos xaiv seb yuav xa tau ntaub ntawv mus rau qhov chaw nyob twg.
+  honeycrisp:
+    day: Hnub
+    month: Lub Hlis
+    year: Xyoo

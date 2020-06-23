@@ -140,3 +140,7 @@ so:
     zip_code: Fadlan gali SIB koodh MN oo sax ah.
     signature: Fadlan gali saxeexaaga.
     choose_address: Fadlan dooro halka waraaqaha boostada laguugu soo dirayo.
+  honeycrisp:
+    day: Maalin
+    month: Bil
+    year: Sannad

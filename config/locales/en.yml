@@ -157,3 +157,7 @@ en:
     zip_code: Please fill in a valid MN ZIP code.
     signature: Please enter your signature.
     choose_address: Please choose where to send mail.
+  honeycrisp:
+    day: Day
+    month: Month
+    year: Year
