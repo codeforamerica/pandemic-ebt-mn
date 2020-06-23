@@ -1,7 +1,7 @@
 hmn:
   shared:
-    yes: Muaj
-    no: Tsis muaj
+    'yes': Muaj
+    'no': Tsis muaj
     i_dont_know: Kuv tsis paub
     not_sure: Kuv tsis paub tseeb
     continue: Txuas ntxiv
@@ -48,7 +48,7 @@ hmn:
     if_the_student: Yog tus tub ntxhais kawm ntawv mus rau ib lub tsev kawm ntawv uas pub zaub mov dawb rau txhua tus, ces teb tias yog.
   meal_eligibility:
     header_question: Cov ntawm no puas muaj ib qho uas muaj tseeb rau koj tsev neeg?
-    header_answer_html: <ul class=""list--bulleted"">   <li>Peb tau tso npe rau tsab ntawv thov zaub mov dawb lossis txo tus nqi zaub mov thaum cuv npe kawm ntawv.</li>   <li>Peb tau tso npe rau tsab ntawv thov lossis hauv online thov zaub mov dawb lossis txo tus nqi zaub mov rau lub xyoo kawm ntawv no.</li>   <li>Peb lub tsev kawm ntawv muaj zaub mov pub dawb rau tus tub ntxhais kawm.</li>   <li>Peb lub tsev kawm ntawv pub tshais thiab su dawb rau txhua tus tub ntxhais kawm ntawv yam tsis tas ua ntawv thov.</li> </ul> 
+    header_answer_html: <ul class=""list--bulleted"">   <li>Peb tau tso npe rau tsab ntawv thov zaub mov dawb lossis txo tus nqi zaub mov thaum cuv npe kawm ntawv.</li>   <li>Peb tau tso npe rau tsab ntawv thov lossis hauv online thov zaub mov dawb lossis txo tus nqi zaub mov rau lub xyoo kawm ntawv no.</li>   <li>Peb lub tsev kawm ntawv muaj zaub mov pub dawb rau tus tub ntxhais kawm.</li>   <li>Peb lub tsev kawm ntawv pub tshais thiab su dawb rau txhua tus tub ntxhais kawm ntawv yam tsis tas ua ntawv thov.</li> </ul>
   sorry:
     header: Qhov txheej xwm no tsuas pub rau cov tub ntxhais kawm ntawv uas tau noj zaub mov dawb thiab tus nqi zaub mov raug txo
     many_immigrants_can_html: Coob leej cov neeg tsiv teb tsaws chaw mus ua npe thov nyiaj muas noj SNAP/EBT tau.Yog tias koj txhawj tsam qhov tso npe thov nyiaj no yuav cuam tshuam koj li ntaub ntawv nyob tebchaws no, hu rau Legal Aid ntawm <a href="tel:18002924150">800-292-4150</a>.

@@ -1,7 +1,7 @@
 so:
   shared:
-    yes: Haa
-    no: Maya
+    'yes': Haa
+    'no': Maya
     i_dont_know: Ma aqaan
     not_sure: Ma hubo
     continue: Sii Wado
@@ -48,7 +48,7 @@ so:
     if_the_student: Haddii ardaygu u dhigto dugsi siiya cuntada lacag la'aanta ah qof kasta, uga jawaab haa.
   meal_eligibility:
     header_question: Midkoodna miyuu kuwani run u tahay qoyskaaga?
-    header_answer_html: <ul class=""list--bulleted"">   <li> Waxaan u buuxinay codsi warqad ah oo loogu talagalay cuntada dugsiga lacag la'aanta ah ama qiimaha jaban iyada oo qayb ka mid aah isqorista dugsiga. </li>   <li> Waxaan u buuxinay codsi warqad ah ma onlayn ah oo loogu talagalay cuntada dugsiga lacag la'aanta ah ama qiimaha jaban muddadii sannad dugsiyeedkan. </li>   <li> Dugsiyaga ayaa siiya ardayda qado ama quraac lacag la'aan ah. </li>   <li> Dugsiyagu wuxuu siiyaa quraac ama qado lacag la'aan ah dhammaan ardayda dugsiga bilaa buuxin codsi. </li> </ul> 
+    header_answer_html: <ul class=""list--bulleted"">   <li> Waxaan u buuxinay codsi warqad ah oo loogu talagalay cuntada dugsiga lacag la'aanta ah ama qiimaha jaban iyada oo qayb ka mid aah isqorista dugsiga. </li>   <li> Waxaan u buuxinay codsi warqad ah ma onlayn ah oo loogu talagalay cuntada dugsiga lacag la'aanta ah ama qiimaha jaban muddadii sannad dugsiyeedkan. </li>   <li> Dugsiyaga ayaa siiya ardayda qado ama quraac lacag la'aan ah. </li>   <li> Dugsiyagu wuxuu siiyaa quraac ama qado lacag la'aan ah dhammaan ardayda dugsiga bilaa buuxin codsi. </li> </ul>
   sorry:
     header: Barnaamijkan waxa loogu talagalay ardayda heli kara cuntada lacag la'aanta iyo qiimaha jaban leh ee dugsiga
     many_immigrants_can_html: Muhaajiriin badan ayaa heli kara SNAP/EBT. Haddii aad ka walwalsan tahay tani inay saamayn ku yeelan karto xaaladdaada imigreeshin, ka wac Legal Aid teleefoonka <a href=""tel:18002924150"">800-292-4150</a>.
@@ -67,9 +67,9 @@ so:
     students: Ardayda gurigaaga ku nool
     child_has_been: Ilmaha waa laga saaray.
     remove: (Ka saar)
-    add: Ku dar arday 
+    add: Ku dar arday
   add_student:
-    header: Ku dar Arday. 
+    header: Ku dar Arday.
     one_at_a_time_add: Kolba mid, ugu dar dhammaan ardayda da'doodu tahay 5-18 muddada laga soo bilaabo Sebtember 1, 2019. Kuwan waxa ka mid noqon kara ardayda k hela quraacda ama qadada lacag la'aanta ah dugsiga.
     first_name: Magaca hore
     legally: Sharci ahaan sida ay uga muuqato diiwaannada dugsiga.
