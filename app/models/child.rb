@@ -45,7 +45,7 @@ class Child < ApplicationRecord
       household.clean_street_1,
       household.clean_street_2,
       household.clean_city,
-      'MN',
+      household.mailing_state,
       household.clean_zip_code,
       household.parent_first_name,
       household.parent_last_name,
