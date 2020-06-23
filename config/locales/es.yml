@@ -162,3 +162,7 @@ es:
     zip_code: Por favor agregue un código postal válido por Minnesota.
     signature: Por favor agregue su firma.
     choose_address: Por favor seleccione a dónde enviar el correo.
+  honeycrisp:
+    day: Día
+    month: Mes
+    year: Año

@@ -140,3 +140,7 @@ vi:
     zip_code: Vui lòng nhập vào mã bưu điện hợp lệ ở tiểu bang Minnesota.
     signature: Vui lòng ký tên vào.
     choose_address: Vui lòng chọn nơi để gửi thư.
+  honeycrisp:
+    day: Ngày
+    month: Tháng
+    year: Năm
