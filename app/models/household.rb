@@ -8,6 +8,9 @@ class Household < ApplicationRecord
 
   scope :submitted, -> { where.not(submitted_at: nil) }
 
+  scope :submitted, -> { where.not(submitted_at: nil) }
+  scope :unsubmitted, -> { where(submitted_at: nil) }
+
   def confirmation_code
     return nil if huid.blank?
 
