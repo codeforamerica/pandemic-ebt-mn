@@ -11,7 +11,7 @@ vi:
     what_is_the_city: Tên thành phố là gì?
     what_is_the_zip: Mã bưu điện là gì?
     go_back: Quay lại
-    if_your_family_html: Nếu gia đình quý vị vẫn cần trợ giúp mua thực phẩm, quý vị có thể <a href=""https://applymn.dhs.mn.gov/"" target=""_blank"">nộp đơn xin SNAP/EBT</a> (hay còn gọi là Phiếu thực phẩm).
+    if_your_family_html: Nếu gia đình quý vị vẫn cần trợ giúp mua thực phẩm, quý vị có thể <a href="https://applymn.dhs.mn.gov/" target="_blank">nộp đơn xin SNAP/EBT</a> (hay còn gọi là Phiếu thực phẩm).
     please_choose: Vui lòng chọn một lựa chọn.
     demo: Trang này chỉ dành để làm ví dụ.
     general_error: Có trục trặc từ phía chúng tôi.
@@ -48,7 +48,7 @@ vi:
     if_the_student: Nếu học sinh đi học tại một trường phục vụ bữa ăn miễn phí cho tất cả mọi người, thì câu trả lời là có.
   meal_eligibility:
     header_question: Có câu nào trong số những câu này đúng với gia đình quý vị không?
-    header_answer_html: <ul class=""list--bulleted"">   <li>Chúng tôi đã điền tờ đơn xin nhận bữa ăn miễn phí hoặc giảm giá từ trường học trong thủ tục ghi danh học.</li>   <li>Chúng tôi đã điền đơn xin trên giấy hoặc trên mạng trực tuyến cho các bữa ăn miễn phí hoặc giảm giá từ trường học trong năm học này.</li>   <li>Trường chúng tôi phục vụ bữa trưa hoặc bữa sáng miễn phí cho học sinh.</li>   <li>Trường chúng tôi cung cấp bữa sáng hoặc bữa trưa miễn phí cho tất cả các học sinh ở trường mà không cần nộp đơn xin.</li> </ul>
+    header_answer_html: <ul class="list--bulleted">   <li>Chúng tôi đã điền tờ đơn xin nhận bữa ăn miễn phí hoặc giảm giá từ trường học trong thủ tục ghi danh học.</li>   <li>Chúng tôi đã điền đơn xin trên giấy hoặc trên mạng trực tuyến cho các bữa ăn miễn phí hoặc giảm giá từ trường học trong năm học này.</li>   <li>Trường chúng tôi phục vụ bữa trưa hoặc bữa sáng miễn phí cho học sinh.</li>   <li>Trường chúng tôi cung cấp bữa sáng hoặc bữa trưa miễn phí cho tất cả các học sinh ở trường mà không cần nộp đơn xin.</li> </ul>
   sorry:
     header: Chương trình này chỉ dành cho những học sinh đủ tiêu chuẩn được cấp các bữa ăn miễn phí và giảm giá tại trường học
     many_immigrants_can_html: Nhiều di dân có thể được trợ cấp SNAP/EBT. Nếu quý vị lo ngại việc này có thể ảnh hưởng tới tình trạng di trú của quý vị như thế nào, gọi Legal Aid (Tổ chức Trợ giúp pháp lý) tại <a href="tel:18002924150">800-292-4150</a>.
@@ -114,7 +114,7 @@ vi:
     header: Đơn xin của quý vị đã hoàn tất!
     write_down_your_html: Ghi lại mã số xác nhận của quý vị&colon;
     if_approved: Nếu được chấp thuận, quý vị sẽ nhận được thẻ P-EBT nạp sẵn tiền để mua thực phẩm trong vòng 10 ngày. Thẻ này sẽ được nạp tiền mua thực phẩm và kèm theo hướng dẫn về cách thức sử dụng thẻ.
-    learn_more_html: <a href=""/info"">Learn more</a> about the P-EBT program.
+    learn_more_html: <a href="/info">Tìm hiểu thêm</a> về chương trình P-EBT.
     if_approved_question: Nếu được chấp thuận, tôi sẽ nhận được bao nhiêu tiền trợ cấp P-EBT?
     if_approved_answer_1_html: Quý vị sẽ nhận được một chiếc thẻ P-EBT qua bưu điện, có nạp sẵn $325 cho mỗi đứa trẻ được chấp thuận để mua thực phẩm tại đa số các tiệm thực phẩm và chợ thực phẩm.
     if_approved_answer_2_html: Quý vị cũng có thể sử dụng thẻ P-EBT để đặt mua thực phẩm trên mạng trực tuyến tại <a target="_blank" href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818">Amazon</a> và <a target="_blank" href="https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540">Walmart</a>.

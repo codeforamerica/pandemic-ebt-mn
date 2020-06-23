@@ -48,11 +48,11 @@ so:
     if_the_student: Haddii ardaygu u dhigto dugsi siiya cuntada lacag la'aanta ah qof kasta, uga jawaab haa.
   meal_eligibility:
     header_question: Midkoodna miyuu kuwani run u tahay qoyskaaga?
-    header_answer_html: <ul class=""list--bulleted"">   <li> Waxaan u buuxinay codsi warqad ah oo loogu talagalay cuntada dugsiga lacag la'aanta ah ama qiimaha jaban iyada oo qayb ka mid aah isqorista dugsiga. </li>   <li> Waxaan u buuxinay codsi warqad ah ma onlayn ah oo loogu talagalay cuntada dugsiga lacag la'aanta ah ama qiimaha jaban muddadii sannad dugsiyeedkan. </li>   <li> Dugsiyaga ayaa siiya ardayda qado ama quraac lacag la'aan ah. </li>   <li> Dugsiyagu wuxuu siiyaa quraac ama qado lacag la'aan ah dhammaan ardayda dugsiga bilaa buuxin codsi. </li> </ul>
+    header_answer_html: <ul class="list--bulleted">   <li> Waxaan u buuxinay codsi warqad ah oo loogu talagalay cuntada dugsiga lacag la'aanta ah ama qiimaha jaban iyada oo qayb ka mid aah isqorista dugsiga. </li>   <li> Waxaan u buuxinay codsi warqad ah ma onlayn ah oo loogu talagalay cuntada dugsiga lacag la'aanta ah ama qiimaha jaban muddadii sannad dugsiyeedkan. </li>   <li> Dugsiyaga ayaa siiya ardayda qado ama quraac lacag la'aan ah. </li>   <li> Dugsiyagu wuxuu siiyaa quraac ama qado lacag la'aan ah dhammaan ardayda dugsiga bilaa buuxin codsi. </li> </ul>
   sorry:
     header: Barnaamijkan waxa loogu talagalay ardayda heli kara cuntada lacag la'aanta iyo qiimaha jaban leh ee dugsiga
-    many_immigrants_can_html: Muhaajiriin badan ayaa heli kara SNAP/EBT. Haddii aad ka walwalsan tahay tani inay saamayn ku yeelan karto xaaladdaada imigreeshin, ka wac Legal Aid teleefoonka <a href=""tel:18002924150"">800-292-4150</a>.
-    you_can_also_html: Waxa kale oo aad ka wici kartaa khadka cuntada (Minnesota Food HelpLine) telefoonka  <a href=""tel:16514869860"">651-486-9860</a> ama <a href=""tel:18887111151"">888-711-1151</a>. Af-celiyeyaal (tarjumaanno) ayaa la heli karaa.
+    many_immigrants_can_html: Muhaajiriin badan ayaa heli kara SNAP/EBT. Haddii aad ka walwalsan tahay tani inay saamayn ku yeelan karto xaaladdaada imigreeshin, ka wac Legal Aid teleefoonka <a href="tel:18002924150">800-292-4150</a>.
+    you_can_also_html: Waxa kale oo aad ka wici kartaa khadka cuntada (Minnesota Food HelpLine) telefoonka  <a href="tel:16514869860">651-486-9860</a> ama <a href="tel:18887111151">888-711-1151</a>. Af-celiyeyaal (tarjumaanno) ayaa la heli karaa.
   received_card:
     alt_text_card: Kaar ku leh dusha sawir meel dibad ah oo ay ku qoran tahay Minnesota EBT dushiisa.
     header: Reerkaagu miyuu isticmaalaa dheefaha cuntada (SNAP/EBT) ama ka qaybqaataa Barnaamijka Maalgalinta Qoyska ee Minnesota (MFIP)?
@@ -60,7 +60,7 @@ so:
   done:
     header: Waad dhammaystirtay!
     you_dont_need: Uma baahnid inaad buuxiso foomkan. Kaarkaaga SNAP/EBT ama MFIP ayaa si isla markaaba ah loogu shubi doonaa dheefahaaga P-EBT. Waxaad u heli doontaa $325 ardaygii kasta ee gurigaaga ku nool.
-    if_theres_a_problem_html: Haddii kaarkaagu u dhibaato yeesho, waxaad ka wacdaa xarunta adeegga macaamiisha ee EBT ee Minnesota <a href=""tel:+18889972227"">(888) 997-2227</a>, 24ka saac maalintii, 7da maalmood usbuucii.
+    if_theres_a_problem_html: Haddii kaarkaagu u dhibaato yeesho, waxaad ka wacdaa xarunta adeegga macaamiisha ee EBT ee Minnesota <a href="tel:+18889972227">(888) 997-2227</a>, 24ka saac maalintii, 7da maalmood usbuucii.
   children:
     header: Ku dar dhammaan ardayda gurigaaga ku nool
     one_at_a_time: Kolba mid, ugu dar dhammaan ardayda da'doodu tahay 5-18 muddada laga soo bilaabo Sebtember 1, 2019. Kuwan waxa ka mid noqon kara ardayda k hela quraacda ama qadada lacag la'aanta ah dugsiga.
@@ -117,13 +117,13 @@ so:
     learn_more_html: <a href="/info">Wax ka ogow</a> arrimaha ku saabsan P-EBT.
     if_approved_question: Haddii la oggolaado, intee in le'eg dheefta P-EBT ah yaan helayaa?
     if_approved_answer_1_html: Waxaad ku heli doontaa hal kaar P-EBT boostada oo loogu soo shubi doono $325 cunug kasta oo la oggolaaday in loogu iibiyo cunnooyinka dukaamada iyo suuqyada cuntada intooda badan.
-    if_approved_answer_2_html: Waxa kale oo aad u adeegsan kartaa kaarka P-EBT inaad ka dalbato cuntada dukaammada onlayn meelahan <a target=""_blank"" href=""https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818"">Amazon</a> iyo <a target=""_blank"" href=""https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540"">Walmart</a>.
+    if_approved_answer_2_html: Waxa kale oo aad u adeegsan kartaa kaarka P-EBT inaad ka dalbato cuntada dukaammada onlayn meelahan <a target="_blank" href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818">Amazon</a> iyo <a target="_blank" href="https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540">Walmart</a>.
     how_was_your_experience: Waa sidee waxyaabahaad kala soo kulanaty codsigan?
     thank_you: Waad ku mahadsan tahay ra’yi-celintaada!
     back_home: Ku noqo kadinta
   footer:
     info: Macluumaadka ku saabsan P-EBT
-    delivered_by_html: mn.p-ebt.org waa adeeg ay ku bixiso<a class=""link--subtle"" href=""https://www.codeforamerica.org/"" target=""_blank"">Code for America</a> magaca dadka Minnesota.
+    delivered_by_html: mn.p-ebt.org waa adeeg ay ku bixiso<a class="link--subtle" href="https://www.codeforamerica.org/" target="_blank">Code for America</a> magaca dadka Minnesota.
   validations:
     please_add_student: Fadlan ku dar arday.
     email_address: Fadlan gali cinwaan iimayl sax ah.
