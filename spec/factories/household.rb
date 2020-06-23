@@ -14,6 +14,7 @@ FactoryBot.define do
       mailing_street { Faker::Address.unique.street_address }
       mailing_city { Faker::Address.city }
       mailing_zip_code { Faker::Address.zip }
+      mailing_state { Faker::Address.state_abbr }
     end
 
     trait :unsubmitted do

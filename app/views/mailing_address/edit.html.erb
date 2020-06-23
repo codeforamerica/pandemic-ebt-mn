@@ -18,6 +18,7 @@
           <%= f.cfa_input_field(:mailing_street, t("shared.what_is_the_street")) %>
           <%= f.cfa_input_field(:mailing_street_2, t("shared.what_is_the_unit")) %>
           <%= f.cfa_input_field(:mailing_city, t("shared.what_is_the_city")) %>
+          <%= f.cfa_select(:mailing_state, t('shared.what_is_the_state'), VALID_STATES.map { |s| [s, s] }) %>
           <%= f.cfa_input_field(:mailing_zip_code, t("shared.what_is_the_zip"), classes: ['form-width--zip']) %>
         </div>
       </div>
