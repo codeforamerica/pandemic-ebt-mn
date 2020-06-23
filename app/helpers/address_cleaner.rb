@@ -29,7 +29,7 @@ class AddressCleaner
     lookup.street = household.mailing_street
     lookup.street2 = household.mailing_street_2
     lookup.city = household.mailing_city
-    lookup.state = 'MN'
+    lookup.state = household.mailing_state
     lookup.zipcode = household.mailing_zip_code
     lookup.candidates = 1
     lookup.match = 'invalid'

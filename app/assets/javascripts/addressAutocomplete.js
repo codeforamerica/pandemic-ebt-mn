@@ -4,6 +4,7 @@ const addressAutocomplete = function (formType) {
         route: {el: `form_${formType}_street`, nameType: 'long_name'},
         locality: {el: `form_${formType}_city`, nameType: 'long_name'},
         postal_code: {el: `form_${formType}_zip_code`, nameType: 'short_name'},
+        administrative_area_level_1: {el: `form_${formType}_state`, nameType: 'short_name'},
     };
     const addressInput = document.getElementById(`form_${formType}_street`);
     // Prevent accidentally submitting form when selecting autocomplete option
@@ -22,7 +23,8 @@ const addressAutocomplete = function (formType) {
         const fieldValues = {
             [`form_${formType}_street`]: [],
             [`form_${formType}_city`]: [],
-            [`form_${formType}_zip_code`]: []
+            [`form_${formType}_zip_code`]: [],
+            [`form_${formType}_state`]: []
         }
 
         for (let field in fieldMap) {

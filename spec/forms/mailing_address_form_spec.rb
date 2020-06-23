@@ -6,7 +6,7 @@ describe MailingAddressForm do
     before do
       @household = Household.create(is_eligible: :yes)
       @form = described_class.new(@household, { mailing_street: '1006 Summit Ave', mailing_street_2: 'Unit 3', mailing_city: 'St Paul',
-                                                mailing_zip_code: '55105' })
+                                                mailing_zip_code: '55105', mailing_state: 'MN' })
     end
 
     it 'updates the existing household' do
@@ -19,6 +19,7 @@ describe MailingAddressForm do
       expect(@household.mailing_street_2).to eq('Unit 3')
       expect(@household.mailing_city).to eq('St Paul')
       expect(@household.mailing_zip_code).to eq('55105')
+      expect(@household.mailing_state).to eq('MN')
     end
 
     it 'is valid without address 2 line' do
@@ -41,11 +42,11 @@ describe MailingAddressForm do
       expect(@form).not_to be_valid
     end
 
-    it 'validates that zip codes are from MN' do
+    it 'allows out of state zip codes' do
       form = described_class.new(@household, { mailing_street: '1600 Pennsylvania Avenue NW', mailing_city: 'Washington D.C.',
-                                               mailing_zip_code: '20500' })
+                                               mailing_zip_code: '20500', mailing_state: 'DC' })
 
-      expect(form).not_to be_valid
+      expect(form).to be_valid
     end
 
     it 'trims zip codes' do
@@ -54,6 +55,11 @@ describe MailingAddressForm do
 
       @form.save
       expect(@household.mailing_zip_code).to eq('55105')
+    end
+
+    it 'requires a state' do
+      @form.mailing_state = ''
+      expect(@form).not_to be_valid
     end
   end
 end

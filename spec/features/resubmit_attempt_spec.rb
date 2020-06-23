@@ -46,6 +46,7 @@ RSpec.describe 'Journey', type: :feature do
       fill_in 'What is the street address?', with: '1006 Summit Ave'
       fill_in 'What is the unit or apartment (optional)?', with: 'Unit 2'
       fill_in 'What is the city?', with: 'St Paul'
+      select 'MN', from: 'What is the state?'
       fill_in 'What is the ZIP code?', with: '55105'
       click_on 'Continue'
       expect(page).to have_text 'Just so you know'
