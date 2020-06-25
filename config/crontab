@@ -1,1 +1,1 @@
-0 9 * * 1  cd /app; bundle exec thor export:last_x_days 7 tmp/$(date +'%Y-%m-%d').csv; bundle exec thor export:upload_export_to_aws tmp/$(date +'%Y-%m-%d').csv
+*/5 * * * *  bash ./app/lib/tasks/weekly_export.sh $RAILS_ENV
