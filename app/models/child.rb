@@ -45,8 +45,13 @@ class Child < ApplicationRecord
       household.clean_street_1,
       household.clean_street_2,
       household.clean_city,
-      household.mailing_state,
+      household.clean_state,
       household.clean_zip_code,
+      household.mailing_street,
+      household.mailing_street_2,
+      household.mailing_city,
+      household.mailing_state,
+      household.mailing_zip_code,
       household.parent_first_name,
       household.parent_last_name,
       household.parent_dob,
@@ -77,6 +82,11 @@ class Child < ApplicationRecord
       parent_signature
       did_you_get_help
       community_organization
+      clean_street
+      clean_street_2
+      clean_city
+      clean_state
+      clean_zip_code
       mailing_street
       mailing_street_2
       mailing_city

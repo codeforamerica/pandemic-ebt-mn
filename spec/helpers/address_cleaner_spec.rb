@@ -11,7 +11,8 @@ RSpec.describe AddressCleaner do
           delivery_line_2: 'Unit B',
           components: OpenStruct.new(
             city_name: 'Minneapolis',
-            zipcode: '55443'
+            zipcode: '55443',
+            state: 'MN'
           )
         )
       )
@@ -23,6 +24,7 @@ RSpec.describe AddressCleaner do
       expect(hh.clean_street_2).to eq('Unit B')
       expect(hh.clean_city).to eq('Minneapolis')
       expect(hh.clean_zip_code).to eq('55443')
+      expect(hh.clean_state).to eq('MN')
       expect(hh.cleaned_address).to be_truthy
     end
   end
