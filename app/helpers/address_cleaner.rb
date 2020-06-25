@@ -7,11 +7,13 @@ class AddressCleaner
       household.clean_street_2 = household.mailing_street_2
       household.clean_city = household.mailing_city
       household.clean_zip_code = household.mailing_zip_code
+      household.clean_state = household.mailing_state
     else
       household.clean_street_1 = result.delivery_line_1
       household.clean_street_2 = result.delivery_line_2
       household.clean_city = result.components.city_name
       household.clean_zip_code = result.components.zipcode
+      household.clean_state = result.components.state
     end
 
     household.cleaned_address = true
