@@ -16,6 +16,7 @@ gem 'skylight'
 gem 'smartystreets_ruby_sdk'
 gem 'thor', '~> 0.19'
 gem 'uglifier', '>= 1.3.0'
+gem 'lograge'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
