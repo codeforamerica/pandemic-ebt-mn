@@ -47,6 +47,8 @@ class Child < ApplicationRecord
       household.clean_city,
       household.clean_state,
       household.clean_zip_code,
+      household.clean_coordinates&.y,
+      household.clean_coordinates&.x,
       household.mailing_street,
       household.mailing_street_2,
       household.mailing_city,
@@ -87,6 +89,8 @@ class Child < ApplicationRecord
       clean_city
       clean_state
       clean_zip_code
+      clean_latitude
+      clean_longitude
       mailing_street
       mailing_street_2
       mailing_city

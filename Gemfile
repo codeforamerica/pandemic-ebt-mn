@@ -6,6 +6,7 @@ ruby '2.6.3'
 gem 'aws-sdk-s3', '~> 1'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'cfa-styleguide', git: 'https://github.com/codeforamerica/honeycrisp-gem'
+gem 'lograge'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.3'
 gem 'rack-cors'
@@ -16,7 +17,6 @@ gem 'skylight'
 gem 'smartystreets_ruby_sdk'
 gem 'thor', '~> 0.19'
 gem 'uglifier', '>= 1.3.0'
-gem 'lograge'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
