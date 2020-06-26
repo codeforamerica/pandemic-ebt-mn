@@ -12,7 +12,7 @@ RSpec.describe AddressCleaner do
           components: OpenStruct.new(
             city_name: 'Minneapolis',
             zipcode: '55443',
-            state: 'MN'
+            state_abbreviation: 'MN'
           ),
           metadata: OpenStruct.new(
             latitude: '37.781712',

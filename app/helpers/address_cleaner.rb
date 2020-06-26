@@ -13,7 +13,7 @@ class AddressCleaner
       household.clean_street_2 = result.delivery_line_2
       household.clean_city = result.components.city_name
       household.clean_zip_code = result.components.zipcode
-      household.clean_state = result.components.state
+      household.clean_state = result.components.state_abbreviation
       if result&.metadata&.latitude.present? && result&.metadata&.longitude.present?
         household.clean_coordinates = [result.metadata.longitude, result.metadata.latitude]
       end
