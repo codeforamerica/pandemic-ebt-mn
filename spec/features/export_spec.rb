@@ -3,7 +3,7 @@ require 'csv'
 
 HEADERS = %w[ child_id student_first_name student_last_name student_dob student_gender student_school_name student_school_grade student_school_type student_school_formatted_id
               student_school_id student_school_breakfast_cep student_school_lunch_cep parent_signature did_you_get_help community_organization
-              clean_street clean_street_2 clean_city clean_state clean_zip_code mailing_street mailing_street_2 mailing_city mailing_state mailing_zip_code parent_first_name
+              clean_street clean_street_2 clean_city clean_state clean_zip_code clean_latitude clean_longitude mailing_street mailing_street_2 mailing_city mailing_state mailing_zip_code parent_first_name
               parent_last_name parent_dob email_address phone_number language submitted_at application_experience experiment_group maxis_id ].freeze
 
 RSpec.describe 'Exporting Children as CSV', type: :feature do
@@ -24,6 +24,7 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     @child_with_double_quotes = create(:child, household: create(:household, clean_street_2: 'Apt "B"'))
     @child_at_matched_school = create(:child, household: create(:household), school_attended_name: 'Centennial Elementary', school_attended_id: '10280695000')
     @child_with_community_organization = create(:child, household: create(:household, :with_community_organization))
+    @child_with_geocoded_address = create(:child, household: create(:household, :geocoded))
   end
 
   after(:all) do
@@ -100,6 +101,12 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
 
     it 'Exports the language' do
       expect(@csv_data.map { |r| r['language'] }).to all(be_present)
+    end
+
+    it 'Exports geocode data' do
+      geocode_row = row_for_child @child_with_geocoded_address
+      expect(geocode_row['clean_longitude']).to eq('-122.408363')
+      expect(geocode_row['clean_latitude']).to eq('37.781712')
     end
 
     it 'Exports email address if present' do

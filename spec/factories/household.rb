@@ -35,6 +35,10 @@ FactoryBot.define do
       community_organization { 'USDR' }
       did_you_get_help { 'yes' }
     end
+
+    trait :geocoded do
+      clean_coordinates { ['-122.408363', '37.781712'] }
+    end
   end
 
   trait :with_email do
