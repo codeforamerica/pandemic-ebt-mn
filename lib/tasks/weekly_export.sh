@@ -2,11 +2,13 @@
 set -xe
 
 rails_env=$1
-curl https://cronitor.link/yITppB/run?msg="Run started on: ${rails_env}" -m 10 || true
+curl https://cronitor.link/yITppB/run?msg="Weekly export started on: ${rails_env}" -m 10 || true
 
 cd /app || exit
 today=$(date +'%Y-%m-%d')
-bundle exec thor export:last_x_days 1 tmp/"${today}".csv
-bundle exec thor export:upload_export_to_aws tmp/"${today}".csv
+result=$(bundle exec thor clean:addresses \
+  && bundle exec thor export:last_x_days 7 tmp/"${today}".csv \
+  && bundle exec thor export:upload_export_to_aws tmp/"${today}".csv)
+status_code=$?
 
-curl https://cronitor.link/yITppB/complete?msg="Run completed on: ${rails_env}" -m 10 || true
+curl https://cronitor.link/yITppB/complete?msg="Weekly export completed on: ${rails_env}, Status Code: ${status_code}, Output: ${result}" -m 10 || true
