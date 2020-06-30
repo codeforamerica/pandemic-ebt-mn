@@ -11,4 +11,4 @@ result=$(bundle exec thor clean:addresses \
   && bundle exec thor export:upload_export_to_aws tmp/"${today}".csv)
 status_code=$?
 
-curl https://cronitor.link/yITppB/complete?msg="Weekly export completed on: ${rails_env}, Status Code: ${status_code}, Output: ${result}" -m 10 || true
+curl https://cronitor.link/yITppB/complete?msg="Weekly export completed on: ${rails_env}, Status: ${status_code}" -m 10 || true
