@@ -30,6 +30,7 @@ class Export < Thor
   end
 
   desc 'upload_export_to_aws FILE', 'Uploads an export file to the S3 bucket specified in environment variables. Will overwrite files with the same name.'
+  STATE_BUCKET = 'mn'.freeze
   def upload_export_to_aws(file)
     required_variables = %w[AWS_REGION AWS_EXPORT_UPLOAD_BUCKET AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY]
     required_variables.each { |var| raise Thor::Error, "ERROR: #{var} is required to be set as an environment variable" unless ENV.key?(var) }
@@ -37,7 +38,7 @@ class Export < Thor
 
     s3 = Aws::S3::Resource.new
     filename = file.split('/')[-1]
-    obj = s3.bucket(ENV['AWS_EXPORT_UPLOAD_BUCKET']).object("mn/#{Rails.env}/#{filename}")
+    obj = s3.bucket(ENV['AWS_EXPORT_UPLOAD_BUCKET']).object("#{STATE_BUCKET}/#{Rails.env}/#{filename}")
     obj.upload_file(file)
     puts 'Upload Complete!'
   end
