@@ -9,4 +9,9 @@ result=$(bundle exec thor clean:addresses)
 status_code=$?
 addresses=$(echo "${result}" | tail -n1 | cut -c26-27)
 
-curl https://cronitor.link/KuHCa7/complete?msg="Daily clean completed on: MN-${rails_env}, Status: ${status_code}, Addresses Cleaned: ${addresses}" -m 10 || true
+request_type='complete'
+if [ "${status_code}" != '0' ]; then
+  request_type='fail'
+fi
+
+curl https://cronitor.link/KuHCa7/${request_type}?msg="Daily clean completed on: MN-${rails_env}, Status: ${status_code}, Addresses Cleaned: ${addresses}" -m 10 || true

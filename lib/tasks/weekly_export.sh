@@ -6,9 +6,15 @@ curl https://cronitor.link/KuHCa7/run?msg="Weekly export started on: MN-${rails_
 
 cd /app || exit
 today=$(date +'%Y-%m-%d')
+launch_day='2020-06-03'
 bundle exec thor clean:addresses \
-  && bundle exec thor export:last_x_days 7 tmp/"${today}".csv \
+  && bundle exec thor export:children -a "${launch_day}" -b "${today}" tmp/"${today}".csv \
   && bundle exec thor export:upload_export_to_aws tmp/"${today}".csv
 status_code=$?
 
-curl https://cronitor.link/KuHCa7/complete?msg="Weekly export completed on: MN-${rails_env}, Status: ${status_code}" -m 10 || true
+request_type='complete'
+if [ "${status_code}" != '0' ]; then
+  request_type='fail'
+fi
+
+curl https://cronitor.link/KuHCa7/${request_type}?msg="Weekly export completed on: MN-${rails_env}, Status: ${status_code}" -m 10 || true
