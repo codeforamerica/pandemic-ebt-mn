@@ -73,6 +73,7 @@ body {
 
 .slab--hero {
   padding-top: 1.5em;
+
   .toolbar {
     line-height: 1em;
   }
@@ -90,6 +91,7 @@ strong.extra-strong {
   position: absolute;
   z-index: 9999;
   margin-left: 15px;
+
   .flash__message {
     margin-right: 2rem;
   }
@@ -125,7 +127,10 @@ h1.form-card__title {
 }
 
 .app-logo {
-  height: 2rem;
+  @include media($tablet-up) {
+    height: 2rem;
+  }
+  height: 1.4rem;
   margin: 1.4rem 0 0 0;
 }
 
