@@ -5,11 +5,11 @@ class Clean < Thor
   desc 'addresses', 'Cleans mailing addresses using the SmartyStreets API'
   def addresses
     cleaner = AddressCleaner.new
-    counter = 0
-    Household.submitted.where(cleaned_address: false).each do |hh|
+    uncleaned_households = Household.submitted.where(cleaned_address: false)
+    count = uncleaned_households.count
+    uncleaned_households.in_batches.each_record do |hh|
       cleaner.run(hh)
-      counter += 1
     end
-    puts "CLEANER COMPLETE! Ran on #{counter} addresses."
+    puts "CLEANER COMPLETE! Ran on #{count} addresses."
   end
 end
