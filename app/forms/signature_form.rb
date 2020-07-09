@@ -14,6 +14,9 @@ class SignatureForm < Form
         huid: (household.huid || Household.next_huid)
       }
       household.update(attributes.merge({ submitted_at: Time.zone.now }))
+      if household.email_address.present?
+        MailerJob.perform_async(household)
+      end
     end
   end
 end
