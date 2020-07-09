@@ -37,6 +37,8 @@ Metrics/CyclomaticComplexity:
     - app/helpers/ordinal_columns_helper.rb
 Metrics/MethodLength:
   Enabled: false
+Rails/ApplicationController:
+  Enabled: false
 Rails/FilePath:
   Enabled: false
 Rails/HasManyOrHasOneDependent:
