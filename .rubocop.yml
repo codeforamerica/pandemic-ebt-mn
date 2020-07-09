@@ -64,6 +64,8 @@ RSpec/BeforeAfterAll:
     - spec/features/upload_aws_spec.rb
 RSpec/MessageSpies:
   Enabled: false
+RSpec/AnyInstance:
+  Enabled: false
 Style/Documentation:
   Enabled: false
 Style/ExponentialNotation:
