@@ -9,6 +9,7 @@ class FormNavigation
     JustSoYouKnowController,
     ParentController,
     ContactController,
+    ReviewController,
     SignatureController,
     SuccessController
   ].freeze
