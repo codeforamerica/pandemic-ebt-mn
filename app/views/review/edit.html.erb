@@ -18,7 +18,7 @@
           <table width="100%" class="bottom-border">
             <tr>
               <td><span class="heading-25-small"><%= t('review.name_birthday', name: current_household.parent_first_name) %></span></td>
-              <td width="20%"><span class="heading-25-small not-bold text--right"><%= link_to 'Edit', '#' %></span></td>
+              <td width="20%"><span class="heading-25-small not-bold text--right"><%= link_to 'Edit', review_parent_birthday_steps_path, id: 'edit-parent-birthday' %></span></td>
             </tr>
             <tr>
               <td><p><%= current_household.parent_dob.strftime('%B %e, %Y') %></p></td>
@@ -38,7 +38,7 @@
           <table width="100%" class="bottom-border">
             <tr>
               <td><span class="heading-25-small">Mailing address</span></td>
-              <td width="20%"><span class="heading-25-small not-bold text--right"><%= link_to 'Edit', '#' %></span></td>
+              <td width="20%"><span class="heading-25-small not-bold text--right"><%= link_to 'Edit', '#',  id: 'edit-mailing-address' %></span></td>
             </tr>
             <tr>
               <td>
