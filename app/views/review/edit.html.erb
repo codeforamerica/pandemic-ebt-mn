@@ -28,7 +28,7 @@
             <table width="100%" class="bottom-border">
               <tr>
                 <td><span class="heading-25-small"><%= t('review.name_birthday', name: child.first_name) %></span></td>
-                <td width="20%"><span class="heading-25-small not-bold text--right"><%= link_to 'Edit', '#' %></span></td>
+                <td width="20%"><span class="heading-25-small not-bold text--right"><%= link_to 'Edit', review_child_birthday_steps_path(id: child.id) %></span></td>
               </tr>
               <tr>
                 <td><p><%= child.dob.strftime('%B %e, %Y') %></p></td>

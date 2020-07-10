@@ -1,0 +1,29 @@
+<% content_for(:template_name, "card") %>
+<%= form_with url: review_child_birthday_steps_path, method: :put, local: true do %>
+  <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
+    <%= f.hidden_field(:id, value: @form.id) %>
+    <div class="form-card__header spacing-below-35">
+      <div class="emoji emoji--bigger spacing-below-25 spacing-below-25 emoji--bust"></div>
+      <h1 class="form-card__title">
+        <%= t("review_parent_birthday.header", name: @child.first_name) %>
+      </h1>
+    </div>
+    <div class="form-card__content">
+      <div class="grid">
+        <div class="grid__item text--left">
+          <%= f.cfa_date_select(
+                  :dob,
+                  t("review_parent_birthday.when_born"),
+                  options: {
+                      start_year: Time.now.year,
+                      end_year: Time.now.year - 100,
+                  }
+              ) %>
+        </div>
+      </div>
+      <div class="form-card__footer">
+        <%= f.button t("shared.save"), class: "button button--primary" %>
+      </div>
+    </div>
+  <% end %>
+<% end %>

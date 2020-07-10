@@ -10,6 +10,7 @@ class FormNavigation
     ParentController,
     ContactController,
     ReviewParentBirthdayController,
+    ReviewChildBirthdayController,
     ReviewController,
     SignatureController,
     SuccessController
