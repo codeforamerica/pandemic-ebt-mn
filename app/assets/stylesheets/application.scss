@@ -29,7 +29,6 @@
 }
 
 body {
-  font-family: -apple-system, "Helvetica Neue", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
   margin-bottom: 0;
 }
 
@@ -151,4 +150,12 @@ h1.form-card__title {
   border: none;
   font-size: 1.6rem;
   font-weight: normal;
+}
+
+.top-border {
+  border-top: 1px solid $color-grey;
+}
+
+.bottom-border {
+  border-bottom: 1px solid $color-grey;
 }

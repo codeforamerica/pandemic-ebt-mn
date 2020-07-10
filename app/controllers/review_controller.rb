@@ -1,0 +1,2 @@
+class ReviewController < FormsController
+end

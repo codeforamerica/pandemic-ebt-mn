@@ -1,5 +1,3 @@
 class JustSoYouKnowForm < Form
-  def save
-    true
-  end
+  def save; end
 end
