@@ -126,6 +126,8 @@ en:
   review_parent_birthday:
     header: "%{name}'s birthday"
     when_born: When were they born?
+  review_address:
+    header: Mailing Address
   signature:
     header: Add a parent or guardian’s signature.
     type_your_full: Type your full legal name here to sign this form. By entering your name you agree you have been
