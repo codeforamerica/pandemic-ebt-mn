@@ -7,7 +7,7 @@ gem 'aws-sdk-s3', '~> 1'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'cfa-styleguide', git: 'https://github.com/codeforamerica/honeycrisp-gem'
 gem 'lograge'
-gem 'mailgun-ruby', '~>1.1.6'
+gem 'mailgun-ruby', '~>1.2.0'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.3'
 gem 'rack-cors'
