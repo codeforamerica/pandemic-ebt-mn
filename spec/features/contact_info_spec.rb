@@ -67,7 +67,7 @@ RSpec.describe 'Contact Info Journey', type: :feature do
     it 'continues without validation if nothing is entered' do
       expect(page).to have_text 'How can we contact you?'
       click_on 'Continue'
-      expect(page).to have_text 'Review your info'
+      expect(page).to have_text 'Review your information'
     end
   end
 
@@ -76,7 +76,7 @@ RSpec.describe 'Contact Info Journey', type: :feature do
       expect(page).to have_text 'How can we contact you?'
       fill_in :form_email_address, with: 'test@test.test'
       click_on 'Continue'
-      expect(page).to have_text 'Review your info'
+      expect(page).to have_text 'Review your information'
     end
   end
 end

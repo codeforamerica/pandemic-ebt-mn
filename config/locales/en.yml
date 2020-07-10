@@ -118,7 +118,7 @@ en:
     we_need_your_email: We need your email address to get in touch with you if there are any problems with your application.
     phone_number: What is your phone number? (optional)
   review:
-    header: Review your info
+    header: Review your information
     helper_text: This information will be used to check your eligibility and to send your P-EBT cards.
     name_birthday: "%{name}'s birthday"
     mailing_address: Mailing address
