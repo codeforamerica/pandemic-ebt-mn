@@ -8,6 +8,7 @@ AllCops:
     - bin/**/*
     - db/**/*
     - vendor/**/*
+    - config/routes.rb
 
 Layout/EmptyLinesAroundAttributeAccessor:
   Enabled: true

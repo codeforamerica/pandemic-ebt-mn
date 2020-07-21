@@ -12,7 +12,6 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.3'
 gem 'rack-cors'
 gem 'rails', '>= 6.0.3.2'
-gem 'rubocop', '~> 0.87.0', require: false
 gem 'sass-rails', '~> 6.0'
 gem 'sentry-raven'
 gem 'skylight'
