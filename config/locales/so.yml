@@ -24,7 +24,7 @@ so:
     apply_starting: Ka codso bartan internet laga bilaabo Juun 8deeda markay tahay 12 Duhur
     apply_by: Codsato P-EBT kama damabayn Luulyo 31keeda
     apply_now: Codso hadda
-    about: Barnaamijkan, oo loo yaqaan P-EBT, ayaa loogu talagalay ardayda sidii caadiga ahayd heli kari jiray cuntada dugsiga ee bilaashka ah ama qiimaha jaban leh. Codso oo u hel illaa $325 cunuggii kasta si loogu bixiyo kharshaka cuntada.
+    about: Barnaamijkan, oo loo yaqaan P-EBT, ayaa loogu talagalay ardayda sidii caadiga ahayd heli kari jiray cuntada dugsiga ee bilaashka ah ama qiimaha jaban leh. Codso oo u hel illaa $325 cunuggii kasta si loogu bixiyo kharashka cuntada. Markaad codsato waxaad walibana uqalmi kartaa $100 oo ah dheefaha P-EBT ee Xagaaga. Uma baahnid inaad dib ugu codsato carruurta aad horay ugu soo gudbisay codsiga.
     children_may: Carruurtu waxay sii wadan karaan inay ka helaan cuntooyon horay ka sii qaado ah "grab n go") ama goobaha quudinta xaaladaha degdegga ah ee COVID-19 ee ay bixiyaan dugsiyada iyo goobaha bulshada, xitaa haddii ay helaan dheefaha P-EBT.
     questions_about: Su'aalo ku saabsan P-EBT?
     learn_more_about: Ka ogow wax intaa u dheer barnaamijkan.
@@ -41,7 +41,7 @@ so:
     your_school_will_make_sure_html: <b>Waxaan hubin doonnaa inaad uqalanto.</b>
     we_will_check: Waxaan eegi doonnaa si aan u hubinno in qoyskaaga uu heli karo P-EBT. Xaaladda socdaalka (immigration) looma tixgalin doono uqalmitaankaaga P-EBT.
     get_a_p_ebt_card_html: <b>Ku hel kaarka P-EBT boostada.</b>
-    if_approved: Haddii laguu oggolaado, waxaad heli doontaa kaarka P-EBT oo ay lacagi ku jirto looguna talagalay KAGA iibsiga cuntada dukaammada gudahooda 10 maalmood gudahood. Kaarka waxa lagu shubi doonaa lacag raashinka lagu soo iibsato lana socdaanna tilmaamaha sida loo isticmaalo.
+    if_approved: Haddii laguu oggolaado, waxaad heli doontaa kaarka P-EBT oo ay lacagi ku jirto looguna talagalay KAGA iibsiga cuntada dukaammada gudahooda 30 maalmood gudahood. Kaarka waxa lagu shubi doonaa lacag raashinka lagu soo iibsato lana socdaanna tilmaamaha sida loo isticmaalo.
   eligible:
     header: Ardaygu miyuu karaa inuu helo cuntooyinka bilaashaka ama jaban ah inta lagu jiro sannad dugsiyeedka?
     even_if_the_student: Xitaa haddii ardaygu uusan cunin quraacda ama qadada dugsiga, waxaan u baahan nahay inaan ogaano inay uqalmaan barnaamijkan.
@@ -55,22 +55,22 @@ so:
     you_can_also_html: Waxa kale oo aad ka wici kartaa khadka cuntada (Minnesota Food HelpLine) telefoonka  <a href="tel:16514869860">651-486-9860</a> ama <a href="tel:18887111151">888-711-1151</a>. Af-celiyeyaal (tarjumaanno) ayaa la heli karaa.
   received_card:
     alt_text_card: Kaar ku leh dusha sawir meel dibad ah oo ay ku qoran tahay Minnesota EBT dushiisa.
-    header: Reerkaagu miyuu isticmaalaa dheefaha cuntada (SNAP/EBT) ama ka qaybqaataa Barnaamijka Maalgalinta Qoyska ee Minnesota (MFIP)?
+    header: Reerkaagu miyay heleen dheefaha cuntada SNAP/FS/EBT ama  Barnaamijka Maalgalinta Qoyska ee Minnesota (MFIP) Bishii Maarj 2020?
     it_looks_like_html: Kaarku wuxuu u ekaan karaa sidan&colon;
   done:
     header: Waad dhammaystirtay!
-    you_dont_need: Uma baahnid inaad buuxiso foomkan. Kaarkaaga SNAP/EBT ama MFIP ayaa si isla markaaba ah loogu shubi doonaa dheefahaaga P-EBT. Waxaad u heli doontaa $325 ardaygii kasta ee gurigaaga ku nool.
+    you_dont_need: Uma baahnid inaad buuxiso foomkan. Kaarkaaga SNAP/EBT ama MFIP ayaa si isla markaaba ah loogu shubi doonaa dheefahaaga P-EBT.
     if_theres_a_problem_html: Haddii kaarkaagu u dhibaato yeesho, waxaad ka wacdaa xarunta adeegga macaamiisha ee EBT ee Minnesota <a href="tel:+18889972227">(888) 997-2227</a>, 24ka saac maalintii, 7da maalmood usbuucii.
   children:
     header: Ku dar dhammaan ardayda gurigaaga ku nool
-    one_at_a_time: Kolba mid, ugu dar dhammaan ardayda da'doodu tahay 5-18 muddada laga soo bilaabo Sebtember 1, 2019. Kuwan waxa ka mid noqon kara ardayda k hela quraacda ama qadada lacag la'aanta ah dugsiga.
+    one_at_a_time: Kolba mar, ugu dar dhammaan ardayda ka hela quraacda ama qadada bilaashka ah dugsiga.
     students: Ardayda gurigaaga ku nool
     child_has_been: Ilmaha waa laga saaray.
     remove: (Ka saar)
     add: Ku dar arday
   add_student:
     header: Ku dar Arday.
-    one_at_a_time_add: Kolba mid, ugu dar dhammaan ardayda da'doodu tahay 5-18 muddada laga soo bilaabo Sebtember 1, 2019. Kuwan waxa ka mid noqon kara ardayda k hela quraacda ama qadada lacag la'aanta ah dugsiga.
+    one_at_a_time_add: Kolba mar, ugu dar dhammaan ardayda ka hela quraacda ama qadada bilaashka ah dugsiga.
     first_name: Magaca hore
     legally: Sharci ahaan sida ay uga muuqato diiwaannada dugsiga.
     last_name: Magaca dambe
@@ -99,7 +99,7 @@ so:
   just_so_you_know:
     header: Si aad haddaba u ogsoonaato
     text_1: Kaarka waxa loo saari doonaa muddakarka ah ee guriga jooga ee dhammaystiray codsiga.
-    text_2: Haddii aad codsatay tiro ka badan hal arday, dheefaha oo dhan ayaa ku jiri doona kaarkan.
+    text_2: Haddii aad codsatay tiro ka badan hal arday, dheefaha oo dhan ayaa ku jiri doona kaarkan. Reeraha qaarkood ayaa dhici karta inay helaan laba kaar.
     text_3: Dadka muddakarka ah ee guriga ku nool waxay u isticmaali karaan inay ugu soo adeegaan qoyska oo dhan.
   contact:
     header: Sideen kuula soo xiriiri karnaa?
@@ -113,10 +113,10 @@ so:
   success:
     header: Codsigaagii waa dhammaystirtay!
     write_down_your_html: Qor lambarkaaga xaqiijinta&colon;
-    if_approved: Haddii laguu oggolaado, waxaad heli doontaa kaarka P-EBT oo ay lacagi ku jirto looguna talagalay KAGA iibsiga cuntada dukaammada 10 maalmood gudahood. Kaarka waxa lagu shubi doonaa lacag raashinka lagu soo iibsato lana socdaanna tilmaamaha sida loo isticmaalo.
+    if_approved: Haddii laguu oggolaado, waxaad heli doontaa kaarka P-EBT oo ay lacagi ku jirto looguna talagalay kaga iibsiga cuntada dukaammada 30 maalmood gudahood. Kaarka waxa lagu shubi doonaa lacag raashinka lagu soo iibsado oo ay la socdaanna tilmaamaha sida loo isticmaalo.
     learn_more_html: <a href="/info">Wax ka ogow</a> arrimaha ku saabsan P-EBT.
     if_approved_question: Haddii la oggolaado, intee in le'eg dheefta P-EBT ah yaan helayaa?
-    if_approved_answer_1_html: Waxaad ku heli doontaa hal kaar P-EBT boostada oo loogu soo shubi doono $325 cunug kasta oo la oggolaaday in loogu iibiyo cunnooyinka dukaamada iyo suuqyada cuntada intooda badan.
+    if_approved_answer_1_html: Waxaad ku heli doontaa hal kaar P-EBT boostada oo loogu soo shubi doono $325 cunug kasta oo la oggolaaday in looga iibiyo cunnooyinka dukaamada iyo suuqyada cuntada. Mar sii damabysa xagaagan $100 oo dheeri ah ayaa cunug kasta oo loo oggolaaday ayaa laguugu soo shubi doonaa kaarkaaga.
     if_approved_answer_2_html: Waxa kale oo aad u adeegsan kartaa kaarka P-EBT inaad ka dalbato cuntada dukaammada onlayn meelahan <a target="_blank" href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818">Amazon</a> iyo <a target="_blank" href="https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540">Walmart</a>.
     how_was_your_experience: Waa sidee waxyaabahaad kala soo kulanaty codsigan?
     thank_you: Waad ku mahadsan tahay ra’yi-celintaada!

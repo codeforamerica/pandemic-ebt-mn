@@ -26,7 +26,7 @@ en:
     apply_starting: Apply on this website starting June 8th at 12 Noon
     apply_by: Apply for P-EBT by July 31st
     apply_now: Apply now
-    about: This program, called P-EBT, is for students who are normally able to get free or reduced price school meals. Apply and get up to $325 per child to spend on groceries.
+    about: This program, called P-EBT, is for students who are normally able to get free or reduced price school meals. Apply and get up to $325 per child to spend on groceries. By applying you may also qualify for $100 Summer P-EBT benefits. You do not need to reapply for children you have already submitted an application for.
     children_may: Children may continue to receive "grab n go" meals or emergency food at COVID-19 emergency feeding
       sites offered by schools and community locations, even if they are receiving P-EBT benefits.
     questions_about: Questions about P-EBT?
@@ -69,19 +69,19 @@ en:
     it_looks_like_html: The card may look like this&colon;
   done:
     header: You’re all done!
-    you_dont_need: You don’t need to fill out this form. Your SNAP/EBT or MFIP card will be automatically loaded with your P-EBT benefits. You will receive $325 for each student in your house.
+    you_dont_need: You don’t need to fill out this form. Your SNAP/EBT or MFIP card will be automatically loaded with your P-EBT benefits.
     if_theres_a_problem_html: If there’s a problem with your card, you can call Minnesota’s EBT customer service
       center at <a href="tel:+18889972227">(888) 997-2227</a>, 24 hours a day, 7 days a week.
   children:
     header: Add all the students in your house
-    one_at_a_time: One at a time, add all students age 5-18 as of September 1, 2019. This can include students who get free breakfast or lunch at school.
+    one_at_a_time: One at a time, add all students who get free breakfast or lunch at school.
     students: Students in your house
     child_has_been: Child has been removed
     remove: (remove)
     add: Add a student
   add_student:
     header: Add a student.
-    one_at_a_time_add: One at a time, add all students age 5-18 as of September 1, 2019. This can include students who get free breakfast or lunch at school.
+    one_at_a_time_add: One at a time, add all students who get free breakfast or lunch at school.
     first_name: First name
     legally: Legally as it appears on school records.
     last_name: Last name
@@ -110,7 +110,7 @@ en:
   just_so_you_know:
     header: Just so you know
     text_1: The card will be issued to the adult in the household that completed the application.
-    text_2: If you applied for more than one student, all benefits will be on this one card.
+    text_2: If you applied for more than one student, all benefits will be on this one card. Some households may receive two cards.
     text_3: Adults in the household will be able to use it to shop for the whole family.
   contact:
     header: How can we contact you?
@@ -142,7 +142,7 @@ en:
     if_approved: If approved, you'll get a P-EBT card with money on it for groceries within 30 days. The card will be loaded with grocery money and come with instructions on how to use it.
     learn_more_html: <a href="/info">Learn more</a> about the P-EBT program.
     if_approved_question: If approved, how much in P-EBT benefits will I get?
-    if_approved_answer_1_html: You will receive one P-EBT card in the mail that will be loaded with $325 for each approved child to purchase food at most grocery stores and food markets.
+    if_approved_answer_1_html: You will receive a P-EBT card in the mail that will be loaded with $325 for each approved child to purchase food at most grocery stores and food markets. Later this summer an additional $100 for each approved child will be loaded to your card.
     if_approved_answer_2_html: You can also use the P-EBT card to order groceries online at
       <a target="_blank" href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818">Amazon</a>
       and

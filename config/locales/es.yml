@@ -22,9 +22,9 @@ es:
     coming_soon_html: Próximamente&colon;
     header: Reciba ayuda para comprar comida mientras escuelas están cerradas.
     apply_starting: Aplica en este sitio empezando el 8 de Junio a las 12 del medio día.
-    apply_by: Registrese para P-EBT antes del 31 de julio.
+    apply_by: Solicite P-EBT antes del 31 de julio.
     apply_now: Registrese ahora
-    about: Este programa, tambien llamado P-EBT, es para estudiantes que normalmente pueden recibir comidas escolares gratis o a precio reducido. Aplica y reciba hasta $325 por niño para comprar alimentos.
+    about: Este programa, llamado P-EBT, es para estudiantes que normalmente pueden recibir comidas escolares gratis o a precio reducido. Presente una solicitud y reciba hasta $325 por niño para comprar alimentos. Cuando presenta una solicitud, es posible que también califique para beneficios P-EBT de verano de $100. No es necesario volver a presentar una solicitud para los niños para los cuales ya ha presentado una.
     children_may: Los niños pueden continuar recibiendo comidas “para llevar” o alimentos en los sitios de alimentación
       de emergencia ofrecidos por las escuelas y espacios comunitarios, incluso si están recibiendo beneficios de P-EBT.
     questions_about: ¿Preguntas sobre P-EBT?
@@ -70,19 +70,18 @@ es:
     it_looks_like_html: Su tarjeta quizas se parece así&colon;
   done:
     header: ¡Ya acabo!
-    you_dont_need: No necesita completar este formulario. Su tarjeta SNAP / EBT o MFIP se cargará automáticamente con sus beneficios P-EBT. Recibirá $ 325 por cada estudiante en su casa.
+    you_dont_need: No necesita completar este formulario. Su tarjeta SNAP/EBT o MFIP se cargará automáticamente con sus beneficios P-EBT.
     if_theres_a_problem_html: Si hay un problema con su tarjeta, puede llamar al Centro de Servicio al Cliente EBT de Minnesota al <a href="tel:18889972227">(888) 997-2227</a>, las 24 horas del día, los 7 días de la semana.
   children:
     header: Enumere a todos los estudiantes en su casa.
-    one_at_a_time: Uno a uno, agregue todos los estudiantes que tenían entre 5 a 18 años de edad a partir del 1 de septiembre de 2019. Esto puede incluir a los estudiantes que reciben desayuno o almuerzo gratis en la escuela.
-      a estudiantes de pre-K o TK que reciben desayuno o almuerzo gratis en la escuela.
+    one_at_a_time: Uno a uno, agregue todos los estudiantes que reciben desayuno o almuerzo gratuito en la escuela.
     students: Estudiantes en su casa
     child_has_been: Sacamos el niño de la lista
     remove: (eliminar)
     add: Agregue un estudiante.
   add_student:
     header: Agregue un estudiante.
-    one_at_a_time_add: Uno a uno, agregue a todos los estudiantes que tengan entre 5 a 18 años de edad.
+    one_at_a_time_add: Uno a uno, agregue todos los estudiantes que reciben desayuno o almuerzo gratuito en la escuela.
     first_name: Primer nombre
     legally: Legalmente como aparece en registros escolares.
     last_name: Apellido
@@ -112,7 +111,7 @@ es:
   just_so_you_know:
     header: Solo para que sepas
     text_1: La tarjeta será enviada al adulto en el hogar que completo la solicitud.
-    text_2: Si usted aplico para mas de un niño, todos los beneficios estarán en esta tarjeta.
+    text_2: Si presentó una solicitud para más de un niño, todos los beneficios estarán en esta tarjeta. Algunos hogares pueden recibir dos tarjetas.
     text_3: Los adultos en el hogar pueden usar la tarjeta para comprar despensa para toda la familia.
   contact:
     header: ¿Cómo podemos contactarlo?
@@ -131,10 +130,10 @@ es:
     header: ¡Su solicitud está lista!
     no_confirmation_email: No recibirá un correo electrónico de confirmación, pero su solicitud a sido enviada correctamente.
     write_down_your_html: Escriba su número de confirmación&colon;
-    if_approved: Si su solicitud es aprobada, usted recibirá una tarjeta P-EBT dentro de 30 días cargada con dinero para alimentos. La tarjeta será cargada con dinero para alimentos, y vendrá con instrucciones sobre como usarla.
+    if_approved: Si su solicitud es aprobada, recibirá una tarjeta P-EBT dentro de 30 días cargada con dinero para alimentos. La tarjeta estará cargada con dinero para alimentos e incluirá instrucciones sobre cómo usarla.
     learn_more_html: <a href="/info">Aprenda más</a> sobre el programa P-EBT.
     if_approved_question: ¿Si se aprueba, ¿cuánto recibiré en beneficios de P-EBT?
-    if_approved_answer_1_html: Recibirá una tarjeta P-EBT por correo cargada con $325 por cada niño aprobado para comprar alimentos en la mayoría de supermercados o mercados de comida.
+    if_approved_answer_1_html: Recibirá una tarjeta P-EBT por correo cargada con $325 por cada niño aprobado para comprar alimentos en la mayoría de supermercados o mercados de comida. Más adelante en este verano, se cargarán $100 adicionales a su tarjeta por cada niño aprobado.
     if_approved_answer_2_html: También puede usar la tarjeta P-EBT para comprar alimentos en línea en
       <a target="_blank" href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818">Amazon</a>
       y

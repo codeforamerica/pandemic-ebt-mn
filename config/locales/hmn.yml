@@ -24,7 +24,7 @@ hmn:
     apply_starting: Tso npe rau hauv lub vej xaij no pib lub 6 Hlis tim 8 thaum 12 tav su
     apply_by: Muab sijhawm tso npe rau P-EBT mus txog lub 6 Lub Xya Hli tim 31
     apply_now: Tso npe tam sim no
-    about: Qhov txheej xwm no, hu uas P-EBT, yog pab rau cov tub ntxhais kawm ntawv uas ib txwm noj zaub mov tom tsev kawm ntawv uas yog dawb lossis tus nqi raug txo.Yog tso npe ces tseem tau txog $325 nyiaj muas noj rau txhua tus menyuam koj muaj los mus yuav zaub mov noj.
+    about: Qhov txheej xwm no, hu uas P-EBT, yog pab rau cov tub ntxhais kawm ntawv uas ib txwm noj zaub mov tom tsev kawm ntawv uas yog dawb lossis tus nqi raug txo.Yog tso npe ces tseem tau txog $325 nyiaj muas noj rau txhua tus menyuam koj muaj los mus yuav zaub mov noj. Thaum koj tso npe ua ntawv thov, ces tej zaum koj kuj yuav muaj npe txais $100 ntxiv rau nyiaj muas noj Caij Ntuj So P-EBT. Tsis tas koj yuav rov tso npe rau cov menyuam uas koj twb tso npe ua ntawv thov tas lawm.
     children_may: Yeej tseem yuav pub mov rau cov menyuam tuaj nqa ("grab n go") lossis zaub mov pub rau xwm ceev ntawm tej chaw uas pub zaub mov dawb sijhawm muaj tus kab mob COVID-19 uas yog los ntawm tsev kawm ntawv thiab tej chaw ua hauv zej hauv zos, tab txawm tias lawv yeej txais nyiaj muas noj P-EBT lawm.
     questions_about: Koj puas muaj lus nug txog P-EBT?
     learn_more_about: Kawm ntxiv txog qhov txheej xwm no.
@@ -41,7 +41,7 @@ hmn:
     your_school_will_make_sure_html: <b>Peb mam li ua kom koj muaj npe txais tau kev pab.</b>
     we_will_check: Peb mam li ua kom koj tsev neeg tau txias cov nyiaj muas noj P-EBT.Qhov koj muab ntaub ntawv nyob hauv tebchaws no li cas yuav tsis cuam tshuam qhov koj muaj npe txais tau cov nyiaj muas noj P-EBT.
     get_a_p_ebt_card_html: <b>Mam xa daim npav P-EBT tuaj.</b>
-    if_approved: Yog tias txais koj, ces mam xa daim npav P-EBT uas muaj nyiaj nyob hauv rau koj mus yuav zaub noj li ntawm 10 hnub.Yuav xa daim npav nrog nyiaj muas noj nyob rau hauv thiab cov ncauj lus qhia siv li cas.
+    if_approved: Yog tias txais koj, ces mam xa daim npav P-EBT uas muaj nyiaj nyob hauv rau koj mus yuav zaub noj li ntawm 30 hnub.Yuav xa daim npav nrog nyiaj muas noj nyob rau hauv thiab cov ncauj lus qhia siv li cas.
   eligible:
     header: Tus tub ntxhais kawm ntawv puas noj mov dawb lossis tus nqi zaub mov raug txo nqi rau xyoo no tom tsev kawm ntawv?
     even_if_the_student: Tab txawm tias tus tub nxhais kawm ntawv tsis noj tshais thiab noj su tom tsev kawm ntawv, los peb xav paub seb nws puas muaj npe rau qhov txheej xwm no.
@@ -55,22 +55,22 @@ hmn:
     you_can_also_html: Koj kuj hu tau Minnesota Food HelpLine ntawm <a href="tel:16514869860">651-486-9860</a> lossis <a href="tel:18887111151">888-711-1151</a>.Muaj cov neeg txhais lus thiab.
   received_card:
     alt_text_card: Ib daim npav uas thaij ib qho chaw thiab cov lus Minnesota EBT sau rau
-    header: Koj tsev neeg puas siv cov nyiaj muas noj (SNAP/EBT) lossis koom nyob rau hauv koom haum Minnesota's Family Investment Program (MFIP)?
+    header: Nyob rau lub 3 Hlis 2020, koj tsev neeg puas tau txais cov nyiaj muas noj (SNAP/FS/EBT) lossis koom nyob rau hauv koom haum Minnesota's Family Investment Program (MFIP)?
     it_looks_like_html: Daim npav zoo li no&colon;
   done:
     header: Koj ua tiav lawm lauj!
-    you_dont_need: Koj tsis tas tso npe rau daim foos no.Koj daim npav SNAP/EBT lossis MFIP yeej muaj nyiaj muas noj P-EBT nyob rau hauv lawm.Yuav muab $325 rau txhua tus tub ntxhais kawm uas nyob hauv koj tsev neeg.
+    you_dont_need: Koj tsis tas tso npe rau daim foos no. Koj daim npav SNAP/EBT lossis MFIP yeej muaj nyiaj muas noj P-EBT nyob rau hauv lawm.
     if_theres_a_problem_html: Yog tias muaj teeb meem dabtsi rau koj daim npav, koj hu tau rau Minnesota EBT qhov chaw txais tos pab qhua ntawm <a href="tel:+18889972227">(888) 997-2227</a>, uas qhib 24 teev txhua hnub rau 7 hnub tauj ib lub lim tiam.
   children:
     header: Ntxiv tagnrho cov tub ntxhais kawm uas nyob hauv koj tsev neeg seb yog pes tsawg leej
-    one_at_a_time: Suav ib tus zuj zus mus, tagnrho cov tub ntxhais kawm uas muaj hnub nyoog 5-18 xyoo pib lub 9 Hlis tim 1, 2019 los mus.Qhov no suav txog cov tub ntxhais kawm uas noj tau tshais thiab su tom tsev kawm ntawv yam dawb xwb.
+    one_at_a_time: Suav ib tus zuj zus mus, tagnrho cov tub ntxhais kawm uas noj tau tshais thiab su tom tsev kawm ntawv yam dawb xwb.
     students: Cov tub ntxhais kawm nyob hauv koj tsev neeg
     child_has_been: Tau muab tus menyuam no rho tawm lawm
     remove: (rho tawm)
     add: Ntxiv ib tus tub ntxhais kawm
   add_student:
     header: Ntxiv ib tus tub ntxhais kawm.
-    one_at_a_time_add: Suav ib tus zuj zus mus, tagnrho cov tub ntxhais kawm uas muaj hnub nyoog 5-18 xyoo pib lub 9 Hlis tim 1, 2019 los mus.Qhov no suav txog cov tub ntxhais kawm uas noj tau tshais thiab su tom tsev kawm ntawv yam dawb xwb.
+    one_at_a_time_add: Suav ib tus zuj zus mus, tagnrho cov tub ntxhais kawm uas noj tau tshais thiab su tom tsev kawm ntawv yam dawb xwb.
     first_name: Npe
     legally: Lub npe uas sau nyob hauv nws tej ntaub ntawv tom tsev kawm ntawv.
     last_name: Xeem
@@ -99,7 +99,7 @@ hmn:
   just_so_you_know:
     header: Qhia li no kom koj paub
     text_1: Daim npav no yuav xa rau tus neeg laus hauv tsev neeg uas tau ua tiav daim ntawv thov.
-    text_2: Yog tias koj tso npe ntau tshaj rau ib tus tub ntxhais kawm twg, tagnrho cov nyiaj muas noj yuav muab tso rau hauv tib daim npav no.
+    text_2: Yog tias koj tso npe ntau tshaj rau ib tus tub ntxhais kawm twg, tagnrho cov nyiaj muas noj yuav muab tso rau hauv tib daim npav no. Tej zaum ib txhia yuav txais ob daim npav los yeej muaj thiab.
     text_3: Cov neeg laus hauv tsev neeg yuav siv tau coj mus yuav zaub mov noj rau nws tsev neeg.
   contact:
     header: Peb yuav tiv tauj koj li cas?
@@ -113,10 +113,10 @@ hmn:
   success:
     header: Koj ua tiav daim ntawv thov lawm!
     write_down_your_html: Sau tus nab npawb ua tiav daim foos no tseg cia&colon;
-    if_approved: Yog tias txais koj, ces mam xa daim npav P-EBT uas muaj nyiaj nyob hauv rau koj mus yuav zaub noj li ntawm 10 hnub.Yuav xa daim npav nrog nyiaj muas noj nyob rau hauv thiab cov ncauj lus qhia siv li cas.
+    if_approved: Yog tias txais koj, ces mam xa daim npav P-EBT uas muaj nyiaj nyob hauv rau koj mus yuav zaub noj li ntawm 30 hnub.Yuav xa daim npav nrog nyiaj muas noj nyob rau hauv thiab cov ncauj lus qhia siv li cas.
     learn_more_html: <a href="/info">Kawm ntxiv</a> txog qhov txheej xwm kev pab cuam nyiaj muas noj P-EBT.
     if_approved_question: Yog tias txais koj, ces koj yuav tau nyiaj muas noj P-EBT pes tsawg?
-    if_approved_answer_1_html: Koj yuav txais daim npav P-EBT uas yeej muaj nyiaj muas noj nyob rau hauv lawm, uas yog ntxiv $325 rau txhua tus menyuam kawm ntawv uas muaj npe. Koj siv tau cov nyiaj no mus yuav zaub mov noj tom tej kiab khw uas muab khoom noj thiab kiab khw muag zaub.
+    if_approved_answer_1_html: Koj yuav txais daim npav P-EBT uas yeej muaj nyiaj muas noj nyob rau hauv lawm, uas yog ntxiv $325 rau txhua tus menyuam kawm ntawv uas muaj npe. Koj siv tau cov nyiaj no mus yuav zaub mov noj tom tej kiab khw uas muab khoom noj thiab kiab khw muag zaub. Tom ntej hauv caij ntuj so no, kuj tseem yuav ntxiv $100 nyob hauv daim npav nyiaj muas noj rau txhua tus menyuam uas muaj npe txais kev pab no thiab.
     if_approved_answer_2_html: Koj kuj siv tau daim npav nyiaj muas noj P-EBT los yuav zaub mov noj hauv online ntawm <a target="_blank" href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818">Amazon</a> and <a target="_blank" href="https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540">Walmart</a>.
     how_was_your_experience: Koj puas nyiam qhov kev ua ntawv thov hauv online no thiab?
     thank_you: Ua tsaug rau koj cov lus!

@@ -24,7 +24,7 @@ vi:
     apply_starting: Nộp đơn xin trên trang mạng này bắt đầu từ 12 giờ trưa ngày 8 tháng Sáu
     apply_by: Nộp đơn xin trợ cấp P-EBT trước ngày 31 Tháng bảy
     apply_now: Nộp đơn ngay bây giờ
-    about: Chương trình này, hay còn gọi là P-EBT, là dành cho những học sinh thường có thể được cấp các bữa ăn miễn phí hoặc giảm giá tại trường học. Nộp đơn xin và được cấp tới tối đa $325 một đứa trẻ để mua thực phẩm.
+    about: Chương trình này, hay còn gọi là P-EBT, dành cho những học sinh thường có thể được cấp các bữa ăn miễn phí hoặc giảm giá tại trường. Nộp đơn xin và được cấp đến tối đa $325 một đứa trẻ để mua thực phẩm. Khi nộp đơn xin, quý vị cũng có thể hội đủ điều kiện nhận $100 trợ cấp P-EBT cho mùa Hè. Quý vị không cần phải nộp đơn xin lại cho những trẻ em mà quý vị đã nộp đơn.
     children_may: Các trẻ em có thể tiếp tục được cấp thực phẩm dạng "đến lấy mang về" tại các địa điểm cung cấp thực phẩm khẩn cấp do đại dịch COVID-19 mà các trường học và địa điểm cộng đồng cung cấp, ngay cả khi các em đang được trợ cấp P-EBT.
     questions_about: Quý vị có thắc mắc gì về P-EBT không?
     learn_more_about: Tìm hiểu thêm về chương trình này.
@@ -41,7 +41,7 @@ vi:
     your_school_will_make_sure_html: <b>Chúng tôi sẽ bảo đảm là quý vị hội đủ điều kiện.</b>
     we_will_check: Chúng tôi sẽ kiểm tra để bảo đảm là gia đình quý vị có thể được cấp P-EBT. Tình trạng di trú không được xem xét đến khi quyết định tình trạng quý vị hội đủ điều kiện nhận trợ cấp P-EBT.
     get_a_p_ebt_card_html: <b>Nhận thẻ P-EBT qua thư bưu điện.</b>
-    if_approved: Nếu được chấp thuận, quý vị sẽ nhận được thẻ P-EBT nạp sẵn tiền để mua thực phẩm trong vòng 10 ngày. Thẻ này sẽ được nạp tiền mua thực phẩm và kèm theo hướng dẫn về cách thức sử dụng thẻ.
+    if_approved: Nếu được chấp thuận, quý vị sẽ nhận được thẻ P-EBT nạp sẵn tiền để mua thực phẩm trong vòng 30 ngày. Thẻ này sẽ được nạp tiền mua thực phẩm và kèm theo hướng dẫn về cách thức sử dụng thẻ.
   eligible:
     header: Học sinh có thể được cấp các bữa ăn miễn phí hoặc giảm giá trong năm học không?
     even_if_the_student: Ngay cả khi học sinh không ăn sáng hoặc ăn trưa ở trường, chúng tôi cần biết là các em có hội đủ điều kiện tham gia chương trình này hay không.
@@ -55,22 +55,22 @@ vi:
     you_can_also_html: Quý vị cũng có thể gọi Đường dây trợ giúp thực phẩm của Minnesota (Minnesota Food HelpLine) tại số <a href="tel:16514869860">651-486-9860</a> hoặc <a href="tel:18887111151">888-711-1151</a>. Có thông dịch viên.
   received_card:
     alt_text_card: Thẻ có hình phong cảnh trên đó và có ghi chữ Minnesota EBT
-    header: Gia đình quý vị có sử dụng trợ cấp thực phẩm (SNAP/EBT) hoặc tham gia Chương trình Đầu tư gia đình của Minnesota (MFIP) không?
+    header: Gia đình quý vị có được nhận trợ cấp thực phẩm SNAP/FS/EBT hoặc trợ cấp của Chương trình Đầu tư Gia đình của Minnesota (MFIP) trong tháng 3, 2020 không?
     it_looks_like_html: Thẻ này có thể trông giống như thế này&colon;
   done:
     header: Quý vị đã làm xong!
-    you_dont_need: Quý vị không cần phải điền mẫu đơn này. Thẻ SNAP/EBT hoặc MFIP sẽ tự động nạp sẵn trợ cấp P-EBT của quý vị. Quý vị sẽ nhận được $325 cho mỗi học sinh trong gia đình quý vị.
+    you_dont_need: Quý vị không cần phải điền mẫu đơn này. Thẻ SNAP/EBT hoặc MFIP sẽ tự động nạp sẵn tiền trợ cấp P-EBT cho quý vị.
     if_theres_a_problem_html: Nếu gặp trục trặc với thẻ của quý vị, quý vị có thể gọi trung tâm dịch vụ khách hàng EBT của Minnesota tại số <a href="tel:+18889972227">(888) 997-2227</a>, 24 giờ trong ngày, 7 ngày một tuần.
   children:
     header: Thêm tất cả các học sinh trong gia đình quý vị
-    one_at_a_time: Từng người một, thêm tất cả các học sinh từ 5-18 tuổi tính đến ngày 1 tháng Chín, 2019. Trong đó có thể bao gồm những học sinh được cấp bữa sáng hoặc bữa trưa miễn phí ở trường.
+    one_at_a_time: Từng người một, cho thêm vào tất cả các học sinh được cấp bữa ăn sáng hoặc bữa trưa miễn phí ở trường.
     students: Các học sinh trong gia đình quý vị
     child_has_been: Đứa trẻ đã bị loại bỏ
     remove: (loại bỏ)
     add: Thêm một học sinh
   add_student:
     header: Thêm một học sinh.
-    one_at_a_time_add: Từng người một, thêm tất cả các học sinh từ 5-18 tuổi tính đến ngày 1 tháng Chín, 2019. Trong đó có thể bao gồm những học sinh được cấp bữa sáng hoặc bữa trưa miễn phí ở trường.
+    one_at_a_time_add: Từng người một, cho thêm vào tất cả các học sinh được cấp bữa ăn sáng hoặc bữa trưa miễn phí ở trường.
     first_name: Tên
     legally: Hợp pháp như ghi nguyên văn trong hồ sơ học bạ.
     last_name: Họ
@@ -99,7 +99,7 @@ vi:
   just_so_you_know:
     header: Để quý vị biết như vậy
     text_1: Thẻ này sẽ được cấp cho người lớn trong gia đình đã điền đơn xin.
-    text_2: Nếu quý vị nộp đơn xin cho hai học sinh trở lên, toàn bộ các trợ cấp sẽ ở trong một thẻ.
+    text_2: Nếu quý vị nộp đơn xin cho nhiều hơn một học sinh, tất cả mọi trợ cấp sẽ được cho vào trong một thẻ. Một số hộ gia đình có thể nhận được hai thẻ.
     text_3: Những người lớn trong gia đình sẽ có thể sử dụng thẻ để mua sắm cho cả gia đình.
   contact:
     header: Chúng tôi có thể liên lạc với quý vị như thế nào?
@@ -113,10 +113,10 @@ vi:
   success:
     header: Đơn xin của quý vị đã hoàn tất!
     write_down_your_html: Ghi lại mã số xác nhận của quý vị&colon;
-    if_approved: Nếu được chấp thuận, quý vị sẽ nhận được thẻ P-EBT nạp sẵn tiền để mua thực phẩm trong vòng 10 ngày. Thẻ này sẽ được nạp tiền mua thực phẩm và kèm theo hướng dẫn về cách thức sử dụng thẻ.
+    if_approved: Nếu được chấp thuận, quý vị sẽ nhận được thẻ P-EBT nạp sẵn tiền để mua thực phẩm trong vòng 30 ngày. Thẻ này sẽ được nạp tiền mua thực phẩm và kèm theo hướng dẫn về cách thức sử dụng thẻ.
     learn_more_html: <a href="/info">Tìm hiểu thêm</a> về chương trình P-EBT.
     if_approved_question: Nếu được chấp thuận, tôi sẽ nhận được bao nhiêu tiền trợ cấp P-EBT?
-    if_approved_answer_1_html: Quý vị sẽ nhận được một chiếc thẻ P-EBT qua bưu điện, có nạp sẵn $325 cho mỗi đứa trẻ được chấp thuận để mua thực phẩm tại đa số các tiệm thực phẩm và chợ thực phẩm.
+    if_approved_answer_1_html: Quý vị sẽ nhận được một chiếc thẻ P-EBT qua bưu điện, có nạp sẵn $325 cho mỗi đứa trẻ được chấp thuận để mua thực phẩm tại đa số các cửa hàng thực phẩm. Cuối mùa hè năm nay, thẻ của quý vị sẽ được nạp thêm $100 cho mỗi đứa trẻ được chấp thuận.
     if_approved_answer_2_html: Quý vị cũng có thể sử dụng thẻ P-EBT để đặt mua thực phẩm trên mạng trực tuyến tại <a target="_blank" href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818">Amazon</a> và <a target="_blank" href="https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540">Walmart</a>.
     how_was_your_experience: Kinh nghiệm của quý vị với lần xin trợ cấp này như thế nào?
     thank_you: Cám ơn ý kiến phản hồi của quý vị!
