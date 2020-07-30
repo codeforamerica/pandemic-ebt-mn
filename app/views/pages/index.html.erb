@@ -38,9 +38,7 @@
           <div class="grid">
             <div class="grid__item width-one-half">
               <% if ENV["CLOSED"] != "1" %>
-                <div class="grid__item width-one-half">
                   <%= render partial: 'apply_now', locals: { is_early: @is_early } %>
-                </div>
               <% end %>
             </div>
             <div class="grid__item width-one-half">
