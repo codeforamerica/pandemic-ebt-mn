@@ -33,6 +33,7 @@ Metrics/BlockLength:
 Metrics/ClassLength:
   Exclude:
     - app/models/child.rb
+    - app/mailers/denial_mailer.rb
 Metrics/CyclomaticComplexity:
   Exclude:
     - app/helpers/ordinal_columns_helper.rb
