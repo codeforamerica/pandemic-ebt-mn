@@ -1,6 +1,8 @@
 class Child < ApplicationRecord
   belongs_to :household
 
+  enum denial_status: { unknown: 0, denied: 1 }, _prefix: :denial_status
+
   scope :submitted, -> { includes(:household).where.not(households: { submitted_at: nil }) }
   scope :unsubmitted, -> { includes(:household).where(households: { submitted_at: nil }) }
 
