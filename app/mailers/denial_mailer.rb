@@ -1,6 +1,6 @@
 class DenialMailer
   def mail(household)
-    return if household.denial_email_status_pending?
+    return unless household.denial_email_status_pending?
 
     client = Mailgun::Client.new(Rails.application.credentials.mailgun_api_key)
     msg =  {
