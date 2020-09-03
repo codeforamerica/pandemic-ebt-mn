@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_08_194430) do
+ActiveRecord::Schema.define(version: 2020_09_03_192826) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2020_07_08_194430) do
     t.string "school_attended_name"
     t.string "school_attended_grade", limit: 2
     t.string "school_attended_id", limit: 15
+    t.integer "denial_status", limit: 2, default: 0
     t.index ["household_id"], name: "index_children_on_household_id"
   end
 
@@ -59,6 +60,7 @@ ActiveRecord::Schema.define(version: 2020_07_08_194430) do
     t.string "clean_state"
     t.point "clean_coordinates"
     t.boolean "confirmation_email_sent", default: false
+    t.integer "denial_email_status", limit: 2, default: 0
     t.index ["cleaned_address"], name: "index_households_on_cleaned_address"
     t.index ["huid"], name: "index_households_on_huid", unique: true
     t.index ["submitted_at"], name: "index_households_on_submitted_at"
