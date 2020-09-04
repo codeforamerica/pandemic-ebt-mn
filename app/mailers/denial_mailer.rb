@@ -21,7 +21,7 @@ class DenialMailer
 
   def text_body(household)
     <<~BODY
-        Date: September 3, 2020
+        Date: September 4, 2020
 
         Dear P-EBT Applicant: #{household.parent_first_name.upcase} #{household.parent_last_name.upcase}
 
@@ -129,7 +129,7 @@ class DenialMailer
     <<~BODY
       <html>
       <body>
-      <p>Date: September 3, 2020</p>
+      <p>Date: September 4, 2020</p>
 
       <p>Dear P-EBT Applicant: #{household.parent_first_name.upcase} #{household.parent_last_name.upcase}</p>
 
