@@ -10,8 +10,13 @@ class DenialMailer
       text: text_body(household),
       html: html_body(household)
     }
-    client.send_message 'p-ebt.org', msg
-    household.update(denial_email_status: :sent)
+    begin
+      client.send_message 'p-ebt.org', msg
+    rescue Mailgun::CommunicationError
+      nil
+    else
+      household.update(denial_email_status: :sent)
+    end
   end
 
   def text_body(household)
