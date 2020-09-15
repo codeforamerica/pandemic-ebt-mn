@@ -36,18 +36,16 @@ class DenialMailer
         - P-EBT benefits have already been issued to the student
         - Multiple applications have been submitted for the same child
         - The child did not attend a school district-run Pre-K program where meals were funded by the National School Lunch Program
-        
-        Nonpublic/private school applications are being approved and denied separately in the next few weeks. 
-        
+                
         Children who were denied:
         #{children_text_list(household)}
         
-        If you would like to appeal this decision, you must submit an appeal via a P-EBT Webform (https://edocs.mn.gov/forms/DHS-7330-ENG) by September 14. The P-EBT appeal process is a secondary review of your application with additional information that you provide.  
+        If you would like to appeal this decision, you must submit an appeal via a P-EBT Webform (https://edocs.mn.gov/forms/DHS-7330-ENG) by September 21. The P-EBT appeal process is a secondary review of your application with additional information that you provide.  
         
         If appealing, applicants must provide verification of each child’s eligibility for free and reduced price meals. Appeals will not be accepted without verification.  Examples of documents to verify eligibility for P-EBT benefits during the 2019-2020 school year may include:
         - The free and reduced-priced meal program enrollment letter with each child’s name 
         - A letter from your school administrator validating each child’s enrollment in free or reduced-price meals
-        - A report card or other school enrollment documentation from your 2019-2020 enrolled school with each child’s name if your child attends a school where all children are certified for free or reduced-price school meals(a community eligibility school)
+        - A report card or other school enrollment documentation from your 2019-2020 enrolled school with each child’s name if your child attends a school where all children are certified for free or reduced-price school meals (a community eligibility school)
         
         If eligibility for the $325 P-EBT benefit cannot be determined, the $100 Summer P-EBT benefit will not be issued.  
         
