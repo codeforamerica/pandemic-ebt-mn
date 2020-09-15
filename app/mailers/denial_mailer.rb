@@ -21,7 +21,9 @@ class DenialMailer
 
   def text_body(household)
     <<~BODY
-        Date: September 4, 2020
+        Note: This corrects some details sent in a previous email.  Appeals can be filed until September 21.
+
+        Date: September 15, 2020
 
         Dear P-EBT Applicant: #{household.parent_first_name.upcase} #{household.parent_last_name.upcase}
 
@@ -127,7 +129,9 @@ class DenialMailer
     <<~BODY
       <html>
       <body>
-      <p>Date: September 4, 2020</p>
+      <p>Note: This corrects some details sent in a previous email. Appeals can be filed until September 21.</p>
+
+      <p>Date: September 15, 2020</p>
 
       <p>Dear P-EBT Applicant: #{household.parent_first_name.upcase} #{household.parent_last_name.upcase}</p>
 
@@ -144,12 +148,11 @@ class DenialMailer
       <li>Multiple applications have been submitted for the same child</li>
       <li>The child did not attend a school district-run Pre-K program where meals were funded by the National School Lunch Program</li>
       </ul>
-      <p>Nonpublic/private school applications are being approved and denied separately in the next few weeks.</p>
       
       <p>Children who were denied:</p>
       #{children_html_list(household)}
       
-      <p>If you would like to appeal this decision, you must submit an appeal via a <a href="https://edocs.mn.gov/forms/DHS-7330-ENG">P-EBT Webform</a> by September 14. The P-EBT appeal process is a secondary review of your application with additional information that you provide.</p>
+      <p>If you would like to appeal this decision, you must submit an appeal via a <a href="https://edocs.mn.gov/forms/DHS-7330-ENG">P-EBT Webform</a> by September 21. The P-EBT appeal process is a secondary review of your application with additional information that you provide.</p>
       
       <p>If appealing, applicants must provide verification of each child’s eligibility for free and reduced price meals. Appeals will not be accepted without verification.  Examples of documents to verify eligibility for P-EBT benefits during the 2019-2020 school year may include:</p>
       <ul>
