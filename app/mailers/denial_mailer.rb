@@ -6,7 +6,7 @@ class DenialMailer
     msg =  {
       from: 'MN Pandemic EBT <no-reply@p-ebt.org>',
       to: household.email_address,
-      subject: 'Notice of Denial of P-EBT benefits',
+      subject: 'P-EBT Benefits Appeal Reminder',
       text: text_body(household),
       html: html_body(household)
     }
@@ -21,28 +21,15 @@ class DenialMailer
 
   def text_body(household)
     <<~BODY
-        Note: This corrects some details sent in a previous email.  Appeals can be filed until September 21.
-
-        Date: September 15, 2020
+        Date: September 17, 2020
 
         Dear P-EBT Applicant: #{household.parent_first_name.upcase} #{household.parent_last_name.upcase}
 
         Confirmation number: #{household.confirmation_code}
-        
-        The P-EBT benefits application you submitted does not meet the criteria to receive P-EBT benefits.  
-        
-        To be eligible for P-EBT benefits, children must be enrolled in a school that offered free or reduced price meals, be receiving free or reduced price meals, or receiving free or reduced price meals while enrolled in a school district-run Pre-K program during the 2019-2020 school year.  The P-EBT application closed on July 31, 2020.  
-        
-        Reasons why your child or children may not be eligible for P-EBT benefits include:
-        - The information on the application submitted did not match the records provided by the Minnesota Department of Education’s list of free and reduced price students
-        - P-EBT benefits have already been issued to the student
-        - Multiple applications have been submitted for the same child
-        - The child did not attend a school district-run Pre-K program where meals were funded by the National School Lunch Program
-                
-        Children who were denied:
-        #{children_text_list(household)}
-        
-        If you would like to appeal this decision, you must submit an appeal via a P-EBT Webform (https://edocs.mn.gov/forms/DHS-7330-ENG) by September 21. The P-EBT appeal process is a secondary review of your application with additional information that you provide.  
+
+        On September 3, 2020, the Notice of Denial of P-EBT benefits and how to appeal was e-mailed to this e-mail address with an initial deadline of September 14.  As a reminder, for those who have not yet submitted an appeal if you would like to appeal this decision, you must submit an appeal via a P-EBT Webform (https://edocs.mn.gov/forms/DHS-7330-ENG) by *September 18*, which is an extended deadline. The P-EBT appeal process is a secondary review of your application with additional information that you provide.
+
+        *For those who have submitted an appeal, there is no further action to take at this time.*
         
         If appealing, applicants must provide verification of each child’s eligibility for free and reduced price meals. Appeals will not be accepted without verification.  Examples of documents to verify eligibility for P-EBT benefits during the 2019-2020 school year may include:
         - The free and reduced-priced meal program enrollment letter with each child’s name 
@@ -129,31 +116,16 @@ class DenialMailer
     <<~BODY
       <html>
       <body>
-      <p>Note: This corrects some details sent in a previous email. Appeals can be filed until September 21.</p>
-
-      <p>Date: September 15, 2020</p>
+      <p>Date: September 17, 2020</p>
 
       <p>Dear P-EBT Applicant: #{household.parent_first_name.upcase} #{household.parent_last_name.upcase}</p>
 
       <p>Confirmation number: #{household.confirmation_code}</p>
       
-      <p>The P-EBT benefits application you submitted does not meet the criteria to receive P-EBT benefits.</p> 
+      <p>On September 3, 2020, the Notice of Denial of P-EBT benefits and how to appeal was e-mailed to this e-mail address with an initial deadline of September 14.  As a reminder, for those who have not yet submitted an appeal if you would like to appeal this decision, you must submit an appeal via a <a href="https://edocs.mn.gov/forms/DHS-7330-ENG">P-EBT Webform</a> by <strong>September 18</strong>, which is an extended deadline. The P-EBT appeal process is a secondary review of your application with additional information that you provide.</p> 
       
-      <p>To be eligible for P-EBT benefits, children must be enrolled in a school that offered free or reduced price meals, be receiving free or reduced price meals, or receiving free or reduced price meals while enrolled in a school district-run Pre-K program during the 2019-2020 school year.  The P-EBT application closed on July 31, 2020.</p>  
-      
-      <p>Reasons why your child or children may not be eligible for P-EBT benefits include:</p>
-      <ul>
-      <li>The information on the application submitted did not match the records provided by the Minnesota Department of Education’s list of free and reduced price students</li>
-      <li>P-EBT benefits have already been issued to the student</li>
-      <li>Multiple applications have been submitted for the same child</li>
-      <li>The child did not attend a school district-run Pre-K program where meals were funded by the National School Lunch Program</li>
-      </ul>
-      
-      <p>Children who were denied:</p>
-      #{children_html_list(household)}
-      
-      <p>If you would like to appeal this decision, you must submit an appeal via a <a href="https://edocs.mn.gov/forms/DHS-7330-ENG">P-EBT Webform</a> by September 21. The P-EBT appeal process is a secondary review of your application with additional information that you provide.</p>
-      
+      <p><strong>For those who have submitted an appeal, there is no further action to take at this time.</strong></p>  
+            
       <p>If appealing, applicants must provide verification of each child’s eligibility for free and reduced price meals. Appeals will not be accepted without verification.  Examples of documents to verify eligibility for P-EBT benefits during the 2019-2020 school year may include:</p>
       <ul>
       <li>The free and reduced-priced meal program enrollment letter with each child’s name</li>
