@@ -161,6 +161,12 @@ h1.form-card__title {
   border-bottom: 1px solid $color-grey;
 }
 
-.demo-banner a {
-  color: white;
+.demo-banner {
+  text-align: left;
+  @include media($site-max-up) {
+    text-align: center;
+  }
+  a {
+    color: white;
+  }
 }
