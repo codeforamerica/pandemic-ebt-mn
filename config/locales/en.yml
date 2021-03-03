@@ -14,7 +14,7 @@ en:
     go_back: Go back
     if_your_family_html: If your family still needs help buying groceries, you can <a href="https://applymn.dhs.mn.gov/" target="_blank">apply for SNAP/EBT</a> (also known as Food Stamps).
     please_choose: Please choose an option.
-    demo: This site is for example purposes only.
+    demo_html: This site is for example purposes only. Do not submit an application if you're seeking P-EBT assistance. Instead, visit the <a href="https://mn.gov/dhs/p-ebt/">official state website for more information</a>.
     general_error: There has been a problem on our end.
     back_to_home: Back to home
     header_logo_alt_text: Minnesota Department of Education and Human Services logo
