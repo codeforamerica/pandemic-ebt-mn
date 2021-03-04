@@ -5,7 +5,7 @@ RSpec.describe AddressCleaner do
     it 'sets the cleaned_address fields' do
       cleaner = described_class.new
 
-      expect(cleaner).to receive(:get_result).and_return(
+      allow(cleaner).to receive(:get_result).and_return(
         OpenStruct.new(
           delivery_line_1: '123 Main St',
           delivery_line_2: 'Unit B',

@@ -18,6 +18,8 @@ Layout/LineLength:
   Enabled: false
 Layout/SpaceAroundMethodCallOperator:
   Enabled: false
+Lint/ConstantDefinitionInBlock:
+  Enabled: false
 Lint/DeprecatedOpenSSLConstant:
   Enabled: true
 Lint/MixedRegexpCaptureTypes:
@@ -38,6 +40,8 @@ Metrics/CyclomaticComplexity:
   Exclude:
     - app/helpers/ordinal_columns_helper.rb
 Metrics/MethodLength:
+  Enabled: false
+Naming/VariableNumber:
   Enabled: false
 Rails/ApplicationController:
   Enabled: false
