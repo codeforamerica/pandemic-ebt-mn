@@ -16,7 +16,7 @@ class ConfirmationMailer
     <<~BODY
       We received your application for Pandemic EBT. If approved,
       you will receive your P-EBT card within 30 days of application.
-      If you have any questions, please visit https://mn.gov/dhs/p-ebt 
+      If you have any questions, please visit https://mn.gov/dhs/p-ebt#{' '}
 
       Confirmation number: ##{household.confirmation_code}
       Application status: in review
@@ -27,23 +27,23 @@ class ConfirmationMailer
 
   def html_body(household)
     <<~BODY
-      <html>
-      <body>
-      <p>
-      We received your application for Pandemic EBT. If approved, you will receive your P-EBT card within 30 days of application.
-      If you have any questions, please visit <a href="https://mn.gov/dhs/p-ebt">mn.gov/dhs/p-ebt</a>
-      </p> 
-  
-      <p>
-      Confirmation number: <b>##{household.confirmation_code}</b><br>
-      Application status: <b>in review</b>
-      </p>
-
-      <p>
-      **This is an automated message. Please do not reply to this message.**
-      </p>
-      </body>
-      </html>
+                  <html>
+                  <body>
+                  <p>
+                  We received your application for Pandemic EBT. If approved, you will receive your P-EBT card within 30 days of application.
+                  If you have any questions, please visit <a href="https://mn.gov/dhs/p-ebt">mn.gov/dhs/p-ebt</a>
+                  </p>#{' '}
+            #{'  '}
+                  <p>
+                  Confirmation number: <b>##{household.confirmation_code}</b><br>
+                  Application status: <b>in review</b>
+                  </p>
+      #{'      '}
+                  <p>
+                  **This is an automated message. Please do not reply to this message.**
+                  </p>
+                  </body>
+                  </html>
     BODY
   end
 end

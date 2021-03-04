@@ -13,9 +13,9 @@ class AutoresponseMailer
 
   def text_body
     <<~BODY
-      This email address is not monitored. 
+      This email address is not monitored.#{' '}
 
-      Please visit https://mn.gov/dhs/p-ebt for more information about Pandemic EBT. 
+      Please visit https://mn.gov/dhs/p-ebt for more information about Pandemic EBT.#{' '}
 
       If you still have questions, email DHS.SNAP.SpecialProjects@state.mn.us
 
@@ -28,10 +28,10 @@ class AutoresponseMailer
       <html>
       <body>
       <p>
-      This email address is not monitored. 
+      This email address is not monitored.#{' '}
       </p>
       <p>
-      Please visit <a href="https://mn.gov/dhs/p-ebt">mn.gov/dhs/p-ebt</a> for more information about Pandemic EBT. 
+      Please visit <a href="https://mn.gov/dhs/p-ebt">mn.gov/dhs/p-ebt</a> for more information about Pandemic EBT.#{' '}
       </p>
       <p>
       If you still have questions, email <a href="mailto:DHS.SNAP.SpecialProjects@state.mn.us">DHS.SNAP.SpecialProjects@state.mn.us</a>
